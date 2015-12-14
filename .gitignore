@@ -3,3 +3,8 @@ code/Packages/
 code/Sitecore.Speak.Theming/Website/bin/
 buildscript/
 license.xml
+<<<<<<< HEAD
+=======
+BuildArtifacts/
+buildscript/
+>>>>>>> 8e3e20452acd54b2ca81b34f8df0795b639bbda0
