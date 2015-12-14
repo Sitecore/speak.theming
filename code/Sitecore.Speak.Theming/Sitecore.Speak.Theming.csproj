@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{49D5BBCA-03F9-4381-9FBD-F9EE7883A543}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sitecore.Speak.Theming</RootNamespace>
+    <AssemblyName>Sitecore.Speak.Theming</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Website\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Website\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Website\App_Config\Include\Sitecore.Speak.Theming.config" />
+    <None Include="Website\sitecore\shell\client\AdditionalTheme\css\speak-default-theme-configuration.less" />
+    <None Include="Website\sitecore\shell\client\AdditionalTheme\css\speak-default-theme-contrast-var.less" />
+    <None Include="Website\sitecore\shell\client\AdditionalTheme\css\speak-default-theme-orange-var.less" />
+    <None Include="Website\sitecore\shell\client\AdditionalTheme\css\speak-default-theme-red-var.less" />
+    <None Include="Website\sitecore\shell\client\AdditionalTheme\css\speak-default-theme-teal-var.less" />
+    <None Include="Website\sitecore\shell\client\Business Component Library\Layouts\Renderings\Structures\Page Structures\Dialog\DialogOrange.cshtml" />
+    <None Include="Website\sitecore\shell\client\Business Component Library\Layouts\Renderings\Structures\Substructures\DialogContentNMOrange.cshtml" />
+    <None Include="Website\sitecore\shell\client\Speak\Layouts\Layouts\Speak-Layout-Orange.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PageCode\ChangeTheme.cs" />
+    <Compile Include="Web\Pipelines\GetPageStylesheets\1000 - ResolveAltThemes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EcmaScript.NET, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Speak.API.8.2.0.17\lib\EcmaScript.NET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Speak.API.8.2.0.17\lib\Iesi.Collections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Mvc.API.8.1.0.10\lib\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Abstractions, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Analytics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Aggregation, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Analytics.Aggregation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Automation, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Analytics.Automation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Automation.Aggregation, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Analytics.Automation.Aggregation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Automation.MongoDB, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Analytics.Automation.MongoDB.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Analytics.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.DataAccess, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Analytics.DataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.DevelopmentEnvironment, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Analytics.DevelopmentEnvironment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Model, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Analytics.Model.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.MongoDB, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Analytics.MongoDB.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.OmniChannel, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Analytics.OmniChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Outcome, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Analytics.Outcome.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Processing, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Analytics.Processing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Sql, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Analytics.Sql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Apps.Loader, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Apps.Loader.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Buckets, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Buckets.API.8.1.0.3\lib\net4.5\Sitecore.Buckets.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Buckets.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Buckets.API.8.1.0.3\lib\net4.5\Sitecore.Buckets.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Client, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Buckets.API.8.1.0.3\lib\net4.5\Sitecore.ContentSearch.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Analytics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Buckets.API.8.1.0.3\lib\net4.5\Sitecore.ContentSearch.Analytics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Analytics.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Buckets.API.8.1.0.3\lib\net4.5\Sitecore.ContentSearch.Analytics.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Buckets.API.8.1.0.3\lib\net4.5\Sitecore.ContentSearch.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Buckets.API.8.1.0.3\lib\net4.5\Sitecore.ContentSearch.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq.Lucene, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Buckets.API.8.1.0.3\lib\net4.5\Sitecore.ContentSearch.Linq.Lucene.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq.Solr, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Buckets.API.8.1.0.3\lib\net4.5\Sitecore.ContentSearch.Linq.Solr.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.LuceneProvider, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Buckets.API.8.1.0.3\lib\net4.5\Sitecore.ContentSearch.LuceneProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.LuceneProvider.JapaneseAnalyzer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Buckets.API.8.1.0.3\lib\net4.5\Sitecore.ContentSearch.LuceneProvider.JapaneseAnalyzer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.SolrProvider, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Buckets.API.8.1.0.3\lib\net4.5\Sitecore.ContentSearch.SolrProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ItemWebApi, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.ItemWebAPI.API.8.1.0.5\lib\.net45\Sitecore.ItemWebApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Kernel, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Kernel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Logging, Version=1.2.0.30715, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Marketing, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Marketing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Marketing.Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Marketing.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Marketing.Taxonomy, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Marketing.Taxonomy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Mvc.API.8.1.0.10\lib\Sitecore.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="sitecore.nexus, Version=1.0.0.4404, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\sitecore.nexus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.NVelocity, Version=0.4.2.8580, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.NVelocity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Oracle, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Oracle.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Publishing.WebDeploy, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Publishing.WebDeploy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Security.AntiCsrf, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.AntiCSRFModule.API.8.1.0.3\lib\.net45\Sitecore.Security.AntiCsrf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.SessionProvider, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.SessionProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.SessionProvider.Memory, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.SessionProvider.Memory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.SessionProvider.MongoDB, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.SessionProvider.MongoDB.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.SessionProvider.Sql, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.SessionProvider.Sql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Speak.Client, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Speak.API.8.2.0.17\lib\Sitecore.Speak.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Speak.ItemWebApi, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Speak.API.8.2.0.17\lib\Sitecore.Speak.ItemWebApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Xdb.Configuration, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Xdb.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Zip, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.CMS.Core.API.8.1.0.5\lib\net45\Sitecore.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Mvc.API.8.1.0.10\lib\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Mvc.API.8.1.0.10\lib\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Mvc.API.8.1.0.10\lib\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Mvc.API.8.1.0.10\lib\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Mvc.API.8.1.0.10\lib\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Yahoo.Yui.Compressor, Version=2.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Speak.API.8.2.0.17\lib\Yahoo.Yui.Compressor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Website\sitecore\shell\client\AdditionalTheme\changeTheme.js" />
+    <Content Include="Website\sitecore\shell\client\AdditionalTheme\css\speak-default-theme-contrast-var.css" />
+    <Content Include="Website\sitecore\shell\client\AdditionalTheme\css\speak-default-theme-orange-var.css" />
+    <Content Include="Website\sitecore\shell\client\AdditionalTheme\css\speak-default-theme-red-var.css" />
+    <Content Include="Website\sitecore\shell\client\AdditionalTheme\css\speak-default-theme-teal-var.css" />
+    <Content Include="Website\sitecore\shell\client\AdditionalTheme\css\style.css" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\sc-speak-logo.gif" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\sc-sprite-contrast.png" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\sc-sprite-orange.png" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\sc-sprite-red.png" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\sc-sprite-teal.png" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\BackButton\back_button-new.png" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\BackButton\back_button.png" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\DialogWindow\close_button_sprite-new.png" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\DropDownButton\arrows.png" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\GlobalLogo\global_logo-contrast.png" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\GlobalLogo\global_logo-orange.png" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\GlobalLogo\global_logo-red.png" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\GlobalLogo\global_logo-teal.png" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\MessageBar\sc-message-bar-icons-new.png" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\ProgressIndicator\sc-spinner32-contrast.gif" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\ProgressIndicator\sc-spinner32-orange.gif" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\ProgressIndicator\sc-spinner32-red.gif" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\ProgressIndicator\sc-spinner32-teal.gif" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\SmartPanel\header_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

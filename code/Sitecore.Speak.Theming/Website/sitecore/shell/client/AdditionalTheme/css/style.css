@@ -1,0 +1,16 @@
+﻿.sc .sc-text-divider {
+  border-bottom: none;
+  margin-top: 50px;
+}
+
+div[data-sc-id=RowPanel1] {
+  padding: 0 15px;
+}
+
+div[data-sc-id=Text16] {
+  margin-top: 60px !important;
+}
+
+button[data-sc-id=ChangeButton] { margin-top: 10px;}
+
+select[data-sc-id=ComboBox] { width: 50%;}
