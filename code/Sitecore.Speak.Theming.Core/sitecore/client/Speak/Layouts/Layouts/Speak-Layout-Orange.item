@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {26EDBEDA-663D-416B-B230-0B7149D39272}
+database: core
+path: /sitecore/client/Speak/Layouts/Layouts/Speak-Layout-Orange
+parent: {B45BDC7C-480B-4221-A8D6-D372D09AAF23}
+name: Speak-Layout-Orange
+master: {00000000-0000-0000-0000-000000000000}
+template: {3A45A723-64EE-4919-9D41-02FD40FD1466}
+templatekey: Layout
+
+----field----
+field: {A036B2BC-BA04-44F6-A75F-BAE6CD242ABF}
+name: Path
+key: path
+content-length: 71
+
+/sitecore/shell/client/Speak/Layouts/Layouts/Speak-Layout-Orange.cshtml
+----field----
+field: {3DFC14ED-3B91-4D2C-86CF-88B42EA0F7D5}
+name: Place Holders
+key: place holders
+content-length: 52
+
+Page.Stylesheets, Page.Scripts, Page.Code, Page.Body
+----version----
+language: en
+version: 1
+revision: 7b6d7c2c-54b8-4563-9017-adacd22c506c
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120508T120123
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7b6d7c2c-54b8-4563-9017-adacd22c506c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20140915T151549:635463909496203802Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

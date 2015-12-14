@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+      <id>Sitecore.Speak.TypeScript</id>
+      <version>1.2.1.0</version>
+      <title>Sitecore SPEAK TypeScript files</title>
+      <authors>Sitecore</authors>
+      <owners>Sitecore</owners>
+      <requireLicenseAcceptance>false</requireLicenseAcceptance>
+      <description>TypeScript definition and base class files for Sitecore SPEAK.</description>
+      <copyright>Copyright (C) by Sitecore A/S</copyright>
+      <tags>Sitecore SPEAK TypeScript</tags>
+    </metadata>
+    <files>
+      <file src="..\Website\sitecore\shell\client\Speak\Assets\lib\core\1.2\Sitecore.Speak.d.ts" target="content\sitecore\shell\client\Speak\Assets\lib\core\1.2\Sitecore.Speak.d.ts" />
+      <file src="..\Website\sitecore\shell\client\Speak\Assets\lib\core\1.2\SitecoreSpeak.ts" target="content\sitecore\shell\client\Speak\Assets\lib\core\1.2\SitecoreSpeak.ts" />
+      <file src="..\Website\sitecore\shell\client\Speak\Assets\lib\core\1.2\SitecoreSpeak.js" target="content\sitecore\shell\client\Speak\Assets\lib\core\1.2\SitecoreSpeak.js" />
+    </files>
+</package>

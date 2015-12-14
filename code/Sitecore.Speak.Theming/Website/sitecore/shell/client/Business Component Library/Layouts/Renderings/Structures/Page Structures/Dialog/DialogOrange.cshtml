@@ -1,0 +1,14 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+  const string DialogContentClass = "sc-dialogContent";
+}
+<header class="sc-dialogHeader">
+  @Html.Sitecore().Placeholder("DialogHeader")
+</header>
+
+<section class="@DialogContentClass">
+  @Html.Sitecore().Placeholder("DialogContent")
+</section>
+
