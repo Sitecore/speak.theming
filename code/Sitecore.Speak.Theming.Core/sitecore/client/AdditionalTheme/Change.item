@@ -20,16 +20,16 @@ content-length: 1
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 2386
+content-length: 2396
 
 <r>
-  <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{26EDBEDA-663D-416B-B230-0B7149D39272}">
+  <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{4F72A793-BDBC-4262-9523-6AADD8FEA487}">
     <r id="{DAFAFFB8-74AF-4141-A96A-70B16834CEC6}" par="PageCodeTypeName=Sitecore.Speak.Theming.PageCode.ChangeTheme%2c+Sitecore.Speak.Theming&amp;PageCodeScriptFileName=%2fsitecore%2fshell%2fclient%2fAdditionalTheme%2fchangeTheme.js" ph="Page.Code" uid="{00126511-1F7E-4CBA-BF7A-AD1F70B545C7}" />
     <r id="{BE007891-2D9C-4E67-943C-752DBA0C041F}" ph="Page.Body" uid="{F373AD1A-6282-4295-96D7-3E29D6EE88B3}" />
     <r id="{06D96EF6-A4F4-4EB0-AA7F-F72C7D1972E8}" ph="Page.Body" uid="{C303A65C-1205-4311-BE50-A275460CFBB2}" />
     <r id="{642C1164-3AE1-4D86-8474-3BC19FE4433B}" ph="DialogHeader" uid="{3AB2380C-C8AD-4B42-8848-69418CE847F8}" />
     <r id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}" par="Id=main&amp;UsePadding=1" ph="Page.Body" uid="{16ABEFF6-990A-4A8E-ADE8-6E756FE81CE9}" />
-    <r id="{7717EB6C-9F90-4C58-826D-5E87722A0318}" par="Id=HeaderTitle&amp;TextType=LargeTitle&amp;Text=Change+Theme" ph="DialogHeader.Title" uid="{1DC97590-77EC-4F75-A687-D86F7D22CAAA}" />
+    <r id="{7717EB6C-9F90-4C58-826D-5E87722A0318}" par="Id=HeaderTitle&amp;TextType=LargeTitle&amp;Text=Change+the+SPEAK+Theme" ph="DialogHeader.Title" uid="{1DC97590-77EC-4F75-A687-D86F7D22CAAA}" />
     <r id="{7717EB6C-9F90-4C58-826D-5E87722A0318}" par="Id=Text&amp;Text=Select+a+new+theme%3a" ph="main.Content" uid="{A1F67CD1-B96A-4886-B965-C8C6E4BDD68F}" />
     <r id="{25D357D3-3648-4336-9B53-55EED7CFA078}" par="Id=ComboBox&amp;SelectedValue=%7bBF60F8CB-4971-4A2B-AE94-45C0D201BCAD%7d&amp;DisplayFieldName=%24displayName&amp;Items=%7bBinding+DataSource.Items%7d" ph="main.Content" uid="{00EBE97D-F6EC-42D8-8100-C32D1C684878}" />
     <r id="{7717EB6C-9F90-4C58-826D-5E87722A0318}" par="Id=SelectedIdText&amp;IsVisible=0" ph="main.Content" uid="{91C32421-8531-4FB3-AEDA-EADD0436E355}" />
@@ -41,7 +41,7 @@ content-length: 2386
 ----version----
 language: en
 version: 1
-revision: 99d96873-5b45-4bce-863d-8e96405a0f98
+revision: b3c6c433-0391-4bee-b76d-7a4d776e9690
 
 ----field----
 field: {7205A57F-93B4-413A-AA9A-6B16BBC59565}
@@ -63,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-99d96873-5b45-4bce-863d-8e96405a0f98
+b3c6c433-0391-4bee-b76d-7a4d776e9690
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150624T055159:635707219197701436Z
+20151217T163610Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
