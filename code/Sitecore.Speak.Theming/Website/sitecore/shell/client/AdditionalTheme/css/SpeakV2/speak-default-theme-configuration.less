@@ -1,0 +1,1897 @@
+﻿@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic");
+@import "speak-default-theme-orange-var.less"; 
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.opacity(@opacity) {
+  opacity: @opacity;
+  @opacity-ie: (@opacity * 100);
+  filter: ~"alpha(opacity=@{opacity-ie})";
+}
+
+body.sc {
+    font-family: 'Source Sans Pro';
+
+    /* Text Control */
+    .sc-text { 
+        color: @SC-MainFontColor;
+        font-size: 16px;
+        font-weight: 300;
+        vertical-align: middle;
+
+        &.sc-text-label {
+            color: @SC-MainFontColor;
+            font-size: 14px;
+        }
+
+        &.sc-text-largelabel {
+            color: @SC-MainColor;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        &.sc-text-value {
+            color: @SC-MainFontColor;
+            font-size: 19px;
+            font-weight: 300;
+        }
+
+        &.sc-text-largevalue {
+            color: @SC-MainFontColor;
+            font-size: 21px;
+            font-weight: 300;
+        }
+
+
+        &.sc-text-title {
+            color: @SC-MainColor;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        &.sc-text-smalltitle {
+            color: @SC-SmallTextColor;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    
+        &.sc-text-largetitle {
+            color: @SC-MainColor;
+            font-size: 32px;
+            font-weight: 300;
+        }
+
+        &.sc-text-divider {
+            color: @SC-MainFontColor;
+        }
+    }
+
+    /* Label */
+    .sc-label {
+        color: @SC-MainFontColor;
+        font-weight: 400;
+    }
+
+    /* Button Control */
+    .btn {
+        .border-radius(4px);
+        height: 30px;
+        padding: 0 12px;
+
+        &.noText {
+            padding: 0 7px;
+        }
+
+        &.btn-primary {
+            border:1px solid @SC-ButtonPrimaryBorderColor;
+            background: linear-gradient(to bottom, @SC-ButtonPrimaryGradiendBottom  0, @SC-ButtonPrimaryGradiendTop 100%);
+            color: #fff;
+            box-shadow: @SC-ButtonPrimaryShadowInset 0 1px 0 0 inset, @SC-ButtonPrimaryShadow 0 1px 0 0;
+            text-shadow: 0 1px 0 @SC-ButtonPrimaryTextShadowColor;
+            &:hover {
+                background: linear-gradient(to bottom,  @SC-ButtonPrimaryHoverGradiendBottom 0, @SC-ButtonPrimaryHoverGradiendTop 100%);
+            }
+            &:active, &.up {
+                background: linear-gradient(to bottom,  @SC-ButtonPrimaryActiveGradiendBottom 0, @SC-ButtonPrimaryActiveGradiendTop 100%);
+                box-shadow: @SC-ButtonPrimaryActiveShadowInset 0 1px 0 0 inset, @SC-ButtonPrimaryActiveShadow 0 1px 0 0;
+            }
+            &:disabled {
+                background: @SC-ButtonPrimaryDisabledBackground;
+                box-shadow: none;
+                border:1px solid @SC-ButtonPrimaryDisabledBorderColor;
+            }
+        }
+
+        &.btn-default, 
+        &.no-text {
+            border:1px solid @SC-ButtonDefaultBorderColor;
+            background: linear-gradient(to bottom,  @SC-ButtonDefaultGradiendBottom 0, @SC-ButtonDefaultGradiendTop 100%);
+            color: @SC-ButtonDefaultTextColor;
+            box-shadow: @SC-ButtonDefaultShadowInset 0 1px 0 0 inset, @SC-ButtonDefaultShadow 0 1px 1px 0;
+            text-shadow: 0 1px 0 @SC-ButtonDefaultTextShadowColor;
+            &:hover {
+                background: linear-gradient(to bottom,  @SC-ButtonDefaultHoverGradiendTop 0, @SC-ButtonDefaultHoverGradiendBottom 100%);
+            
+            }
+            &:active, &.up {
+                background: @SC-ButtonDefaultActiveBackground;
+                box-shadow: @SC-ButtonDefaultActiveShadow 0 1px 0 0 inset;
+                border: 1px solid @SC-ButtonDefaultActiveBorderColor;
+            }
+            &:disabled {
+                background: @SC-ButtonDefaultDisabledBackground;
+                box-shadow: @SC-ButtonDefaultDisabledShadow 0 1px 0 0 inset;
+                border:1px solid @SC-ButtonDefaultDisabledBorderColor;
+            }
+        }
+
+        &.btn-inverse {
+            border:1px solid @SC-ButtonInverseBorderColor;
+            background: linear-gradient(to bottom,  @SC-ButtonInverseGradiendBottom 0, @SC-ButtonInverseGradiendTop 100%);
+            color: @SC-ButtonInverseTextColor;
+            box-shadow: @SC-ButtonInverseShadowInset 0 1px 0 0 inset, @SC-ButtonInverseShadow 0 1px 0 0;
+            text-shadow: 0 1px 0 @SC-ButtonInverseTextShadowColor; 
+            &:hover {
+                background: linear-gradient(to bottom,  @SC-ButtonInverseHoverGradiendTop 0, @SC-ButtonInverseHoverGradiendBottom 100%);
+            }
+            &:active, &.up {
+                background: linear-gradient(to bottom,  @SC-ButtonInverseActiveGradientTop 0, @SC-ButtonInverseActiveGradientBottom 100%);
+                box-shadow: @SC-ButtonInverseActiveShadow 0 1px 0 0 inset;
+                border: 1px solid @SC-ButtonInverseActiveBorderColor;
+            }
+            &:disabled {
+                background: @SC-ButtonInverseDisabledBackground;
+                box-shadow: none;
+                border:1px solid @SC-ButtonInverseDisabledBorderColor;
+            }
+        }
+    }
+    
+    /* Back Button Control */
+    .sc-backbutton.btn {
+        height: 43px;
+
+        &:before,
+        &:after,
+        .sc-backbutton-text {
+            background-image: url("/sitecore/shell/client/Speak/Assets/img/Speak/BackButton/back_button-new.png");
+        }
+
+        .sc-backbutton-text {
+            color: @SC-ButtonDefaultTextColor;
+            text-shadow: 0 1px 0 @SC-BackButtonTextShadowColor;
+            font-size: 13px;
+        }
+    }
+
+    /* DropDownButton Control */
+    .sc-dropdownbutton {
+        > button.btn-inverse,
+        > button.btn-default,
+        > button.btn-primary {
+            .sc-dropdownbutton-toggler {
+                margin-top: -2px; 
+
+                .sc-dropdownbutton-chevron {
+                    border: none;
+                    background: url("/sitecore/shell/client/Speak/Assets/img/Speak/DropDownButton/arrows.png") no-repeat;
+                    width: 10px;
+                    height: 6px;
+                }
+            }
+
+            &.up {
+                .sc-dropdownbutton-toggler {
+                    margin-top: -3px; 
+                }
+            }
+        }
+
+        > button.btn-inverse .sc-dropdownbutton-toggler .sc-dropdownbutton-chevron,
+        > button.btn-primary .sc-dropdownbutton-toggler .sc-dropdownbutton-chevron {
+            background-position: -10px top;
+            &.up {
+                background-position: -10px bottom;
+            }
+        }
+        > button.btn-default .sc-dropdownbutton-toggler .sc-dropdownbutton-chevron {
+            background-position: 0 0;
+            &.up {
+                background-position: 0 -6px;
+            }
+        }
+    }
+ 
+    /* ToggleButton Control */
+    .sc-togglebutton {
+        
+        &.btn-inverse,
+        &.btn-default,
+        &.btn-primary {
+            .sc-togglebutton-toggler {
+                margin-top: -2px; 
+
+                .sc-togglebutton-chevron {
+                    border: none;
+                    background: url("/sitecore/shell/client/Speak/Assets/img/Speak/DropDownButton/arrows.png") no-repeat;
+                    width: 10px;
+                    height: 6px;
+                }
+            }
+
+            &.up {
+                .sc-togglebutton-toggler {
+                    margin-top: -3px; 
+                }
+            }
+        }
+
+        &.btn-inverse .sc-togglebutton-toggler .sc-togglebutton-chevron,
+        &.btn-primary .sc-togglebutton-toggler .sc-togglebutton-chevron {
+            background-position: -10px top;
+            &.up {
+                background-position: -10px bottom;
+            }
+        }
+        &.btn-default .sc-togglebutton-toggler .sc-togglebutton-chevron {
+            background-position: 0 0;
+            &.up {
+                background-position: 0 -6px;
+            }
+        }
+    }
+    
+    /* Filter Control */
+    .sc-filtercontrol {
+        padding: 40px 10px;
+        background: @SC-FilterBackground;
+        border: 1px solid @SC-FilterBorderColor;
+        border-bottom: 1px solid @SC-FilterBorderBottomColor;
+        box-shadow: 0px 1px 0 0 @SC-FilterShadowColor;
+
+        .sc-filtercontrol-item {
+            &:hover {
+                background: @SC-FilterHoverItem;
+            }
+
+            span {
+                margin-left: 5px;
+            }
+        }
+
+        table {
+            background: none;
+            th {
+                background: none;
+                border: none;
+                color: @SC-FilterHeaderColor;
+                font-weight: 400;
+                font-size: 14px;
+                padding: 10px 15px 15px 15px;
+            }
+
+            td {
+                border: none;
+                padding-top: 5px;
+                span {
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    /* Textbox Control */
+    .sc-textbox,
+    .sc-uploaderInfo-row .form-control,
+    .sc-textarea
+    {
+        .border-radius(4px);
+        background: @SC-TextboxBackground;
+        box-shadow: inset 0 1px 0 @SC-TextboxShadowColor;
+        border: 1px solid @SC-TextboxBorderColor;
+        border-top: 1px solid @SC-TextboxBorderTopColor;
+        margin: 0;
+        height: 32px;
+        font-size: 16px;
+        line-height: 32px;
+        color: @SC-TextboxTextColor;
+        font-weight: 300;
+        &:focus {
+            background: @SC-TextboxFocusBackground;
+        }
+    }
+    input.form-control {
+        &[placeholder],
+        &::-webkit-input-placeholder,
+            &::-moz-placeholder,
+            &:-moz-placeholder,
+            &:-ms-input-placeholder {
+             color: @SC-TextboxTextColor;
+        }
+    }
+
+    /* Combobox Control */
+    .sc-combobox {
+        .border-radius(4px);
+        background: @SC-TextboxBackground;
+        box-shadow: inset 0 1px 0 @SC-TextboxShadowColor;
+        border: 1px solid @SC-TextboxBorderColor;
+        border-top: 1px solid @SC-TextboxBorderTopColor;
+        height: 32px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: 14px;
+        color: @SC-TextboxTextColor;
+        font-weight: 300;
+    }
+
+    /* Textarea Control */
+    .sc-textarea {
+        height: auto;
+        line-height: 20px;
+    }
+
+    /* List Control */
+    .sc-listcontrol {
+        .sc-table {
+            tbody {
+                td {
+                    background: @SC-ListcontrolRowBackground;
+                    color: @SC-MainFontColor;
+                    border: 1px solid @SC-ListcontrolBorderColor;
+                }
+
+                tr:nth-child(odd) td {
+                    background: @SC-ListcontrolRowBackgroundOdd;
+                }
+
+                tr:hover td,
+                tr.active td {
+                    background: @SC-ListcontrolRowActiveBackground;
+                }
+
+                tr td {
+                    a {
+                        color: @SC-MainFontColor;
+                        border-bottom: 1px dotted @SC-MainFontColor;
+
+                        &:hover {
+                            border: none;
+                        }
+                    }
+                }
+            }
+
+            tbody tr th, thead th {
+                background: @SC-ListcontrolHeaderBackground;
+                color: @SC-ListcontrolHeaderTextColor;
+
+                .sc-table-sortable {
+                    border-left: 0.4em solid transparent;
+                    border-right: 0.4em solid transparent;
+                }
+            }
+
+            td, th {
+                padding-top: 19px;
+                padding-bottom: 19px;
+                font-size: 16px;
+            }
+        }
+
+        .sc-table-header th.sc-table-head {
+            border-left:1px solid @SC-ListcontrolHeaderBorder;
+
+            &:after {
+                display: none;              
+            }
+
+            &:first-child {
+                border: none;
+            }
+
+            .sc-table-sortable {
+                border-top-color: @SC-ListcontrolArrowColor;
+
+                &.noDirection, &.up {
+                    border-bottom-color: @SC-ListcontrolArrowColor;
+                }
+
+            }
+        }
+
+        .clearfix {
+            margin-left: -10px;
+        }
+
+        .sc-iconList-wrap {
+            background: none;
+            margin: 10px 10px 10px 10px;
+            height: auto !important;
+            width: auto !important;
+            float: none;
+            display: inline-block;
+
+            .sc-iconList-item {
+                box-sizing: initial;
+                -webkit-box-sizing: initial;
+                padding: 10px;
+                background: @SC-ListcontrolIconBackground;
+                border: 1px solid @SC-ListcontrolIconBorderColor;
+                height: auto !important;
+
+                .sc-iconList-item-title {
+                    text-align: left;
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+            }
+
+            &:hover, &.active {
+                position: relative;
+                z-index: 10;
+
+                .sc-iconList-item {
+                    border: 1px solid @SC-ListcontrolActiveIconBorderColor;
+                }
+            }
+
+            &:hover {
+                .sc-iconList-item {
+                    -webkit-transform:scale(1.1);
+                    -moz-transform:scale(1.1);
+                    -ms-transform:scale(1.1);
+                    -o-transform:scale(1.1);
+                    transform:scale(1.1);
+                    -webkit-transition: all 0.1s ease-out;
+                    -moz-transition: all 0.1s ease-out;
+                    -ms-transition: all 0.1s ease-out;
+                    -o-transition: all 0.1s ease-out;
+                    transition: all 0.1s ease-out;
+                }
+            }
+        }
+    }
+
+    /* ButtonTextBox Control */
+    .input-group {
+        height: 32px;
+
+        .form-control {
+            float: none;
+            height: 30px;
+            border-radius:4px !important;
+        }
+
+        &.sc-buttontextbox {
+            display: block;
+            position: relative;
+            
+            input.form-control {
+                border: 1px solid @SC-TextboxBorderColor;
+                border-top: 1px solid @SC-TextboxBorderTopColor;
+                box-shadow: inset 0 1px 0 @SC-TextboxShadowColor;
+                background: @SC-TextboxBackground;
+                color: @SC-TextboxTextColor;
+                font-family: "Source Sans Pro";
+                font-size: 14px;
+                height: 32px;
+                line-height: 32px; 
+                padding-left: 48px;
+                z-index: 1;
+                position: absolute;
+            }
+
+            .input-group-btn {
+                z-index: 10;
+                width: 30px;
+                position: absolute;
+                right: 20px;
+                height: 32px;
+                line-height: 32px;
+
+                button {
+                    border: none;
+                    box-shadow: none;
+                    background: none;
+                    margin-top: -5px;
+                }
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 17px;
+                height: 17px;
+                left: 17px;
+                top: 8px; 
+                z-index: 10;
+                background: url("/sitecore/shell/client/Speak/Assets/img/sc-sprite-orange.png") no-repeat -217px 0;
+            }
+        }
+    }
+
+    /* MessageBar Control */
+    .sc-messageBar {
+        .alert {
+            font-weight: 400;
+            background: @SC-MessagebarWarningBackground;
+            padding: 18px 22px 19px 64px;
+            font-size: 14px;
+            color: @SC-MessagebarWarningTextColor;
+            box-shadow: none;
+
+            .close {
+                font-size: 15px;
+                text-shadow: none;
+                .opacity(.7);
+                margin-top: -8px;
+                right: 22px;
+                color:@SC-MessagebarWarningClose;
+
+                &:hover {
+                    .opacity(1);
+                }
+            }
+
+            a {
+                color: @SC-MessagebarWarningLink;
+            }
+
+            .icon-chevron {
+                border-top: 5px solid @SC-MessagebarWarningArrowColor;
+
+                &.direction-up {
+                    border-top: none;
+                    border-bottom: 5px solid @SC-MessagebarWarningArrowColor;
+                }
+            }
+
+            .sc-messageBar-messageText, 
+            .sc-messageBar-chevron-layout {
+                line-height: 26px;
+            }
+            .alert-ico {
+                margin-left: -36px;
+                background: transparent url("/sitecore/shell/client/Speak/Assets/img/Speak/MessageBar/sc-message-bar-icons-new.png") no-repeat;
+                background-position: 0 -52px;
+                width: 26px;
+                height: 26px;
+            }
+
+            &:hover {
+                background: @SC-MessagebarWarningBackground;
+            }
+
+            a {
+                font-weight: 400;
+            }
+
+            &.alert-error, &.alert-error:hover {
+                background: @SC-MessagebarErrorBackground;
+            }
+
+            &.alert-info, &.alert-info:hover {
+                background: @SC-MessagebarInfoBackground;
+                color: @SC-MessagebarInfoTextColor;
+
+                a {
+                    color: @SC-MessagebarInfoTextColor;
+                }
+            }
+
+            &.alert-info {
+                .alert-ico {
+                    background-position: 0 -26px;
+                }
+
+                .icon-chevron {
+                     border-top: 5px solid @SC-MessagebarInfoArrowColor;
+
+                     &.direction-up {
+                         border-top: none;
+                         border-bottom: 5px solid @SC-MessagebarInfoArrowColor;
+                     }
+                }
+
+                .close {
+                    color:@SC-MessagebarInfoClose;
+                }
+            }
+
+            &.alert-error {
+                .alert-ico {
+                    background-position: 0 0;
+                }
+
+                .icon-chevron {
+                     border-top: 5px solid @SC-MessagebarErrorArrowColor;
+
+                     &.direction-up {
+                         border-top: none;
+                         border-bottom: 5px solid @SC-MessagebarErrorArrowColor;
+                     }
+                }
+
+                .close {
+                    color: @SC-MessagebarErrorClose;
+                }
+            }
+        }
+
+        .sc-messageBar-messages-nested-children {
+            .alert {
+                padding: 3px 22px 3px 69px;
+
+                .sc-messageBar-messageText, 
+                .sc-messageBar-actionLink {
+                    font-size: 13px;
+                }
+            }
+
+            &.sc-messageBar-messages-wrap {
+                
+                .alert {
+                    border-bottom: 1px solid @SC-MessagebarWarningBorderBottom;
+
+                    .alert-ico {
+                        width: 18px;
+                        background-position: -26px -60px;
+                        margin-top: 4px;
+                     }
+                }
+
+                .alert-error {
+
+                    border-bottom: 1px solid @SC-MessagebarErrorBorderBottom;
+                    .alert-ico {
+                        background-position: -26px -8px;
+                    }
+                }
+
+                .alert-info {
+
+                    border-bottom: 1px solid @SC-MessagebarInfoBorderBottom;
+                    .alert-ico {
+                        background-position: -26px -34px;
+                    }
+                }
+            }
+        }
+
+        .sc-messageBar-actionLink {
+            line-height: 26px;
+        }
+
+        .sc-messageBar-head {
+            &.alert {
+                border-bottom: 1px solid @SC-MessagebarWarningBorderBottom;
+            }
+
+            &.alert-info {
+                border-bottom: 1px solid @SC-MessagebarInfoBorderBottom;
+            }
+
+            &.alert-error {
+                border-bottom: 1px solid @SC-MessagebarErrorBorderBottom;
+            }
+        }
+    }
+
+    /* SmartPanel Control */
+    .sc-smartpanel {
+        .sc-smartpanel-header {
+            background: @SC-SmartpanelHeaderBackgroundColor;
+            padding-right: 60px;
+            
+            span {
+                color: @SC-SmartpanelHeaderTextColor !important;
+            }
+        }
+
+        .sc-smartpanel-content {
+            bottom: 15px;
+
+            img {
+                border: 1px solid @SC-HyperlinkColor;
+                padding: 40px;
+            }
+        }
+
+        .sc-smartpanel-buttons {
+            display: none;
+        }
+    }
+
+    a.sc-smartpanel-close,
+    a.sc-dialogWindow-close {
+        background: url("/sitecore/shell/client/Speak/Assets/img/Speak/DialogWindow/close_button_sprite-new.png") no-repeat 0 0;
+        width: 9px;
+        height: 9px;
+        top: 24px;
+        right: 24px;
+
+        &:hover {
+            background-position: left bottom;
+        }
+
+        &:before {
+            content: "";
+            width: 0;
+            height: 60px;
+            border-left: 1px solid @SC-SmartpanelHeaderTextColor;
+            top: -24px;
+            position: absolute;
+            left: -24px;
+        }
+    }
+
+    /* Hyperlink Button Control */
+    .sc-hyperlinkbutton {
+        color: @SC-HyperlinkColor;
+
+        &:hover {
+        color: @SC-HyperlinkColor;
+        }
+    }
+
+    /* IconHyperlink Button Control */
+    .sc-iconhyperlinkbutton {
+        color: @SC-HyperlinkColor;
+
+        &:hover {
+        color: @SC-HyperlinkColor;
+        }
+    }
+
+    /* HyperlinkButtonGroup Control */
+    .sc-hyperlinkbuttonsgroup {
+        font-size: 14px;
+
+        a, a:hover {
+            color: @SC-HyperlinkButtonGroupTextColor;
+        }
+
+        li {
+            height: 48px;
+
+            a.sc-hyperlinkbutton {
+                padding: 14px 0 14px 20px;
+            }
+        }
+
+        li[sc-selected] {
+            background: @SC-HyperlinkButtonGroupSelectedBackground;
+            box-shadow: inset 5px 0 0 0 @SC-HyperlinkButtonGroupBorderLeft;
+
+            a.sc-hyperlinkbutton {
+                box-shadow: 0 0 0 1px @SC-HyperlinkButtonGroupShadow;
+                color: @SC-MenuItemSelectedTextColor;
+                cursor: default;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    /* Advanced Expander Control */
+    .sc-advancedExpander {
+        &[data-sc-iscollapsible=False] {
+            .sc-advancedExpander-header-actionbar {
+                padding-right: 10px !important;
+            }
+        }
+
+        .sc-advancedExpander-header, 
+        &.open .sc-advancedExpander-header {
+            a {
+                span {
+                    &.sc-advancedExpander-header-chevron-glyph {
+                        background: none;
+                        width: 0;
+                        height: 0;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        border-top: 8px solid @SC-AdvancedExpanderHeaderArrowColor;
+                        border-bottom: 0 solid @SC-AdvancedExpanderHeaderArrowColor;
+
+                        &.sc-advancedExpander2-header-chevron-glyph-open {
+                            border-bottom: 8px solid @SC-AdvancedExpanderHeaderArrowColor;
+                            border-top: 0 solid @SC-AdvancedExpanderHeaderArrowColor;
+                        }
+                    }
+                }
+            }
+            > table {
+                background: none;
+
+                .sc-advancedExpander-header-title {
+                    color: @SC-AdvancedExpanderHeaderTextColor;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+            }
+        }
+        
+        .sc-advancedExpander-header {
+            border-left: none;
+            padding-left: 5px;
+            line-height: 60px;
+            background: @SC-AdvancedExpanderHeaderBackground;
+
+            .btn.btn-default.mainButton {
+                border: 1px solid @SC-AdvancedExpanderHeaderButtonBorder;
+            }
+
+            .btn-group > .btn {
+                border: 1px solid @SC-AdvancedExpanderHeaderButtonBorder !important;
+                height: 32px;
+            }
+        }
+
+        .sc-advancedExpander-body {
+            border-top: 1px solid @SC-AdvancedExpanderBodyBorderTop;
+            border-left: none;
+            border-right: none;
+            background: @SC-AdvancedExpanderBodyBackground;
+            border-bottom: @SC-AdvancedExpanderBodyBackground;
+
+            .sc-listcontrol-body {
+                table.sc-table {
+                    tr {
+                        td {
+                            &:first-child {
+                                border-left: none;
+                            }
+
+                            &:last-child {
+                                border-right: none;
+                            }
+                        }
+
+                        &:last-child td {
+                            border-bottom: none;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .sc-advancedExpander-footer {
+            background: @SC-AdvancedExpanderFooterBackground;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1.3em;
+        }
+    }
+    
+    /* Action Control */
+    .sc-actioncontrol {
+        height: 18px !important;
+
+        .dropdown-text {
+            line-height: 27px;
+            padding-right: 16px;
+        }
+
+        .btn.noText {
+            min-width: 39px;
+            padding: 6px 8px;
+            border: 1px solid @SC-ActioncontrolButtonBorderColor;
+            margin: 0;
+            box-shadow: @SC-ActioncontrolShadowInset 0 1px 0 0 inset, @SC-ActioncontrolShadow 0 1px 1px 0;
+
+            .sc-dropdownbutton-toggler {
+                right: 14px;
+            }
+        }
+
+        .btn.no-text {
+            height: 32px; 
+            padding: 5px 10px;
+            float: left;
+            margin-left: -1px;
+        }
+
+        ul.nav {
+            .sc-dropdownbutton-toggler {
+                right: 12px;
+                margin-top: -2px;
+            }
+
+            .icon-group {
+                .mainButton.noText {
+                    .sc-icon {
+                        margin-left: 1px;
+                        margin-right: 0;
+                    }
+                }
+
+                .btn.no-text {
+                    .border-radius(0);
+
+                    &:first-child {
+                        border-top-left-radius: 4px;
+                        border-bottom-left-radius: 4px;
+                    }
+
+                    &:last-child {
+                        border-top-right-radius: 4px;
+                        border-bottom-right-radius: 4px;
+                    }
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .sc-dropdownbutton-chevron {
+                border: none;
+                background: url('/sitecore/shell/client/Speak/Assets/img/Speak/DropDownButton/arrows.png') no-repeat 0 0;
+                width: 10px;
+                height: 6px;
+                &.up {
+                    background-position: 0 -6px;
+                }
+            }
+
+            .sc-foldout.dropdown-menu.open {
+               &:after, &:before {
+	                bottom: 100%;
+	                right: 13px;
+	                border: solid transparent;
+	                content: " ";
+	                height: 0;
+	                width: 0;
+	                position: absolute;
+	                pointer-events: none;
+                }
+
+                &:after {
+	                //border-color: @SC-ActioncontrolBackground;
+	                border-bottom-color: @SC-ActioncontrolBackground;
+	                border-width: 6px;
+	                margin-left: -6px;
+                    right: 14px;
+                }
+                &:before {
+	               // border-color: @SC-ActioncontrolBorderColor;
+	                border-bottom-color: @SC-ActioncontrolBorderColor;
+	                border-width: 7px;
+	                margin-left: -7px;
+                }
+            }
+
+        }
+
+
+    }
+
+    /* Global Header Control */
+    .sc-globalHeader {
+        height: 60px;
+        line-height: 60px;
+
+        .sc-global-logo.medium {
+            margin-top: 12px;
+        }
+    }
+
+    /* Breadcrumb Control */
+    .sc-breadcrumb {
+        > ul {
+            > li {
+                color: @SC-BreadcrumbColor;
+                font-size: 14px;
+
+                a {
+                    color: @SC-BreadcrumbColor;
+                }
+
+                &::first-child {
+                    text-transform: none;
+                }
+            }
+        }
+    }
+
+    /* Navigation Menu Control */
+    .sc-navigation-menu {
+        top: 60px;
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 270px;
+        box-shadow: inset -1px 0 0 0 @SC-NavigationMenuShadow;
+    }
+
+    /* Account Information Control */
+    .sc-accountInformation {
+        font-size: 14px;
+
+        .logout {
+            color: @SC-AccountInfoLogoutColor;
+        }
+
+        li {
+            color: @SC-AccountInfoUserTextColor;
+
+            img {
+                display: none;
+            }
+
+            &:after {
+                padding: 0 10px 0 12px;
+            }
+        }
+
+        
+    }
+
+    /* Menu Control */
+    .sc-menu {
+        border-top: 1px solid @SC-MenuBorderTop;
+        padding-top: 15px;
+
+        .menuroot {
+            border: none;
+            background: none;
+            width: 269px;
+
+            .itemRow.menuItem {
+                width: 270px;
+
+                a {
+                    color: @SC-MainColor;
+                }
+
+                &.selected {
+                    background: @SC-MenuItemSelected;
+
+                    a {
+                        color: @SC-MenuItemSelectedTextColor;
+                        cursor: default;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            .header {
+                background: @SC-MenuHeaderBackground;
+                &.rootItem {
+                    a {
+                        color: @SC-MainColor;
+                    }
+                    &.selected {
+                        background: @SC-MenuHeaderBackground;
+                        box-shadow: inset 5px 0 0 0px @SC-HyperlinkButtonGroupBorderLeft, inset 2px 0 0 1px @SC-MenuItemShadow;
+                        
+                        a {
+                            color: @SC-MenuItemSelectedTextColor;
+                            cursor: default;
+
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+
+                &.menuItem {
+                    a {
+                        color: @SC-MainColor;
+                    }
+                }
+
+                &.highlighted {
+                    background: none;
+                }
+            }
+
+            .menuchevron {
+                background: none;
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 6px solid @SC-MenuArrow;
+                border-bottom: 0 solid @SC-MenuArrow;
+                content: "";
+                top: -21px;
+                left: 240px;
+            }
+
+            .open {
+                .menuchevron {
+                    border-bottom: 6px solid @SC-MenuArrow;
+                    border-top: 0 solid @SC-MenuArrow;
+                    top: -43px;
+                }
+            }
+
+        }
+    }
+ 
+    /* Popover Control */
+    .popover {
+        .border-radius(0);
+        box-shadow: none;
+        border: 1px solid @SC-PopoverBorderColor;
+
+        &.right {
+             > .arrow {
+                border-right-color: @SC-PopoverBorderColor;
+            }
+
+        }
+    }
+
+    /* Dialog Window */
+    .modal {
+        .sc-dialogWindow-header {
+            background: @SC-MainColor;
+
+            .sc-dialogWindow-header-title {
+                font-size: 1.75em;
+            }
+
+            a.sc-dialogWindow-close {
+                top: 34px;
+
+                &:before {
+                    top: -26px;
+                }
+            }
+        }
+
+        .sc-dialogWindow-body {
+            background: @SC-DialogWindowBodyBackground;
+        }
+
+        .sc-dialogWindow-buttons {
+            background: @SC-DialogWindowButtonsBackground;
+            border-top: 1px solid @SC-DialogWindowButtonsBorderTop;
+        }
+    }
+
+    /* Uploader Control */
+    .sc-uploader-content {
+        .btn.btn-default {
+            line-height: 27px;
+        }
+    }
+
+    /* Tab Control */
+    .sc-tabcontrol {
+        &.subTab > .nav-tabs {
+            border: none;
+            background: none;
+        }
+
+        > .nav-tabs {
+            border-bottom: none;
+
+            > li {
+                &.active {
+                    > a {
+                        border: none !important;
+                    }
+                }
+
+                > a {
+                    height: 39px;
+                    line-height: 17px;
+                    text-transform: none;
+                    color: @SC-MainFontColor;
+                    text-shadow: 0 1px 0 @SC-TabcontrolNavLinkTextShadow;
+                    font-size: 14px;
+                    border: none;
+                    background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/tab_gray_background.png') repeat-x left top;
+                }
+            }
+        }
+
+        &.progressive, &.tabbable {
+            > .nav-tabs {
+                > li {
+                    &:before {
+                        content:"";
+                        top: 0;
+                        z-index:10;
+                        width: 16px;
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        height: 39px;
+                        background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
+                    }
+
+                    &:first-child:before {
+                        display: none;
+                    }
+
+                    &.first-visible-nav-tab:before {
+                        display: none;
+                    }
+
+                    > a {
+                        padding-left: 30px;
+
+                        &:before {
+                            display: none;
+                        }
+
+                        &:hover {
+                            text-decoration: none;
+
+                            &:after {
+                                display: none;
+                            }
+                        }                     
+                    }
+
+                    &.active-first-sibling {
+                        &:before {
+                            background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
+                        }
+                    }
+
+                    &.active {
+                        &:before {
+                            background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
+                        }
+
+                        > a {
+                            color: @SC-TabcontrolProgressiveActiveText;
+                        }
+                    }
+
+                    &.first-visible-nav-tab {
+                        a {
+                            padding-left: 15px;
+                            &:before {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    &.first-visible-nav-tab,
+                    &.last-visible-nav-tab,
+                    &:first-child {
+                        &:after {
+                            width: 3px;
+                            height: 39px;
+                            content: "";
+                            top: 0; 
+                            left: 0;
+                            position: absolute;
+                            background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/corner.png') no-repeat left top;
+                        }
+
+                        a {
+                            border: none;
+                            margin-left: 3px;
+                        }
+                    }
+
+                    &.last-visible-nav-tab {
+                        &:after {
+                            left : auto;
+                            right: -3px;
+                            background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/corner.png') no-repeat right top;
+                        }
+
+                        a {
+                            margin-left: 0;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        
+    } 
+
+    /* Global Logo */
+    .sc-global-logo {
+        background-image: url('/sitecore/shell/client/Speak/Assets/img/Speak/GlobalLogo/global_logo@{SC-Suffix}.png')
+    }
+
+    .sc-progressindicator-inner {
+        background-image: url("/sitecore/shell/client/Speak/Assets/img/Speak/ProgressIndicator/sc-spinner32@{SC-Suffix}.gif");
+    }
+}
+
+/* ------------------------------------------------------------- */
+.sc-navigation-content {
+    padding-left: 310px;
+    padding-right: 20px;
+
+    .sc-applicationContent-main {
+        padding: 0;
+
+        > .sc-border.sc-show-padding { // check it
+            padding: 15px 0;
+        }
+    }
+}
+
+.sc-applicationContent-main, 
+.sc-applicationContent-info {
+    background: @SC-BodyBackground;
+}
+
+.sc-applicationContent {
+    padding: 0 20px;
+    background: @SC-BodyBackground;
+
+    .sc-navigation-menu {
+        margin-left: 0 !important;
+    }
+
+    .sc-navigation-content {
+        padding-right: 0;
+        padding-left: 290px;
+    }
+
+    .sc-applicationContent-info {
+        color: @SC-ApplicationContentInfoText;
+
+        label,
+        .sc-text {
+            font-weight: 400;
+            color: @SC-ApplicationContentInfoText;
+            font-size: 14px;
+        }
+    }
+}
+
+.sc-applicationContent-navigation {
+    background: @SC-ApplicationContentBackground;
+
+    &.sc-navigation-menu {
+        .btn.sc-button.lg {
+            width: 220px !important;
+            margin-left: 25px; 
+            margin-right: 25px;
+        }
+    }
+}
+
+.sc-applicationHeader {
+    padding-top: 80px;
+    background: none;
+
+    .sc-applicationHeader-row1 {
+        background: none;
+        height: 92px;
+        border-left: @SC-ApplicationBoxBorder;
+        border-right: @SC-ApplicationBoxBorder;
+
+        .sc-applicationHeader-content {
+            background: @SC-ApplicationHeaderContentBackground;
+            height: 61px;
+            border-bottom: 1px solid @SC-ApplicationHeaderBorderBottomColor;
+
+            .sc-applicationHeader-title {
+                span.sc-text {
+                    font-size: 21px;
+                    font-weight: 400;
+                }
+            }
+            
+            &.breadcrumb {
+                border: none;
+                .border-radius(0);
+                height: 32px;
+                padding: 5px 15px;
+            }
+        }
+         
+        &:after {
+            display: none;
+        }
+    }
+
+    .sc-applicationHeader-row2 {
+        background: @SC-ApplicationHeader2Background;
+        border-left: @SC-ApplicationBoxBorder;
+        border-right: @SC-ApplicationBoxBorder;
+        border-bottom: 1px solid @SC-ApplicationHeader2BorderBottomColor;
+        box-shadow: @SC-ApplicationBoxBorderColor 0 1px 0 0;
+    }
+
+    .sc-applicationHeader-actions {
+        padding-top: 5px;
+    }
+
+    .sc-applicationHeader-back {
+        padding-top: 3px;
+    }
+}
+
+.sc-globalHeader {
+    background: @SC-GlobalHeaderBackground;
+    border-bottom: 1px solid @SC-GlobalHeaderBorderBottomColor;
+
+    .sc-global-logo.medium {
+        margin-top: 7px;
+    }
+}
+
+body {
+    background: @SC-BodyBackground;
+}
+
+/* Select Media Dialog Layout */
+.sc-dialogHeader {
+    background: @SC-GlobalHeaderBackground;
+    border-bottom: 1px solid @SC-GlobalHeaderBorderBottomColor;
+    height: 79px;
+
+    .sc-dialogHeader-title {
+        padding-top: 5px;
+    }
+
+    .sc-dialogHeader-actions {
+        top: 8px;
+        text-align: right;
+        width: 30%;
+        right: 40px;
+
+        button {
+            margin-left: 7px;
+        }
+    }
+
+    .sc-dialogHeader-content {
+        padding-left: 30px;
+    }
+}
+
+.sc-dialogContent {
+    margin-top: 80px;
+    margin-bottom: 0;
+    
+    .sc-dialogContent-navigation {
+        background: @SC-ApplicationContentBackground;
+        box-shadow: inset -1px 0 0 0 @SC-NavigationMenuShadow;
+        margin-top: 40px !important;
+
+        a.sc-iconhyperlinkbutton {
+            &.icon{
+                padding-left: 0;
+                color: @SC-HyperlinkColor;
+                font-size: 15px;
+                line-height: 20px;
+                text-decoration: underline;
+                &:hover {
+                    color: @SC-HyperlinkColor;
+                }
+            }
+            .sc-icon{
+                width: 20px;
+                height: 20px;
+                left: 0;
+            }
+        }
+
+        .sc-dialogContent-link {
+            padding: 15px 15px 15px 20px;
+            border-bottom: 1px solid @SC-MenuBorderTop;
+        }
+
+        .sc-hyperlinkbuttonsgroup {
+            .sc-hyperlinkbutton {
+                position: relative;
+                padding-left: 48px;
+                &:before {
+                    content:"";
+                    position: absolute; 
+                    width: 24px;
+                    height: 20px;
+                    left: 21px;
+                    top: 16px;
+                    background: url("/sitecore/shell/client/Speak/Assets/img/sc-sprite@{SC-Suffix}.png") no-repeat 0 0;
+                }
+            }
+
+            ul {
+                li {
+                    &:nth-child(1){
+                        a:before {
+                            background-position: -24px 0;
+                        }
+                        
+                        &[sc-selected=true] a:before {
+                            background-position: -24px -20px;
+                        }
+                    }
+
+                    &:nth-child(2){
+                        a:before {
+                            background-position: -48px 0;
+                        }
+                        
+                        &[sc-selected=true] a:before {
+                            background-position: -48px -20px;
+                        }
+                    }
+
+                    &:nth-child(3){
+                        a:before {
+                            background-position: -72px 0;
+                        }
+                        
+                        &[sc-selected=true] a:before {
+                            background-position: -72px -20px;
+                        }
+                    }
+
+                    &:nth-child(4){
+                        a:before {
+                            background-position: -96px 0;
+                        }
+                        
+                        &[sc-selected=true] a:before {
+                            background-position: -96px -20px;
+                        }
+                    }
+
+                    &:nth-child(5){
+                        a:before {
+                            background-position: -120px 0;
+                        }
+                        
+                        &[sc-selected=true] a:before {
+                            background-position: -120px -20px;
+                        }
+                    }
+
+                    &:nth-child(6){
+                        a:before {
+                            background-position: -144px 0;
+                        }
+                        
+                        &[sc-selected=true] a:before {
+                            background-position: -144px -20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sc-navigation-menu {
+        top: 100px;
+        width: 270px;
+        margin-left: 20px;
+    }
+
+    .sc-navigation-content {
+        padding-left: 310px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+
+
+    .sc-dialogContent-toolbar {
+        border-bottom: 1px solid @SC-GlobalHeaderBorderBottomColor;
+        background: @SC-ApplicationContentBackground; 
+        padding: 12px 40px;
+
+        .sc-dialogContent-toolbar-actions {
+            width: 100%;
+        }
+    }
+
+    .sc-dialogContent-main {
+        background: @SC-ApplicationContentBackground;
+        position: relative;
+        padding: 15px 40px;
+
+        .sc-messageBar {
+            margin-top: 10px;
+        }
+
+        .sc-filtercontrol {
+            position: absolute;
+            background: @SC-FilterBackground;
+            z-index: 11;
+            width: 100%;
+            left: 0;
+            top: -1px;
+        }
+
+        .sc-listcontrol {
+            margin-right: -40px;
+        }
+
+        .row {
+            .col-md-4.text-right {
+                .sc-togglebutton {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .sc-navigation-content {
+        padding-left: 20px !important;
+    }
+
+    .sc-navigation-wrapper.active .sc-navigation-menu {
+        z-index: 1000 !important;
+    }
+}
+
+/* ---------------------------  DIALOG  ------------------------------ */
+body.sc {
+    .sc-search-filters {
+        margin-top: -2px;
+    }
+
+    .sc-smartpanel {
+        top: 78px !important;
+
+        .sc-smartpanel-header {
+            background: @SC-SmartpanelHeaderBackgroundColor url('/sitecore/shell/client/Speak/Assets/img/Speak/SmartPanel/header_icon.png') no-repeat 25px 50%;
+            padding-right: 60px;
+            padding-left: 68px;
+
+            .sc-text.sc-text-title {
+                font-weight: 100;
+                font-size: 16px;
+            }
+        }
+
+        .sc-smartpanel-content {
+            padding-top: 35px;
+
+            .sc-text {
+                line-height: 19px;
+            }
+        }
+    }
+
+    .sc-search-searches {
+        position: relative;
+    }
+}
+
+.sc-dialogContent-title {
+    display: none;
+}
+
+.sc .sc-navigation-menu .btn.sc-button.lg[data-sc-id=UploadButton] {
+    width: 240px !important;
+}
+
+/* ------------------------  LIST MANAGER  --------------------------- */
+body.sc {
+    .sc-createlist-option {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        .name {
+            color: @SC-MainFontColor;
+            font-weight: 400;
+            font-size: 125%;
+        }
+
+        .description {
+            color: @SC-PopoverText;
+            font-size: 115%;
+        }
+    } 
+
+    .sc-popover {
+        .sc-text {
+            color: @SC-PopoverText;
+            font-weight: 400;
+            font-size: 125%;
+            line-height: 120%;
+        }
+
+        a.sc-hyperlinkbutton {
+            color: @SC-PopoverText;
+            font-size: 125%;
+            font-weight: 400;
+        }
+
+        .sc-text.sc-text-largelabel,
+        .sc-text.sc-text-largetitle {
+            font-size: 175%;
+            font-weight: 100;
+            color: @SC-MainColor !important;
+        }
+    }
+
+    .sc-ListPath {
+        height: 35px !important;
+
+        > ul > li {
+            a {
+                color: @SC-MainColor;
+                font-weight: 400;
+                font-size: 16px;
+                border-bottom: 1px dotted @SC-MainColor;
+                line-height: 16px;
+
+                &:hover {
+                    text-decoration: none;
+                    border-bottom: none;
+                }
+            }
+
+            &:first-child {
+                > a {
+                    text-transform: none;
+                }
+            }
+        }
+    }
+}
+
+
+/* hacks */
+.modal {
+    div.sc-border[data-sc-id=ShowMoreBorder] {
+        padding-top: 15px;
+        height: 105px !important;
+    }
+}
+
+.sc-advancedExpander-body {
+    .sc-ListPath {
+        padding: 0 15px;
+    }
+
+    div.sc-border[data-sc-id=ShowMoreBorder], 
+    div.sc-border[data-sc-id=ContactsShowMoreBorder] {
+        padding: 15px;
+        text-align: center !important;
+    }
+}
+
+body.sc .input-group.sc-buttontextbox .input-group-btn button {
+    img {
+        display:none;
+    }
+
+    &:before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        background: url("/sitecore/shell/client/Speak/Assets/img/Speak/Common/16x16/dark_gray/arrow-right.png") no-repeat left top;
+        right: 0;
+        top: 9px;
+    }
+}
+
+.sc-advancedExpander {
+    margin-top: 30px;
+}
+
+.popover div.sc-border[data-sc-id=CreateBorder] {
+    width: 800px !important;
+
+    .col-md-3 { 
+        width: 16% !important;
+    }
+
+    .col-md-9 { 
+        width: 80% !important;
+    }
+}
+
+.sc .sc-menu .menuroot > div > div > &:first-child {
+    position: relative;
+
+    .menuicon {
+        opacity: 0;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 22px;
+        top: 13px;
+        opacity: 0.55;
+        background: url("/sitecore/shell/client/Speak/Assets/img/sc-sprite.png") no-repeat -102px -341px;
+    }
+}
+
+.sc .sc-menu .menuroot > div > div:nth-child(2) > &:first-child {
+    &:before {
+        background-position: -152px -136px;
+    }
+}
+
+.sc .sc-menu .menuroot > div > div:nth-child(3) > &:first-child {
+    &:before {
+        background-position: -102px -358px;
+    }
+}
+
+.sc .sc-menu .menuroot > div > div:nth-child(4) > &:first-child {
+    &:before {
+        background-position: -102px -375px;
+    }
+}
+
+.sc .sc-menu .menuroot > div > div:nth-child(5) > &:first-child {
+    &:before {
+        background-position: -119px -357px;
+    }
+}
+
+
+div[data-sc-id=GeneralInformationDestinationTextBox] .btn.btn-default {
+    font-size: 0;
+}
+
+div[data-sc-id=GeneralInformationAcordion] {
+    margin-top: 10px !important;
+}
+
+div[data-sc-id=ListSourceAccordion],
+div[data-sc-id=ContactsAccordion] {
+    margin-top: 0 !important;
+}
+
+hr[data-sc-id=InfoSpotCreatedSeparator] {
+    .opacity(0);
+}
+
+.sc-listcontrol .sc-table tbody tr td img {
+    margin-top: -5px;
+}
+
+body.sc .sc-listcontrol[data-sc-id=VisitorsList] .sc-table tbody tr td a {
+    border: none;
+}
+
+.sc-listcontrol .sc-table tbody tr td img { //should be deleted
+    display: none;
+}
+
+.sc-dialogContent-link a[data-sc-id=UploadButton] .sc-icon {
+    background-image: url('/sitecore/shell/client/Speak/Assets/img/sc-sprite@{SC-Suffix}.png') !important;
+}
+
+/* experience profile */
+body.sc .sc-tabcontrol > .nav-tabs > li > a, body.sc .sc-tabcontrol > .nav-pills > li > a {
+    padding-left: 30px !important;
+    padding-right: 15px !important;
+}
+
+.sc-ChartComposites [data-sc-id$="ActionControl"] .btn-default
+{
+      border: 1px solid #cacaca !important;
+      height: 30px !important;
+      border-radius: 4px !important;
+}
+
+.sc-ChartComposites .sc-advancedExpander-header {
+      border-bottom: none !important;
+      margin-bottom: 0 !important; 
+}

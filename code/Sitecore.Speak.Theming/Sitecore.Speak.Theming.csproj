@@ -43,6 +43,11 @@
     <None Include="Website\sitecore\shell\client\AdditionalTheme\css\speak-default-theme-orange-var.less" />
     <None Include="Website\sitecore\shell\client\AdditionalTheme\css\speak-default-theme-red-var.less" />
     <None Include="Website\sitecore\shell\client\AdditionalTheme\css\speak-default-theme-teal-var.less" />
+    <None Include="Website\sitecore\shell\client\AdditionalTheme\css\SpeakV2\speak-default-theme-configuration.less" />
+    <None Include="Website\sitecore\shell\client\AdditionalTheme\css\SpeakV2\speak-default-theme-contrast-var.less" />
+    <None Include="Website\sitecore\shell\client\AdditionalTheme\css\SpeakV2\speak-default-theme-orange-var.less" />
+    <None Include="Website\sitecore\shell\client\AdditionalTheme\css\SpeakV2\speak-default-theme-red-var.less" />
+    <None Include="Website\sitecore\shell\client\AdditionalTheme\css\SpeakV2\speak-default-theme-teal-var.less" />
     <None Include="Website\sitecore\shell\client\Business Component Library\Layouts\Renderings\Structures\Page Structures\Dialog\DialogOrange.cshtml" />
     <None Include="Website\sitecore\shell\client\Business Component Library\Layouts\Renderings\Structures\Substructures\DialogContentNMOrange.cshtml" />
     <None Include="Website\sitecore\shell\client\Speak\Layouts\Layouts\Speak-Layout-Orange.cshtml" />
@@ -294,6 +299,10 @@
     <Content Include="Website\sitecore\shell\client\AdditionalTheme\css\speak-default-theme-orange-var.css" />
     <Content Include="Website\sitecore\shell\client\AdditionalTheme\css\speak-default-theme-red-var.css" />
     <Content Include="Website\sitecore\shell\client\AdditionalTheme\css\speak-default-theme-teal-var.css" />
+    <Content Include="Website\sitecore\shell\client\AdditionalTheme\css\SpeakV2\speak-default-theme-contrast-var.css" />
+    <Content Include="Website\sitecore\shell\client\AdditionalTheme\css\SpeakV2\speak-default-theme-orange-var.css" />
+    <Content Include="Website\sitecore\shell\client\AdditionalTheme\css\SpeakV2\speak-default-theme-red-var.css" />
+    <Content Include="Website\sitecore\shell\client\AdditionalTheme\css\SpeakV2\speak-default-theme-teal-var.css" />
     <Content Include="Website\sitecore\shell\client\AdditionalTheme\css\style.css" />
     <Content Include="Website\sitecore\shell\client\Speak\Assets\img\sc-speak-logo.gif" />
     <Content Include="Website\sitecore\shell\client\Speak\Assets\img\sc-sprite-contrast.png" />

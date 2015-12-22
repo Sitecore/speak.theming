@@ -6,16 +6,23 @@ path: /sitecore/client/AdditionalTheme/Change/PageSettings/Themes/Teal Theme
 parent: {A79722F7-20DB-4189-A911-0B967E31C017}
 name: Teal Theme
 master: {00000000-0000-0000-0000-000000000000}
-template: {1349EB63-C41D-439C-AB9D-F86D2E1AEAC9}
-templatekey: Stylesheet
+template: {C1FAC1B4-DA03-49A2-933B-E8DC89120C69}
+templatekey: ThemeStylesheet
 
 ----field----
-field: {753D9148-734A-4F0F-8EE2-AC3E61E8B27F}
-name: Source
-key: source
+field: {CF14ED27-C831-4727-AB64-E3D3FF1291B1}
+name: SourceSpeakV1
+key: sourcespeakv1
 content-length: 75
 
 /sitecore/shell/client/AdditionalTheme/css/speak-default-theme-teal-var.css
+----field----
+field: {3CD0BE6D-4E52-473B-A7B0-B628805C86E6}
+name: SourceSpeakV2
+key: sourcespeakv2
+content-length: 83
+
+/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-teal-var.css
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
@@ -40,7 +47,7 @@ content-length: 2
 ----version----
 language: en
 version: 1
-revision: f16b9fc8-0a9e-48ad-b80a-9d3a759c1249
+revision: 39471e9d-7d70-4ff6-be13-755a6e451f66
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f16b9fc8-0a9e-48ad-b80a-9d3a759c1249
+39471e9d-7d70-4ff6-be13-755a6e451f66
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151211T163540Z
+20151222T153824Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -6,16 +6,23 @@ path: /sitecore/client/AdditionalTheme/Change/PageSettings/Themes/Red and black 
 parent: {A79722F7-20DB-4189-A911-0B967E31C017}
 name: Red and black Theme
 master: {00000000-0000-0000-0000-000000000000}
-template: {1349EB63-C41D-439C-AB9D-F86D2E1AEAC9}
-templatekey: Stylesheet
+template: {C1FAC1B4-DA03-49A2-933B-E8DC89120C69}
+templatekey: ThemeStylesheet
 
 ----field----
-field: {753D9148-734A-4F0F-8EE2-AC3E61E8B27F}
-name: Source
-key: source
+field: {CF14ED27-C831-4727-AB64-E3D3FF1291B1}
+name: SourceSpeakV1
+key: sourcespeakv1
 content-length: 74
 
 /sitecore/shell/client/AdditionalTheme/css/speak-default-theme-red-var.css
+----field----
+field: {3CD0BE6D-4E52-473B-A7B0-B628805C86E6}
+name: SourceSpeakV2
+key: sourcespeakv2
+content-length: 82
+
+/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-red-var.css
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
@@ -33,7 +40,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 0adef7de-8cb8-4c14-995c-fb76644a4b70
+revision: 282d3044-6272-445d-8e32-ec0f20bd0b84
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0adef7de-8cb8-4c14-995c-fb76644a4b70
+282d3044-6272-445d-8e32-ec0f20bd0b84
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151211T163524Z
+20151222T153718Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

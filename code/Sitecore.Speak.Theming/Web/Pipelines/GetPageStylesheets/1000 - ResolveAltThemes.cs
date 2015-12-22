@@ -30,17 +30,23 @@ namespace Sitecore.Speak.Theming.Web.Pipelines.GetPageStylesheets
           Assert.ArgumentNotNull(args, "args");
           var switchItem = ClientHost.Databases.Database.GetItem("{3D65ACF4-31FF-427C-81D0-CF48EE30238D}");
           Item selectedTheme = null;
-          var themeSource = "";
+          var themeSource = string.Empty;
 
           if (switchItem != null)
           {
               selectedTheme = ClientHost.Databases.Database.GetItem(switchItem["Selected theme"]);
           }
+
           if (selectedTheme != null)
           {
-              themeSource = selectedTheme["Source"];
+            themeSource = selectedTheme["SourceSpeakV1"];
+            if (args.CoreVersion == "2")
+            {
+              themeSource = selectedTheme["SourceSpeakV2"];
+            }
           }
-          if (!String.IsNullOrEmpty(themeSource))
+
+          if (!string.IsNullOrEmpty(themeSource))
           {
               themeSource = FileUtil.MapPath(themeSource);
               if (File.Exists(themeSource))
