@@ -37,43 +37,6 @@ body.sc .sc-text {
   font-weight: 300;
   vertical-align: middle;
 }
-body.sc .sc-text.sc-text-label {
-  color: #666666;
-  font-size: 14px;
-}
-body.sc .sc-text.sc-text-largelabel {
-  color: #f79635;
-  font-size: 15px;
-  font-weight: 400;
-}
-body.sc .sc-text.sc-text-value {
-  color: #666666;
-  font-size: 19px;
-  font-weight: 300;
-}
-body.sc .sc-text.sc-text-largevalue {
-  color: #666666;
-  font-size: 21px;
-  font-weight: 300;
-}
-body.sc .sc-text.sc-text-title {
-  color: #f79635;
-  font-size: 15px;
-  font-weight: 700;
-}
-body.sc .sc-text.sc-text-smalltitle {
-  color: #b1b1b1;
-  font-size: 14px;
-  font-weight: 400;
-}
-body.sc .sc-text.sc-text-largetitle {
-  color: #f79635;
-  font-size: 32px;
-  font-weight: 300;
-}
-body.sc .sc-text.sc-text-divider {
-  color: #666666;
-}
 body.sc .sc-label {
   color: #666666;
   font-weight: 400;
@@ -1479,3 +1442,4 @@ body.sc .sc-tabcontrol > .nav-pills > li > a {
   border-bottom: none !important;
   margin-bottom: 0 !important;
 }
+/*# sourceMappingURL=speak-default-theme-orange-var.css.map */

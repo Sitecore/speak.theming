@@ -1,0 +1,106 @@
+----item----
+version: 1
+id: {D1F2286B-911C-4D1D-B330-D134BEE70BE3}
+database: core
+path: /sitecore/client/AdditionalTheme/v2
+parent: {A60BDEAF-70C1-45F3-B9FD-B810229CB5B5}
+name: v2
+master: {00000000-0000-0000-0000-000000000000}
+template: {8152CF09-9DD0-40C0-B806-6E91FDF389BC}
+templatekey: Speak-DialogPage
+
+----field----
+field: {3A67AD0F-9530-4B1B-9B70-9230C36AE8D6}
+name: UseFullWidth
+key: usefullwidth
+content-length: 1
+
+1
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+400
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 6495
+
+<r>
+  <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{26EDBEDA-663D-416B-B230-0B7149D39272}">
+    <r id="{06D96EF6-A4F4-4EB0-AA7F-F72C7D1972E8}" ph="Page.Body" uid="{C303A65C-1205-4311-BE50-A275460CFBB2}" />
+    <r id="{642C1164-3AE1-4D86-8474-3BC19FE4433B}" ph="DialogHeader" uid="{3AB2380C-C8AD-4B42-8848-69418CE847F8}" />
+    <r id="{DAFAFFB8-74AF-4141-A96A-70B16834CEC6}" par="SpeakCoreVersion=%7b3F937240-C16E-4229-9641-4CE5B4CB4ABA%7d" ph="Page.Code" uid="{00126511-1F7E-4CBA-BF7A-AD1F70B545C7}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=HeaderTitle1&amp;Text=Theme&amp;TextSize=X-Large" ph="DialogHeader.Title" uid="{1DC97590-77EC-4F75-A687-D86F7D22CAAA}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=main&amp;UsePadding=1" ph="Page.Body" uid="{16ABEFF6-990A-4A8E-ADE8-6E756FE81CE9}" />
+    <r id="{6BD31067-6DAB-4028-B5FD-584C3F6208EF}" par="NumberOfCells=2&amp;Id=Grid1&amp;CellAttributes=%7b%22numberOfCells%22%3a2%2c%22layoutType%22%3a%22374b2dbc-bd33-4879-854e-62807ed4aecc%22%2c%22sizeAttributes%22%3a%5b%7b%22cellAttributes%22%3a%5b%7b%22index%22%3a1%2c%22span%22%3a1%7d%2c%7b%22index%22%3a2%2c%22span%22%3a1%7d%5d%2c%22numberOfColumns%22%3a2%2c%22size%22%3a%22Large%22%7d%2c%7b%22cellAttributes%22%3a%5b%7b%22index%22%3a1%2c%22span%22%3a1%7d%2c%7b%22index%22%3a2%2c%22span%22%3a1%7d%5d%2c%22numberOfColumns%22%3a2%2c%22size%22%3a%22Medium%22%7d%2c%7b%22cellAttributes%22%3a%5b%7b%22index%22%3a1%2c%22span%22%3a1%7d%2c%7b%22index%22%3a2%2c%22span%22%3a1%7d%5d%2c%22numberOfColumns%22%3a1%2c%22size%22%3a%22Small%22%7d%2c%7b%22cellAttributes%22%3a%5b%7b%22index%22%3a1%2c%22span%22%3a1%7d%2c%7b%22index%22%3a2%2c%22span%22%3a1%7d%5d%2c%22numberOfColumns%22%3a1%2c%22size%22%3a%22XSmall%22%7d%5d%7d&amp;UseCellBottomPadding=1&amp;LayoutType=%7b374B2DBC-BD33-4879-854E-62807ED4AECC%7d" ph="main.Content" uid="{3A6D61EF-AC1B-4BE0-8E0F-94B8549417E2}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border1" ph="Grid1.Cell1" uid="{16ABEFF6-990A-4A8E-ADE8-6E756FE81CE9}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text&amp;Text=Text+Controls&amp;TextSize=XX-Large" ph="Border1.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border2" ph="Border1.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text1&amp;Text=X-Small&amp;TextSize=X-Small" ph="Border2.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text2&amp;Text=Small&amp;TextSize=Small" ph="Border2.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text3&amp;Text=Medium&amp;TextSize=Medium" ph="Border2.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text4&amp;Text=Large&amp;TextSize=Large" ph="Border2.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text5&amp;Text=X-Large&amp;TextSize=X-Large" ph="Border2.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text6&amp;Text=XX-Large&amp;TextSize=XX-Large" ph="Border2.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text7&amp;Text=XXX-Large&amp;TextSize=XXX-Large" ph="Border2.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text8&amp;Text=Italic+text&amp;TextSize=X-Large&amp;TextStyle=Italic" ph="Border2.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="TextWeight=Bold&amp;Id=Text9&amp;Text=Bold+text&amp;TextSize=X-Large" ph="Border2.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border3&amp;PaddingType=Top&amp;UsePadding=1" ph="Border1.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text10&amp;Text=Button+Controls&amp;TextSize=XX-Large" ph="Border3.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border" ph="Border3.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
+    <r id="{88C38B36-787A-43FA-85D4-FE08B0A4B7FF}" par="Id=Button&amp;ButtonType=Inverse&amp;Text=Inverse+Button" ph="Border3.Content" uid="{09F4CEEF-A089-426A-8E12-965E132321D7}" />
+    <r id="{88C38B36-787A-43FA-85D4-FE08B0A4B7FF}" par="Id=Button1&amp;ButtonType=Primary&amp;Text=Primary+Button" ph="Border3.Content" uid="{09F4CEEF-A089-426A-8E12-965E132321D7}" />
+    <r id="{88C38B36-787A-43FA-85D4-FE08B0A4B7FF}" par="Id=Button2&amp;ButtonType=Default&amp;Text=Default+Button" ph="Border3.Content" uid="{09F4CEEF-A089-426A-8E12-965E132321D7}" />
+    <r id="{88C38B36-787A-43FA-85D4-FE08B0A4B7FF}" par="Id=Button3&amp;IsEnabled=0&amp;ButtonType=Default&amp;Text=Disabled+Button" ph="Border3.Content" uid="{09F4CEEF-A089-426A-8E12-965E132321D7}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border4&amp;PaddingType=Top&amp;UsePadding=1" ph="Border1.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text11&amp;Text=TextBox+Controls&amp;TextSize=XX-Large" ph="Border4.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{86A75B44-5A2A-4950-AC4E-232C2C2A5D00}" par="Id=TextBox1&amp;IsVisible=1&amp;IsEnabled=1" ph="Border4.Content" uid="{EC330F5F-096B-44F2-8171-E15474DFF77E}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border5&amp;PaddingType=Top&amp;UsePadding=1" ph="Border1.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text12&amp;Text=List+Control+-+&amp;TextSize=XX-Large" ph="Border5.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{6F8AB6DD-9307-4AD3-964E-5B84F0B9B4F0}" par="Id=ListControlStaticData&amp;ColumnDefinitionItems=%7bFA2F67B6-84BD-4F51-90E1-5FF502E24DDA%7d%7c%7b0CCAC04F-7785-4896-93EF-29833333A1AB%7d%7c%7b46C10716-573E-4421-97F3-3B49929CF4AA%7d&amp;StaticData=%7b6C7A71E0-258F-4AF4-B8ED-D8CB75169339%7d" ph="Border5.Content" uid="{BB8C16D4-B243-40CC-8399-80C09AE111DC}" />
+  </d>
+</r>
+----version----
+language: en
+version: 1
+revision: 4ccc4014-065b-4cd4-9d6c-6b1af10d9903
+
+----field----
+field: {7205A57F-93B4-413A-AA9A-6B16BBC59565}
+name: BrowserTitle
+key: browsertitle
+content-length: 22
+
+Speak 2.0 Orange Theme
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20140924T132658Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4ccc4014-065b-4cd4-9d6c-6b1af10d9903
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151224T160036Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -37,43 +37,6 @@ body.sc .sc-text {
   font-weight: 300;
   vertical-align: middle;
 }
-body.sc .sc-text.sc-text-label {
-  color: #b1b1b1;
-  font-size: 14px;
-}
-body.sc .sc-text.sc-text-largelabel {
-  color: #616b7d;
-  font-size: 15px;
-  font-weight: 400;
-}
-body.sc .sc-text.sc-text-value {
-  color: #b1b1b1;
-  font-size: 19px;
-  font-weight: 300;
-}
-body.sc .sc-text.sc-text-largevalue {
-  color: #b1b1b1;
-  font-size: 21px;
-  font-weight: 300;
-}
-body.sc .sc-text.sc-text-title {
-  color: #616b7d;
-  font-size: 15px;
-  font-weight: 700;
-}
-body.sc .sc-text.sc-text-smalltitle {
-  color: #b1b1b1;
-  font-size: 14px;
-  font-weight: 400;
-}
-body.sc .sc-text.sc-text-largetitle {
-  color: #616b7d;
-  font-size: 32px;
-  font-weight: 300;
-}
-body.sc .sc-text.sc-text-divider {
-  color: #b1b1b1;
-}
 body.sc .sc-label {
   color: #b1b1b1;
   font-weight: 400;
@@ -1497,3 +1460,4 @@ body.sc .sc-ListPath > ul > li a {
   color: #fff;
   border-bottom-color: #fff;
 }
+/*# sourceMappingURL=speak-default-theme-red-var.css.map */

@@ -57,4 +57,9 @@
   <Item ItemPath="/sitecore/client/AdditionalTheme/Change/PageSettings/Themes/Red and black Theme" ItemIcon="/temp/IconCache/Imaging/16x16/paint_brush_big_h.png" />
   <Item ItemPath="/sitecore/client/AdditionalTheme/Change/PageSettings/Themes/Teal Theme" ItemIcon="/temp/IconCache/Imaging/16x16/paint_brush_big_h.png" />
   <Item ItemPath="/sitecore/client/AdditionalTheme/Change/PageSettings/Page-Stylesheet-File" ItemIcon="/temp/IconCache/WordProcessing/16x16/imp_exp_xml.png" />
+  <Item ItemPath="/sitecore/client/AdditionalTheme/Change/PageSettings/ThemeStylesheet" ItemIcon="/~/icon/Applications/32x32/Document.png.aspx" />
+  <Item ItemPath="/sitecore/client/AdditionalTheme/Change/PageSettings/ThemeStylesheet/Data" ItemIcon="/~/icon/Applications/32x32/Document.png.aspx" />
+  <Item ItemPath="/sitecore/client/AdditionalTheme/Change/PageSettings/ThemeStylesheet/Data/SourceSpeakV1" ItemIcon="/~/icon/Applications/32x32/Document.png.aspx" />
+  <Item ItemPath="/sitecore/client/AdditionalTheme/Change/PageSettings/ThemeStylesheet/Data/SourceSpeakV2" ItemIcon="/~/icon/Applications/32x32/Document.png.aspx" />
+  <Item ItemPath="/sitecore/client/AdditionalTheme/v2" ItemIcon="/temp/IconCache/Applications/16x16/window_dialog.png" />
 </ItemIconCache>

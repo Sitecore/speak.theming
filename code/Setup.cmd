@@ -1,4 +1,4 @@
-set source=E:\Sandboxes\Sitecore.Speak.Theming\code
+set source=E:\Sandboxes\Git.Theming\code
 set target=E:\orange
 
 
