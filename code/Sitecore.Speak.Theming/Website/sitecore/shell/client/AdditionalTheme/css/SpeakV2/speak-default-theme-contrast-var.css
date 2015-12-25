@@ -16,7 +16,6 @@ body.sc {
   /* MessageBar Control */
   /* SmartPanel Control */
   /* Hyperlink Button Control */
-  /* IconHyperlink Button Control */
   /* HyperlinkButtonGroup Control */
   /* Advanced Expander Control */
   /* Action Control */
@@ -547,24 +546,24 @@ body.sc .sc-messageBar .sc-messageBar-head.alert-info {
 body.sc .sc-messageBar .sc-messageBar-head.alert-error {
   border-bottom: 1px solid #d45e4e;
 }
-body.sc .sc-smartpanel .sc-smartpanel-header {
+body.sc .sc-ovelaypanel .sc-ovelaypanel-header {
   background: #008e97;
   padding-right: 60px;
 }
-body.sc .sc-smartpanel .sc-smartpanel-header span {
+body.sc .sc-ovelaypanel .sc-ovelaypanel-header span {
   color: #ffffff !important;
 }
-body.sc .sc-smartpanel .sc-smartpanel-content {
+body.sc .sc-ovelaypanel .sc-ovelaypanel-content {
   bottom: 15px;
 }
-body.sc .sc-smartpanel .sc-smartpanel-content img {
+body.sc .sc-ovelaypanel .sc-ovelaypanel-content img {
   border: 1px solid #008e97;
   padding: 40px;
 }
-body.sc .sc-smartpanel .sc-smartpanel-buttons {
+body.sc .sc-ovelaypanel .sc-smartpanel-buttons {
   display: none;
 }
-body.sc a.sc-smartpanel-close,
+body.sc a.sc-ovelaypanel-close,
 body.sc a.sc-dialogWindow-close {
   background: url("/sitecore/shell/client/Speak/Assets/img/Speak/DialogWindow/close_button_sprite-new.png") no-repeat 0 0;
   width: 9px;
@@ -572,11 +571,11 @@ body.sc a.sc-dialogWindow-close {
   top: 24px;
   right: 24px;
 }
-body.sc a.sc-smartpanel-close:hover,
+body.sc a.sc-ovelaypanel-close:hover,
 body.sc a.sc-dialogWindow-close:hover {
   background-position: left bottom;
 }
-body.sc a.sc-smartpanel-close:before,
+body.sc a.sc-ovelaypanel-close:before,
 body.sc a.sc-dialogWindow-close:before {
   content: "";
   width: 0;
@@ -591,12 +590,16 @@ body.sc .sc-hyperlinkbutton {
 }
 body.sc .sc-hyperlinkbutton:hover {
   color: #008e97;
+  opacity: .6;
 }
-body.sc .sc-iconhyperlinkbutton {
+body.sc .sc-hyperlinkbutton.icon {
   color: #008e97;
 }
-body.sc .sc-iconhyperlinkbutton:hover {
+body.sc .sc-hyperlinkbutton.icon:hover {
   color: #008e97;
+}
+body.sc .sc-hyperlinkbutton.icon .sc-icon {
+  margin-top: 1px;
 }
 body.sc .sc-hyperlinkbuttonsgroup {
   font-size: 14px;
@@ -1261,22 +1264,19 @@ body {
 body.sc .sc-search-filters {
   margin-top: -2px;
 }
-body.sc .sc-smartpanel {
-  top: 78px !important;
-}
-body.sc .sc-smartpanel .sc-smartpanel-header {
-  background: #008e97 url('/sitecore/shell/client/Speak/Assets/img/Speak/SmartPanel/header_icon.png') no-repeat 25px 50%;
+body.sc .sc-ovelaypanel-header {
+  background: #008e97 url('/sitecore/shell/client/Speak/Assets/img/Speak/SmartPanel/header_icon.png') no-repeat 25px 50% !important;
   padding-right: 60px;
   padding-left: 68px;
 }
-body.sc .sc-smartpanel .sc-smartpanel-header .sc-text.sc-text-title {
+body.sc .sc-ovelaypanel-header .sc-text.sc-text-title {
   font-weight: 100;
   font-size: 16px;
 }
-body.sc .sc-smartpanel .sc-smartpanel-content {
+body.sc .sc-ovelaypanel-content {
   padding-top: 35px;
 }
-body.sc .sc-smartpanel .sc-smartpanel-content .sc-text {
+body.sc .sc-ovelaypanel-content .sc-text {
   line-height: 19px;
 }
 body.sc .sc-search-searches {

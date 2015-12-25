@@ -638,8 +638,8 @@ body.sc {
     }
 
     /* SmartPanel Control */
-    .sc-smartpanel {
-        .sc-smartpanel-header {
+    .sc-ovelaypanel {
+        .sc-ovelaypanel-header {
             background: @SC-SmartpanelHeaderBackgroundColor;
             padding-right: 60px;
             
@@ -648,7 +648,7 @@ body.sc {
             }
         }
 
-        .sc-smartpanel-content {
+        .sc-ovelaypanel-content {
             bottom: 15px;
 
             img {
@@ -662,7 +662,7 @@ body.sc {
         }
     }
 
-    a.sc-smartpanel-close,
+    a.sc-ovelaypanel-close,
     a.sc-dialogWindow-close {
         background: url("/sitecore/shell/client/Speak/Assets/img/Speak/DialogWindow/close_button_sprite-new.png") no-repeat 0 0;
         width: 9px;
@@ -690,16 +690,20 @@ body.sc {
         color: @SC-HyperlinkColor;
 
         &:hover {
-        color: @SC-HyperlinkColor;
+          color: @SC-HyperlinkColor;
+          opacity: .6;
         }
-    }
 
-    /* IconHyperlink Button Control */
-    .sc-iconhyperlinkbutton {
-        color: @SC-HyperlinkColor;
+        &.icon {
+          color: @SC-HyperlinkColor;
 
-        &:hover {
-        color: @SC-HyperlinkColor;
+          &:hover {
+            color: @SC-HyperlinkColor;
+          }
+
+          .sc-icon {
+            margin-top: 1px;
+          }
         }
     }
 
@@ -1600,26 +1604,22 @@ body.sc {
         margin-top: -2px;
     }
 
-    .sc-smartpanel {
-        top: 78px !important;
+    .sc-ovelaypanel-header {
+        background: @SC-SmartpanelHeaderBackgroundColor url('/sitecore/shell/client/Speak/Assets/img/Speak/SmartPanel/header_icon.png') no-repeat 25px 50% !important;
+        padding-right: 60px;
+        padding-left: 68px;
 
-        .sc-smartpanel-header {
-            background: @SC-SmartpanelHeaderBackgroundColor url('/sitecore/shell/client/Speak/Assets/img/Speak/SmartPanel/header_icon.png') no-repeat 25px 50%;
-            padding-right: 60px;
-            padding-left: 68px;
-
-            .sc-text.sc-text-title {
-                font-weight: 100;
-                font-size: 16px;
-            }
+        .sc-text.sc-text-title {
+            font-weight: 100;
+            font-size: 16px;
         }
+    }
 
-        .sc-smartpanel-content {
-            padding-top: 35px;
+    .sc-ovelaypanel-content {
+        padding-top: 35px;
 
-            .sc-text {
-                line-height: 19px;
-            }
+        .sc-text {
+            line-height: 19px;
         }
     }
 

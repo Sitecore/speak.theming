@@ -27,7 +27,7 @@ content-length: 3
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 15063
+content-length: 14287
 
 <r>
   <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{4F72A793-BDBC-4262-9523-6AADD8FEA487}">
@@ -100,16 +100,13 @@ content-length: 15063
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border14&amp;PaddingType=Bottom&amp;UsePadding=1" ph="BorderRight.Content" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
     <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text19&amp;Text=Messagebar+Controls&amp;TextSize=XX-Large" ph="Border14.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border15&amp;PaddingType=Top&amp;UsePadding=1" ph="Border14.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
-    <r id="{8C3B1C75-9DBA-49BC-AC49-CD9AD5559FD6}" par="Messages=%257b421C634F-245D-469B-9136-4A5CB9C4FA00%257d%257c%257b4B7C380F-8C91-4E73-BC23-7CA67E22A5B8%257d&amp;Id=NotificationMessageBar" ph="Border15.Content" uid="{BD42B195-2B7A-4937-9D13-6C4A9973D244}" />
-    <r id="{8C3B1C75-9DBA-49BC-AC49-CD9AD5559FD6}" par="Messages=%257bEB844E79-8BFD-47A7-96A4-73218AB69981%257d%257c%257b3A2DD0A2-03B9-4C4C-AEE6-5BB9B23B9DF4%257d&amp;Id=ErrorMessageBar" ph="Border15.Content" uid="{1591F72D-F186-4AEF-BD05-E7DD4E12A0A6}" />
-    <r id="{8C3B1C75-9DBA-49BC-AC49-CD9AD5559FD6}" par="Messages=%257bD26ABE9D-1262-42D7-AA6E-EEA381F21393%257d%257c%257bEA5755E0-2A54-4E46-9DC7-9622DB711FA5%257d&amp;Id=MessageBar" ph="Border15.Content" uid="{A6CE81E7-DF3D-417E-8745-6E95EC145E09}" />
     <r id="{8C3B1C75-9DBA-49BC-AC49-CD9AD5559FD6}" par="ConfigurationItem=%7b20265D99-351B-42F3-9F96-39C9B288992C%7d&amp;Id=MessageBar1" ph="Border15.Content" uid="{09CCEAE9-9CF8-4D68-9C04-DFDFD0D00E69}" />
   </d>
 </r>
 ----version----
 language: en
 version: 1
-revision: 0b4dabb7-5c59-4b65-ad18-6ed7ed49f4ee
+revision: f3bdf647-6ec1-4468-ba94-78df183502e0
 
 ----field----
 field: {7205A57F-93B4-413A-AA9A-6B16BBC59565}
@@ -131,14 +128,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0b4dabb7-5c59-4b65-ad18-6ed7ed49f4ee
+f3bdf647-6ec1-4468-ba94-78df183502e0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151225T084233Z
+20151225T085809Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
