@@ -1,5 +1,5 @@
 set source=E:\Sandboxes\Git.Theming\code
-set target=E:\orange
+set target=E:\theming
 
 
 copy %source%\Sitecore.Speak.Theming\Website\App_Config\Include\Sitecore.Speak.Theming.config %target%\Website\App_Config\Include\Sitecore.Speak.Theming.config

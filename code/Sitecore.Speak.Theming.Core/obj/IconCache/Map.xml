@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ItemIconCache>
   <Item ItemPath="/sitecore/client" ItemIcon="/temp/IconCache/Applications/16x16/question_and_answer.png" />
-  <Item ItemPath="/sitecore/client/Speak" ItemIcon="/temp/IconCache/Software/16x16/window_application.png" />
-  <Item ItemPath="/sitecore/client/Speak/Layouts" ItemIcon="/temp/IconCache/Applications/16x16/windows.png" />
-  <Item ItemPath="/sitecore/client/Speak/Layouts/Layouts" ItemIcon="/temp/IconCache/Applications/16x16/windows.png" />
   <Item ItemPath="/sitecore/client/Applications" ItemIcon="/temp/IconCache/Applications/16x16/window_dialog.png" />
   <Item ItemPath="/sitecore/client/Applications/Launchpad" ItemIcon="/temp/IconCache/Applications/16x16/media_play.png" />
   <Item ItemPath="/sitecore/client/Applications/Launchpad/PageSettings" ItemIcon="/temp/IconCache/Applications/16x16/preferences.png" />
@@ -61,5 +58,8 @@
   <Item ItemPath="/sitecore/client/AdditionalTheme/Change/PageSettings/ThemeStylesheet/Data" ItemIcon="/~/icon/Applications/32x32/Document.png.aspx" />
   <Item ItemPath="/sitecore/client/AdditionalTheme/Change/PageSettings/ThemeStylesheet/Data/SourceSpeakV1" ItemIcon="/~/icon/Applications/32x32/Document.png.aspx" />
   <Item ItemPath="/sitecore/client/AdditionalTheme/Change/PageSettings/ThemeStylesheet/Data/SourceSpeakV2" ItemIcon="/~/icon/Applications/32x32/Document.png.aspx" />
+  <Item ItemPath="/sitecore/client/Speak" ItemIcon="/temp/IconCache/Software/16x16/window_application.png" />
+  <Item ItemPath="/sitecore/client/Speak/Layouts" ItemIcon="/temp/IconCache/Applications/16x16/windows.png" />
+  <Item ItemPath="/sitecore/client/Speak/Layouts/Layouts" ItemIcon="/temp/IconCache/Applications/16x16/windows.png" />
   <Item ItemPath="/sitecore/client/AdditionalTheme/v2" ItemIcon="/temp/IconCache/Applications/16x16/window_dialog.png" />
 </ItemIconCache>

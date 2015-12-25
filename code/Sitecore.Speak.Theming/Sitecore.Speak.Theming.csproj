@@ -65,7 +65,6 @@
     <None Include="Website\sitecore\shell\client\AdditionalTheme\css\SpeakV2\speak-default-theme-teal-var.less" />
     <None Include="Website\sitecore\shell\client\Business Component Library\Layouts\Renderings\Structures\Page Structures\Dialog\DialogOrange.cshtml" />
     <None Include="Website\sitecore\shell\client\Business Component Library\Layouts\Renderings\Structures\Substructures\DialogContentNMOrange.cshtml" />
-    <None Include="Website\sitecore\shell\client\Speak\Layouts\Layouts\Speak-Layout-Orange.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PageCode\ChangeTheme.cs" />
