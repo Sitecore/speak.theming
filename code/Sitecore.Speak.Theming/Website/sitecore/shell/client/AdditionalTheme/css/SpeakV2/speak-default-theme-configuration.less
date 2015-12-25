@@ -292,7 +292,6 @@ body.sc {
 
     /* List Control */
     .sc-listcontrol {
-
       &.sc-detaillist {
         .table {
 
@@ -309,8 +308,6 @@ body.sc {
                 }
               }
 
-
-
               &:before {
                 display: none;
               }
@@ -318,57 +315,57 @@ body.sc {
           }
 
 
-                td {
-                    background: @SC-ListcontrolRowBackground;
-                    color: @SC-MainFontColor;
-                    border: 1px solid @SC-ListcontrolBorderColor; 
+          td {
+              background: @SC-ListcontrolRowBackground;
+              color: @SC-MainFontColor;
+              border: 1px solid @SC-ListcontrolBorderColor; 
 
-                    &:first-child {
-                      border-left: 1px solid @SC-ListcontrolBorderColor !important; 
-                    }
-                }
+              &:first-child {
+                border-left: 1px solid @SC-ListcontrolBorderColor !important; 
+              }
+          }
 
-                tr:nth-child(odd) td {
-                    background: @SC-ListcontrolRowBackgroundOdd;
-                }
+          tr:nth-child(odd) td {
+              background: @SC-ListcontrolRowBackgroundOdd;
+          }
 
-                tr:hover td,
-                tr.active td {
-                    background: @SC-ListcontrolRowActiveBackground;
-                }
+          tr:hover td,
+          tr.active td {
+              background: @SC-ListcontrolRowActiveBackground;
+          }
 
-                tr td {
-                  border-left: none;
-                  border-top: none;
-                  padding-left: 15px;
-                  padding-right: 15px;
+          tr td {
+            border-left: none;
+            border-top: none;
+            padding-left: 15px;
+            padding-right: 15px;
 
-                    a {
-                        color: @SC-MainFontColor;
-                        border-bottom: 1px dotted @SC-MainFontColor;
+              a {
+                  color: @SC-MainFontColor;
+                  border-bottom: 1px dotted @SC-MainFontColor;
 
-                        &:hover {
-                            border: none;
-                        }
-                    }
-                }
+                  &:hover {
+                      border: none;
+                  }
+              }
+          }
 
 
-            tbody tr th, thead th {
-                background: @SC-ListcontrolHeaderBackground;
-                color: @SC-ListcontrolHeaderTextColor;
+          tbody tr th, thead th {
+              background: @SC-ListcontrolHeaderBackground;
+              color: @SC-ListcontrolHeaderTextColor;
 
-                .sc-table-sortable {
-                    border-left: 0.4em solid transparent;
-                    border-right: 0.4em solid transparent;
-                }
-            }
+              .sc-table-sortable {
+                  border-left: 0.4em solid transparent;
+                  border-right: 0.4em solid transparent;
+              }
+          }
 
-            td, th {
-                padding-top: 19px !important;
-                padding-bottom: 19px !important;
-                font-size: 16px;
-            }
+          td, th {
+              padding-top: 19px !important;
+              padding-bottom: 19px !important;
+              font-size: 16px;
+          }
         }
 
         .sc-listcontrol-header th {
