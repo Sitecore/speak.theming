@@ -274,55 +274,76 @@ body.sc .sc-textarea {
   height: auto;
   line-height: 20px;
 }
-body.sc .sc-listcontrol .sc-table tbody td {
+body.sc .sc-listcontrol.sc-detaillist .table.sc-listcontrol-header > thead > tr > th {
+  border-bottom: none !important;
+  font-size: 16px;
+}
+body.sc .sc-listcontrol.sc-detaillist .table.sc-listcontrol-header > thead > tr > th.sc-sortable:hover,
+body.sc .sc-listcontrol.sc-detaillist .table.sc-listcontrol-header > thead > tr > th.sc-sortable.active {
+  opacity: 0.8;
+  background-color: #e48539;
+}
+body.sc .sc-listcontrol.sc-detaillist .table.sc-listcontrol-header > thead > tr > th:before {
+  display: none;
+}
+body.sc .sc-listcontrol.sc-detaillist .table td {
   background: #f8f8f8;
   color: #666666;
   border: 1px solid #d8d8d8;
 }
-body.sc .sc-listcontrol .sc-table tbody tr:nth-child(odd) td {
+body.sc .sc-listcontrol.sc-detaillist .table td:first-child {
+  border-left: 1px solid #d8d8d8 !important;
+}
+body.sc .sc-listcontrol.sc-detaillist .table tr:nth-child(odd) td {
   background: #eee1da;
 }
-body.sc .sc-listcontrol .sc-table tbody tr:hover td,
-body.sc .sc-listcontrol .sc-table tbody tr.active td {
+body.sc .sc-listcontrol.sc-detaillist .table tr:hover td,
+body.sc .sc-listcontrol.sc-detaillist .table tr.active td {
   background: #ecd6cb;
 }
-body.sc .sc-listcontrol .sc-table tbody tr td a {
+body.sc .sc-listcontrol.sc-detaillist .table tr td {
+  border-left: none;
+  border-top: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body.sc .sc-listcontrol.sc-detaillist .table tr td a {
   color: #666666;
   border-bottom: 1px dotted #666666;
 }
-body.sc .sc-listcontrol .sc-table tbody tr td a:hover {
+body.sc .sc-listcontrol.sc-detaillist .table tr td a:hover {
   border: none;
 }
-body.sc .sc-listcontrol .sc-table tbody tr th,
-body.sc .sc-listcontrol .sc-table thead th {
+body.sc .sc-listcontrol.sc-detaillist .table tbody tr th,
+body.sc .sc-listcontrol.sc-detaillist .table thead th {
   background: #e48539;
   color: #ffffff;
 }
-body.sc .sc-listcontrol .sc-table tbody tr th .sc-table-sortable,
-body.sc .sc-listcontrol .sc-table thead th .sc-table-sortable {
+body.sc .sc-listcontrol.sc-detaillist .table tbody tr th .sc-table-sortable,
+body.sc .sc-listcontrol.sc-detaillist .table thead th .sc-table-sortable {
   border-left: 0.4em solid transparent;
   border-right: 0.4em solid transparent;
 }
-body.sc .sc-listcontrol .sc-table td,
-body.sc .sc-listcontrol .sc-table th {
-  padding-top: 19px;
-  padding-bottom: 19px;
+body.sc .sc-listcontrol.sc-detaillist .table td,
+body.sc .sc-listcontrol.sc-detaillist .table th {
+  padding-top: 19px !important;
+  padding-bottom: 19px !important;
   font-size: 16px;
 }
-body.sc .sc-listcontrol .sc-table-header th.sc-table-head {
+body.sc .sc-listcontrol.sc-detaillist .sc-listcontrol-header th {
   border-left: 1px solid #ffffff;
 }
-body.sc .sc-listcontrol .sc-table-header th.sc-table-head:after {
+body.sc .sc-listcontrol.sc-detaillist .sc-listcontrol-header th:after {
   display: none;
 }
-body.sc .sc-listcontrol .sc-table-header th.sc-table-head:first-child {
+body.sc .sc-listcontrol.sc-detaillist .sc-listcontrol-header th:first-child {
   border: none;
 }
-body.sc .sc-listcontrol .sc-table-header th.sc-table-head .sc-table-sortable {
+body.sc .sc-listcontrol.sc-detaillist .sc-listcontrol-header th .sc-listcontrol-sortable {
   border-top-color: #ffffff;
 }
-body.sc .sc-listcontrol .sc-table-header th.sc-table-head .sc-table-sortable.noDirection,
-body.sc .sc-listcontrol .sc-table-header th.sc-table-head .sc-table-sortable.up {
+body.sc .sc-listcontrol.sc-detaillist .sc-listcontrol-header th .sc-listcontrol-sortable.noDirection,
+body.sc .sc-listcontrol.sc-detaillist .sc-listcontrol-header th .sc-listcontrol-sortable.up {
   border-bottom-color: #ffffff;
 }
 body.sc .sc-listcontrol .clearfix {

@@ -292,12 +292,40 @@ body.sc {
 
     /* List Control */
     .sc-listcontrol {
-        .sc-table {
-            tbody {
+
+      &.sc-detaillist {
+        .table {
+
+          &.sc-listcontrol-header {
+            > thead > tr > th {
+              border-bottom: none !important;
+              font-size: 16px;
+
+              &.sc-sortable {
+                &:hover, 
+                &.active {
+                  opacity: 0.8;
+                  background-color: @SC-ListcontrolHeaderBackground;
+                }
+              }
+
+
+
+              &:before {
+                display: none;
+              }
+            }
+          }
+
+
                 td {
                     background: @SC-ListcontrolRowBackground;
                     color: @SC-MainFontColor;
-                    border: 1px solid @SC-ListcontrolBorderColor;
+                    border: 1px solid @SC-ListcontrolBorderColor; 
+
+                    &:first-child {
+                      border-left: 1px solid @SC-ListcontrolBorderColor !important; 
+                    }
                 }
 
                 tr:nth-child(odd) td {
@@ -310,6 +338,11 @@ body.sc {
                 }
 
                 tr td {
+                  border-left: none;
+                  border-top: none;
+                  padding-left: 15px;
+                  padding-right: 15px;
+
                     a {
                         color: @SC-MainFontColor;
                         border-bottom: 1px dotted @SC-MainFontColor;
@@ -319,7 +352,7 @@ body.sc {
                         }
                     }
                 }
-            }
+
 
             tbody tr th, thead th {
                 background: @SC-ListcontrolHeaderBackground;
@@ -332,13 +365,13 @@ body.sc {
             }
 
             td, th {
-                padding-top: 19px;
-                padding-bottom: 19px;
+                padding-top: 19px !important;
+                padding-bottom: 19px !important;
                 font-size: 16px;
             }
         }
 
-        .sc-table-header th.sc-table-head {
+        .sc-listcontrol-header th {
             border-left:1px solid @SC-ListcontrolHeaderBorder;
 
             &:after {
@@ -349,7 +382,7 @@ body.sc {
                 border: none;
             }
 
-            .sc-table-sortable {
+            .sc-listcontrol-sortable {
                 border-top-color: @SC-ListcontrolArrowColor;
 
                 &.noDirection, &.up {
@@ -358,10 +391,12 @@ body.sc {
 
             }
         }
+      }
+        
 
-        .clearfix {
-            margin-left: -10px;
-        }
+      .clearfix {
+          margin-left: -10px;
+      }
 
         .sc-iconList-wrap {
             background: none;
