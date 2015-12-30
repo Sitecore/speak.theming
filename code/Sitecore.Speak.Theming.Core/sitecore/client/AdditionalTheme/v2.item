@@ -27,7 +27,7 @@ content-length: 3
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 14287
+content-length: 16661
 
 <r>
   <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{4F72A793-BDBC-4262-9523-6AADD8FEA487}">
@@ -70,6 +70,17 @@ content-length: 14287
     <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text20&amp;Text=Overlay+panel+Control&amp;TextSize=XX-Large" ph="Border16.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border164&amp;PaddingType=Top&amp;UsePadding=1" ph="Border16.Content" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
     <r id="{88C38B36-787A-43FA-85D4-FE08B0A4B7FF}" par="Id=Button4&amp;Text=Open+Smartpanel&amp;Click=javascript%3aapp.OverlayPanel.viewModel.open()" ph="Border16.Content" uid="{C1384FC7-EE37-4B5D-8421-9BD91A557351}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=BorderBack1&amp;PaddingType=Top&amp;UsePadding=1" ph="Grid1.Cell1" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text21&amp;Text=Backbutton+Control&amp;TextSize=XX-Large" ph="Grid1.Cell1" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=BorderBack&amp;PaddingType=Top&amp;UsePadding=1" ph="Grid1.Cell1" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
+    <r id="{C03E9CF5-EE02-4B11-8F06-8E124CF3F6CE}" par="Text=Back+button&amp;Id=BackButton" ph="BorderBack.Content" uid="{2C29504D-B6DC-4E65-95B4-6C90F9E90FEB}" />
+    <r id="{C03E9CF5-EE02-4B11-8F06-8E124CF3F6CE}" par="Text=Back+button+disabled&amp;Id=BackButton2&amp;IsEnabled=0" ph="BorderBack.Content" uid="{2C29504D-B6DC-4E65-95B4-6C90F9E90FEB}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text22&amp;Text=Expander+with+Action+Control&amp;TextSize=XX-Large" ph="Grid1.Cell1" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=BorderAcc&amp;PaddingType=Top&amp;UsePadding=1" ph="Grid1.Cell1" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
+    <r id="{1CA7EB02-74E0-42F9-B8C9-32E62FD505BD}" par="Id=Expander1&amp;Header=Expander+Control&amp;IsOpen=1" ph="BorderAcc.Content" uid="{A9BB859C-8709-4122-8B20-8E21B20D28E0}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text23&amp;Text=text" ph="Border18.Content" uid="{20B2BCE5-8294-4AC2-A664-51310F2E6F58}" />
+    <r id="{43F4C6E5-22F1-41BF-A317-B213C1ABBDA5}" par="Id=ActionControl1&amp;Text=Text&amp;Menu=%7bDE0BB0B7-1CCC-412E-93BF-9183D240EBDE%7d" ph="Expander1.ActionBar" uid="{C5CC9B61-A97E-4692-9598-47520335794C}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border18&amp;UsePadding=1" ph="Expander1.Body" uid="{EB91C79B-BFD0-4DB2-AC4D-ADD6481AC5A8}" />
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=BorderRight" ph="Grid1.Cell2" uid="{16ABEFF6-990A-4A8E-ADE8-6E756FE81CE9}" />
     <r id="{09205F96-FC45-4DCE-B027-F6C5D7AE6AD3}" par="Id=OverlayPanel&amp;Position=Right" ph="Page.Body" uid="{3079AF12-155E-4CA8-8DD9-EDEE4D9250A1}" />
     <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Overlaypanelheader&amp;Text=Overlay+panel+header" ph="OverlayPanel.Header" uid="{A4593B9A-64FB-4BBD-9FBC-BE30047AF87F}" />
@@ -100,13 +111,15 @@ content-length: 14287
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border14&amp;PaddingType=Bottom&amp;UsePadding=1" ph="BorderRight.Content" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
     <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text19&amp;Text=Messagebar+Controls&amp;TextSize=XX-Large" ph="Border14.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border15&amp;PaddingType=Top&amp;UsePadding=1" ph="Border14.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
-    <r id="{8C3B1C75-9DBA-49BC-AC49-CD9AD5559FD6}" par="ConfigurationItem=%7b20265D99-351B-42F3-9F96-39C9B288992C%7d&amp;Id=MessageBar1" ph="Border15.Content" uid="{09CCEAE9-9CF8-4D68-9C04-DFDFD0D00E69}" />
+    <r id="{8C3B1C75-9DBA-49BC-AC49-CD9AD5559FD6}" par="ConfigurationItem=%7b20265D99-351B-42F3-9F96-39C9B288992C%7d&amp;Id=MessageBar" ph="Border15.Content" uid="{09CCEAE9-9CF8-4D68-9C04-DFDFD0D00E69}" />
+    <r id="{8C3B1C75-9DBA-49BC-AC49-CD9AD5559FD6}" par="ConfigurationItem=%7b6ADE710A-E080-4379-BA75-564925D20050%7d&amp;Id=MessageBar1" ph="Border15.Content" uid="{09CCEAE9-9CF8-4D68-9C04-DFDFD0D00E69}" />
+    <r id="{8C3B1C75-9DBA-49BC-AC49-CD9AD5559FD6}" par="ConfigurationItem=%7bB27167B0-ADEE-49C3-B8B0-2E3C1DBF31F3%7d&amp;Id=MessageBar2" ph="Border15.Content" uid="{09CCEAE9-9CF8-4D68-9C04-DFDFD0D00E69}" />
   </d>
 </r>
 ----version----
 language: en
 version: 1
-revision: f3bdf647-6ec1-4468-ba94-78df183502e0
+revision: 6bb0d029-179a-4dfa-b7fb-56b049606fd1
 
 ----field----
 field: {7205A57F-93B4-413A-AA9A-6B16BBC59565}
@@ -128,14 +141,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f3bdf647-6ec1-4468-ba94-78df183502e0
+6bb0d029-179a-4dfa-b7fb-56b049606fd1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151225T085809Z
+20151230T072913Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -349,37 +349,39 @@ body.sc .sc-listcontrol.sc-detaillist .sc-listcontrol-header th .sc-listcontrol-
 body.sc .sc-listcontrol .clearfix {
   margin-left: -10px;
 }
-body.sc .sc-listcontrol .sc-iconList-wrap {
+body.sc .sc-listcontrol.sc-iconlist .sc-listcontrol-icon {
   background: none;
-  margin: 10px 10px 10px 10px;
+  margin: 10px;
+  padding: 10px;
   height: auto !important;
   width: auto !important;
   float: none;
   display: inline-block;
+  border: 1px solid #ffffff;
 }
-body.sc .sc-listcontrol .sc-iconList-wrap .sc-iconList-item {
+body.sc .sc-listcontrol.sc-iconlist .sc-listcontrol-icon .sc-listcontrol-icon-content {
   box-sizing: initial;
   -webkit-box-sizing: initial;
   padding: 10px;
+  border: none;
   background: #ffffff;
-  border: 1px solid #ffffff;
   height: auto !important;
 }
-body.sc .sc-listcontrol .sc-iconList-wrap .sc-iconList-item .sc-iconList-item-title {
+body.sc .sc-listcontrol.sc-iconlist .sc-listcontrol-icon .sc-listcontrol-icon-content .sc-listcontrol-icon-description {
   text-align: left;
   font-size: 14px;
   margin-top: 20px;
 }
-body.sc .sc-listcontrol .sc-iconList-wrap:hover,
-body.sc .sc-listcontrol .sc-iconList-wrap.active {
+body.sc .sc-listcontrol.sc-iconlist .sc-listcontrol-icon:hover,
+body.sc .sc-listcontrol.sc-iconlist .sc-listcontrol-icon.active {
   position: relative;
   z-index: 10;
 }
-body.sc .sc-listcontrol .sc-iconList-wrap:hover .sc-iconList-item,
-body.sc .sc-listcontrol .sc-iconList-wrap.active .sc-iconList-item {
+body.sc .sc-listcontrol.sc-iconlist .sc-listcontrol-icon:hover .sc-iconList-item,
+body.sc .sc-listcontrol.sc-iconlist .sc-listcontrol-icon.active .sc-iconList-item {
   border: 1px solid #e11f27;
 }
-body.sc .sc-listcontrol .sc-iconList-wrap:hover .sc-iconList-item {
+body.sc .sc-listcontrol.sc-iconlist .sc-listcontrol-icon:hover .sc-iconList-item {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -449,6 +451,10 @@ body.sc .sc-messageBar .alert {
   color: #e48539;
   box-shadow: none;
 }
+body.sc .sc-messageBar .alert .alert-ico-background {
+  background: none !important;
+  width: 1px;
+}
 body.sc .sc-messageBar .alert .close {
   font-size: 15px;
   text-shadow: none;
@@ -475,9 +481,11 @@ body.sc .sc-messageBar .alert .icon-chevron.direction-up {
 body.sc .sc-messageBar .alert .sc-messageBar-messageText,
 body.sc .sc-messageBar .alert .sc-messageBar-chevron-layout {
   line-height: 26px;
+  vertical-align: middle;
 }
 body.sc .sc-messageBar .alert .alert-ico {
   margin-left: -36px;
+  margin-top: -2px;
   background: transparent url("/sitecore/shell/client/Speak/Assets/img/Speak/MessageBar/sc-message-bar-icons-new.png") no-repeat;
   background-position: 0 -52px;
   width: 26px;
@@ -529,7 +537,10 @@ body.sc .sc-messageBar .alert.alert-error .close {
   color: #9e4033;
 }
 body.sc .sc-messageBar .sc-messageBar-messages-nested-children .alert {
-  padding: 3px 22px 3px 69px;
+  padding: 3px 22px 3px 20px;
+}
+body.sc .sc-messageBar .sc-messageBar-messages-nested-children .alert.alert-ico-background {
+  width: 46px !important;
 }
 body.sc .sc-messageBar .sc-messageBar-messages-nested-children .alert .sc-messageBar-messageText,
 body.sc .sc-messageBar .sc-messageBar-messages-nested-children .alert .sc-messageBar-actionLink {
@@ -647,11 +658,11 @@ body.sc .sc-hyperlinkbuttonsgroup li[sc-selected] a.sc-hyperlinkbutton {
 body.sc .sc-hyperlinkbuttonsgroup li[sc-selected]:hover {
   text-decoration: none;
 }
-body.sc .sc-advancedExpander[data-sc-iscollapsible=False] .sc-advancedExpander-header-actionbar {
+body.sc .sc-expander[data-sc-iscollapsible=False] .sc-advancedExpander-header-actionbar {
   padding-right: 10px !important;
 }
-body.sc .sc-advancedExpander .sc-advancedExpander-header a span.sc-advancedExpander-header-chevron-glyph,
-body.sc .sc-advancedExpander.open .sc-advancedExpander-header a span.sc-advancedExpander-header-chevron-glyph {
+body.sc .sc-expander .sc-expander-header a span.sc-expander-header-chevron-glyph,
+body.sc .sc-expander.open .sc-expander-header a span.sc-expander-header-chevron-glyph {
   background: none;
   width: 0;
   height: 0;
@@ -660,114 +671,115 @@ body.sc .sc-advancedExpander.open .sc-advancedExpander-header a span.sc-advanced
   border-top: 8px solid #ffffff;
   border-bottom: 0 solid #ffffff;
 }
-body.sc .sc-advancedExpander .sc-advancedExpander-header a span.sc-advancedExpander-header-chevron-glyph.sc-advancedExpander2-header-chevron-glyph-open,
-body.sc .sc-advancedExpander.open .sc-advancedExpander-header a span.sc-advancedExpander-header-chevron-glyph.sc-advancedExpander2-header-chevron-glyph-open {
+body.sc .sc-expander .sc-expander-header a span.sc-expander-header-chevron-glyph.sc-advancedExpander2-header-chevron-glyph-open,
+body.sc .sc-expander.open .sc-expander-header a span.sc-expander-header-chevron-glyph.sc-advancedExpander2-header-chevron-glyph-open {
   border-bottom: 8px solid #ffffff;
   border-top: 0 solid #ffffff;
 }
-body.sc .sc-advancedExpander .sc-advancedExpander-header > table,
-body.sc .sc-advancedExpander.open .sc-advancedExpander-header > table {
+body.sc .sc-expander .sc-expander-header > table,
+body.sc .sc-expander.open .sc-expander-header > table {
   background: none;
 }
-body.sc .sc-advancedExpander .sc-advancedExpander-header > table .sc-advancedExpander-header-title,
-body.sc .sc-advancedExpander.open .sc-advancedExpander-header > table .sc-advancedExpander-header-title {
+body.sc .sc-expander .sc-expander-header > table .sc-expander-header-title,
+body.sc .sc-expander.open .sc-expander-header > table .sc-expander-header-title {
   color: #ffffff;
   font-weight: 400;
   font-size: 18px;
 }
-body.sc .sc-advancedExpander .sc-advancedExpander-header {
+body.sc .sc-expander .sc-expander-header {
   border-left: none;
-  padding-left: 5px;
+  padding-left: 20px;
   line-height: 60px;
   background: #e11f27;
 }
-body.sc .sc-advancedExpander .sc-advancedExpander-header .btn.btn-default.mainButton {
+body.sc .sc-expander .sc-expander-header .btn.btn-default.mainButton {
   border: 1px solid #cacaca;
 }
-body.sc .sc-advancedExpander .sc-advancedExpander-header .btn-group > .btn {
+body.sc .sc-expander .sc-expander-header .btn-group > .btn {
   border: 1px solid #cacaca !important;
   height: 32px;
 }
-body.sc .sc-advancedExpander .sc-advancedExpander-body {
+body.sc .sc-expander .sc-expander-body {
   border-top: 1px solid #e11f27;
   border-left: none;
   border-right: none;
   background: #2c363f;
   border-bottom: #2c363f;
 }
-body.sc .sc-advancedExpander .sc-advancedExpander-body .sc-listcontrol-body table.sc-table tr td:first-child {
+body.sc .sc-expander .sc-expander-body .sc-listcontrol-body table.sc-table tr td:first-child {
   border-left: none;
 }
-body.sc .sc-advancedExpander .sc-advancedExpander-body .sc-listcontrol-body table.sc-table tr td:last-child {
+body.sc .sc-expander .sc-expander-body .sc-listcontrol-body table.sc-table tr td:last-child {
   border-right: none;
 }
-body.sc .sc-advancedExpander .sc-advancedExpander-body .sc-listcontrol-body table.sc-table tr:last-child td {
+body.sc .sc-expander .sc-expander-body .sc-listcontrol-body table.sc-table tr:last-child td {
   border-bottom: none;
 }
-body.sc .sc-advancedExpander .sc-advancedExpander-footer {
+body.sc .sc-expander .sc-expander-footer {
   background: #f7f7f7;
   text-align: center;
   padding: 10px 0;
   font-size: 1.3em;
 }
-body.sc .sc-actioncontrol {
+body.sc .sc-actionpanel {
   height: 18px !important;
+  float: none;
 }
-body.sc .sc-actioncontrol .dropdown-text {
+body.sc .sc-actionpanel .dropdown-text {
   line-height: 27px;
   padding-right: 16px;
 }
-body.sc .sc-actioncontrol .btn.noText {
+body.sc .sc-actionpanel .btn.noText {
   min-width: 39px;
   padding: 6px 8px;
   border: 1px solid #cacaca;
   margin: 0;
   box-shadow: #fbfbfb 0 1px 0 0 inset, #e1dfdf 0 1px 1px 0;
 }
-body.sc .sc-actioncontrol .btn.noText .sc-dropdownbutton-toggler {
+body.sc .sc-actionpanel .btn.noText .sc-dropdownbutton-toggler {
   right: 14px;
 }
-body.sc .sc-actioncontrol .btn.no-text {
+body.sc .sc-actionpanel .btn.no-text {
   height: 32px;
   padding: 5px 10px;
   float: left;
   margin-left: -1px;
 }
-body.sc .sc-actioncontrol ul.nav .sc-dropdownbutton-toggler {
+body.sc .sc-actionpanel ul.nav .sc-dropdownbutton-toggler {
   right: 12px;
   margin-top: -2px;
 }
-body.sc .sc-actioncontrol ul.nav .icon-group .mainButton.noText .sc-icon {
+body.sc .sc-actionpanel ul.nav .icon-group .mainButton.noText .sc-icon {
   margin-left: 1px;
   margin-right: 0;
 }
-body.sc .sc-actioncontrol ul.nav .icon-group .btn.no-text {
+body.sc .sc-actionpanel ul.nav .icon-group .btn.no-text {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-body.sc .sc-actioncontrol ul.nav .icon-group .btn.no-text:first-child {
+body.sc .sc-actionpanel ul.nav .icon-group .btn.no-text:first-child {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-body.sc .sc-actioncontrol ul.nav .icon-group .btn.no-text:last-child {
+body.sc .sc-actionpanel ul.nav .icon-group .btn.no-text:last-child {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-body.sc .sc-actioncontrol ul.nav .icon-group .btn.no-text:hover {
+body.sc .sc-actionpanel ul.nav .icon-group .btn.no-text:hover {
   opacity: 1;
 }
-body.sc .sc-actioncontrol ul.nav .sc-dropdownbutton-chevron {
+body.sc .sc-actionpanel ul.nav .sc-dropdownbutton-chevron {
   border: none;
   background: url('/sitecore/shell/client/Speak/Assets/img/Speak/DropDownButton/arrows.png') no-repeat 0 0;
   width: 10px;
   height: 6px;
 }
-body.sc .sc-actioncontrol ul.nav .sc-dropdownbutton-chevron.up {
+body.sc .sc-actionpanel ul.nav .sc-dropdownbutton-chevron.up {
   background-position: 0 -6px;
 }
-body.sc .sc-actioncontrol ul.nav .sc-foldout.dropdown-menu.open:after,
-body.sc .sc-actioncontrol ul.nav .sc-foldout.dropdown-menu.open:before {
+body.sc .sc-actionpanel ul.nav .sc-foldout.dropdown-menu.open:after,
+body.sc .sc-actionpanel ul.nav .sc-foldout.dropdown-menu.open:before {
   bottom: 100%;
   right: 13px;
   border: solid transparent;
@@ -777,13 +789,13 @@ body.sc .sc-actioncontrol ul.nav .sc-foldout.dropdown-menu.open:before {
   position: absolute;
   pointer-events: none;
 }
-body.sc .sc-actioncontrol ul.nav .sc-foldout.dropdown-menu.open:after {
+body.sc .sc-actionpanel ul.nav .sc-foldout.dropdown-menu.open:after {
   border-bottom-color: #ffffff;
   border-width: 6px;
   margin-left: -6px;
   right: 14px;
 }
-body.sc .sc-actioncontrol ul.nav .sc-foldout.dropdown-menu.open:before {
+body.sc .sc-actionpanel ul.nav .sc-foldout.dropdown-menu.open:before {
   border-bottom-color: #dcdadb;
   border-width: 7px;
   margin-left: -7px;

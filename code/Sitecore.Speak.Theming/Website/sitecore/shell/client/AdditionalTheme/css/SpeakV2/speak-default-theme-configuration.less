@@ -395,23 +395,28 @@ body.sc {
           margin-left: -10px;
       }
 
-        .sc-iconList-wrap {
+
+      &.sc-iconlist {
+        .sc-listcontrol-icon {
             background: none;
-            margin: 10px 10px 10px 10px;
+            margin: 10px;
+            padding: 10px;
             height: auto !important;
             width: auto !important;
             float: none;
             display: inline-block;
+            border: 1px solid @SC-ListcontrolIconBorderColor;
 
-            .sc-iconList-item {
+            .sc-listcontrol-icon-content {
                 box-sizing: initial;
                 -webkit-box-sizing: initial;
                 padding: 10px;
+                border: none;
                 background: @SC-ListcontrolIconBackground;
-                border: 1px solid @SC-ListcontrolIconBorderColor;
+                
                 height: auto !important;
 
-                .sc-iconList-item-title {
+                .sc-listcontrol-icon-description {
                     text-align: left;
                     font-size: 14px;
                     margin-top: 20px;
@@ -442,6 +447,7 @@ body.sc {
                 }
             }
         }
+      }
     }
 
     /* ButtonTextBox Control */
@@ -512,6 +518,11 @@ body.sc {
             color: @SC-MessagebarWarningTextColor;
             box-shadow: none;
 
+            .alert-ico-background {
+              background: none !important;
+              width: 1px;
+            }
+
             .close {
                 font-size: 15px;
                 text-shadow: none;
@@ -541,9 +552,11 @@ body.sc {
             .sc-messageBar-messageText, 
             .sc-messageBar-chevron-layout {
                 line-height: 26px;
+                vertical-align: middle;
             }
             .alert-ico {
                 margin-left: -36px;
+                margin-top: -2px;
                 background: transparent url("/sitecore/shell/client/Speak/Assets/img/Speak/MessageBar/sc-message-bar-icons-new.png") no-repeat;
                 background-position: 0 -52px;
                 width: 26px;
@@ -612,7 +625,11 @@ body.sc {
 
         .sc-messageBar-messages-nested-children {
             .alert {
-                padding: 3px 22px 3px 69px;
+                padding: 3px 22px 3px 20px;
+
+                &.alert-ico-background {
+                  width: 46px !important;
+                }
 
                 .sc-messageBar-messageText, 
                 .sc-messageBar-actionLink {
@@ -773,18 +790,18 @@ body.sc {
     }
 
     /* Advanced Expander Control */
-    .sc-advancedExpander {
+    .sc-expander {
         &[data-sc-iscollapsible=False] {
             .sc-advancedExpander-header-actionbar {
                 padding-right: 10px !important;
             }
         }
 
-        .sc-advancedExpander-header, 
-        &.open .sc-advancedExpander-header {
+        .sc-expander-header, 
+        &.open .sc-expander-header {
             a {
                 span {
-                    &.sc-advancedExpander-header-chevron-glyph {
+                    &.sc-expander-header-chevron-glyph {
                         background: none;
                         width: 0;
                         height: 0;
@@ -803,7 +820,7 @@ body.sc {
             > table {
                 background: none;
 
-                .sc-advancedExpander-header-title {
+                .sc-expander-header-title {
                     color: @SC-AdvancedExpanderHeaderTextColor;
                     font-weight: 400;
                     font-size: 18px;
@@ -811,9 +828,9 @@ body.sc {
             }
         }
         
-        .sc-advancedExpander-header {
+        .sc-expander-header {
             border-left: none;
-            padding-left: 5px;
+            padding-left: 20px;
             line-height: 60px;
             background: @SC-AdvancedExpanderHeaderBackground;
 
@@ -827,7 +844,7 @@ body.sc {
             }
         }
 
-        .sc-advancedExpander-body {
+        .sc-expander-body {
             border-top: 1px solid @SC-AdvancedExpanderBodyBorderTop;
             border-left: none;
             border-right: none;
@@ -856,7 +873,7 @@ body.sc {
             }
         }
 
-        .sc-advancedExpander-footer {
+        .sc-expander-footer {
             background: @SC-AdvancedExpanderFooterBackground;
             text-align: center;
             padding: 10px 0;
@@ -865,8 +882,9 @@ body.sc {
     }
     
     /* Action Control */
-    .sc-actioncontrol {
+    .sc-actionpanel {
         height: 18px !important;
+        float: none;
 
         .dropdown-text {
             line-height: 27px;
