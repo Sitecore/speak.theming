@@ -350,14 +350,14 @@ body.sc .sc-listcontrol .clearfix {
   margin-left: -10px;
 }
 body.sc .sc-listcontrol.sc-iconlist .sc-listcontrol-icon {
-  background: none;
+  background: #fff;
   margin: 10px;
   padding: 10px;
   height: auto !important;
   width: auto !important;
   float: none;
   display: inline-block;
-  border: 1px solid #d5d4d4;
+  border: 1px solid #008e97;
 }
 body.sc .sc-listcontrol.sc-iconlist .sc-listcontrol-icon .sc-listcontrol-icon-content {
   box-sizing: initial;
