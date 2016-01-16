@@ -474,7 +474,7 @@ body.sc {
                 font-size: 14px;
                 height: 32px;
                 line-height: 32px; 
-                padding-left: 48px;
+                padding-left: 15px;
                 z-index: 1;
                 position: absolute;
             }
@@ -483,27 +483,14 @@ body.sc {
                 z-index: 10;
                 width: 30px;
                 position: absolute;
-                right: 20px;
+                right: 11px;
                 height: 32px;
                 line-height: 32px;
 
-                button {
-                    border: none;
-                    box-shadow: none;
-                    background: none;
-                    margin-top: -5px;
+                .btn.sc-button {
+                  height: 31px;
+                  margin-top: -1px;
                 }
-            }
-
-            &:before {
-                content: "";
-                position: absolute;
-                width: 17px;
-                height: 17px;
-                left: 17px;
-                top: 8px; 
-                z-index: 10;
-                background: url("/sitecore/shell/client/Speak/Assets/img/sc-sprite-orange.png") no-repeat -217px 0;
             }
         }
     }
@@ -1148,26 +1135,63 @@ body.sc {
 
     /* Dialog Window */
     .modal {
-        .sc-dialogWindow-header {
-            background: @SC-MainColor;
 
-            .sc-dialogWindow-header-title {
-                font-size: 1.75em;
+      a.sc-dialogWindow-maximize, 
+      a.sc-dialogWindow-restore {
+        &:before {
+          display: none;
+        }
+      }
+
+      &.maximize {
+        a.sc-dialogWindow-restore {
+          background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAzADMAMzfwV8aAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH3wkcDSI2WLPO5gAAAFlJREFUOMu1U0EKwDAIq6M/yv+fkDdlp0EZ2haa5iQqmhgMSS1BmszwtEP0WZFkVDUAsjCwSNCK5kyS74jjdADbtt61cXWTewxI/jd/od+F4wGh4h2rfjuDFzQIGbqF9LfZAAAAAElFTkSuQmCC') /*/sitecore/shell/client/Business Component Library/version 2/Assets/img/DialogWindow/dialog_restore_h.png*/ !important;
+        }
+      }
+
+      a.sc-dialogWindow-maximize {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAzADMAMzfwV8aAAAACXBIWXMAAAsRAAALEQF/ZF+RAAAAB3RJTUUH3wkcDSIAlwlbfwAAADBJREFUOMtj/P///38GCgATA4WABcZ48uQJIykaZWRk/lPFBaMGjBowOAxgHPDcCAA9xgwZGg9wbAAAAABJRU5ErkJggg==') /*/sitecore/shell/client/Business Component Library/version 2/Assets/img/DialogWindow/dialog_maximize_h.png*/ !important;
+      }
+
+        .sc-confirmationDialog-header,
+        .sc-dialogWindow-header {
+            background: @SC-AdvancedExpanderHeaderBackground;
+            height: 60px;
+
+            .sc-confirmationDialog-header-title,
+            .sc-dialogWindow-close {
+                font-size: 1.75em !important;
             }
 
+            a.sc-confirmationDialog-close,
             a.sc-dialogWindow-close {
-                top: 34px;
+                top: 29px;
 
                 &:before {
                     top: -26px;
+                    border-left-color: @SC-DialogWindowBodyBackground;
+                    height: 65px;
+                    right: 34px;
                 }
             }
         }
 
+        
+
+        .sc-dialogWindow-close {
+          top: 33px !important; 
+
+          &:before {
+            left: -40px !important;
+          }
+        }
+
+        .sc-confirmationDialog-body,
         .sc-dialogWindow-body {
             background: @SC-DialogWindowBodyBackground;
         }
 
+        .sc-confirmationDialog-buttons,
         .sc-dialogWindow-buttons {
             background: @SC-DialogWindowButtonsBackground;
             border-top: 1px solid @SC-DialogWindowButtonsBorderTop;
@@ -1321,6 +1345,30 @@ body.sc {
     .sc-progressindicator-inner {
         background-image: url("/sitecore/shell/client/Speak/Assets/img/Speak/ProgressIndicator/sc-spinner32@{SC-Suffix}.gif");
     }
+
+    /* Progress bar */
+    .sc-progressbar {
+      .progress-bar {
+        background: linear-gradient(to bottom, @SC-ButtonPrimaryGradiendBottom  0, @SC-ButtonPrimaryTextShadowColor 100%);
+      }
+    }
+
+    /* Searchable Droplist */
+    .select2-drop {
+      &.select2-drop-active {
+        border: 1px solid @SC-ButtonPrimaryGradiendTop;
+      }
+    }
+
+    .select2-container-active {
+      .select2-choice,
+      .select2-choices {
+        border: 1px solid @SC-ButtonPrimaryGradiendTop !important;
+      }
+      
+    }
+
+
 }
 
 /* ------------------------------------------------------------- */
@@ -1776,16 +1824,6 @@ body.sc {
 body.sc .input-group.sc-buttontextbox .input-group-btn button {
     img {
         display:none;
-    }
-
-    &:before {
-        content: "";
-        width: 16px;
-        height: 16px;
-        position: absolute;
-        background: url("/sitecore/shell/client/Speak/Assets/img/Speak/Common/16x16/dark_gray/arrow-right.png") no-repeat left top;
-        right: 0;
-        top: 9px;
     }
 }
 

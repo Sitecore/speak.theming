@@ -27,7 +27,7 @@ content-length: 3
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 16661
+content-length: 22282
 
 <r>
   <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{4F72A793-BDBC-4262-9523-6AADD8FEA487}">
@@ -85,12 +85,12 @@ content-length: 16661
     <r id="{09205F96-FC45-4DCE-B027-F6C5D7AE6AD3}" par="Id=OverlayPanel&amp;Position=Right" ph="Page.Body" uid="{3079AF12-155E-4CA8-8DD9-EDEE4D9250A1}" />
     <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Overlaypanelheader&amp;Text=Overlay+panel+header" ph="OverlayPanel.Header" uid="{A4593B9A-64FB-4BBD-9FBC-BE30047AF87F}" />
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border1&amp;PaddingType=Top&amp;UsePadding=1" ph="BorderRight.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
-    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text13&amp;Text=DropDownButton3+Controls&amp;TextSize=XX-Large" ph="Border1.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text13&amp;Text=ToggleButton+Controls&amp;TextSize=XX-Large" ph="Border1.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border6&amp;PaddingType=Bottom&amp;UsePadding=1" ph="Border1.Content" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
-    <r id="{C0182326-91FE-45C6-8BF0-C1C3AFE1D21A}" par="Id=ToggleButton1&amp;Text=DropDownButton3+Default" ph="Border6.Content" uid="{C5EE5888-1F01-42E4-9ABE-018DB54D03F6}" />
-    <r id="{C0182326-91FE-45C6-8BF0-C1C3AFE1D21A}" par="Id=ToggleButton&amp;Text=DropDownButton3+Inverse&amp;ButtonType=Inverse" ph="Border6.Content" uid="{C5EE5888-1F01-42E4-9ABE-018DB54D03F6}" />
-    <r id="{C0182326-91FE-45C6-8BF0-C1C3AFE1D21A}" par="Id=ToggleButton2&amp;Text=DropDownButton3+Primary&amp;ButtonType=Primary" ph="Border6.Content" uid="{C5EE5888-1F01-42E4-9ABE-018DB54D03F6}" />
-    <r id="{C0182326-91FE-45C6-8BF0-C1C3AFE1D21A}" par="Id=ToggleButton3&amp;Text=DropDownButton3+with+arrow+opened&amp;ShowArrow=1&amp;IsOpen=1" ph="Border6.Content" uid="{C5EE5888-1F01-42E4-9ABE-018DB54D03F6}" />
+    <r id="{C0182326-91FE-45C6-8BF0-C1C3AFE1D21A}" par="Id=ToggleButton1&amp;Text=ToggleButton+Default" ph="Border6.Content" uid="{C5EE5888-1F01-42E4-9ABE-018DB54D03F6}" />
+    <r id="{C0182326-91FE-45C6-8BF0-C1C3AFE1D21A}" par="Id=ToggleButton&amp;Text=ToggleButton+Inverse&amp;ButtonType=Inverse" ph="Border6.Content" uid="{C5EE5888-1F01-42E4-9ABE-018DB54D03F6}" />
+    <r id="{C0182326-91FE-45C6-8BF0-C1C3AFE1D21A}" par="Id=ToggleButton2&amp;Text=ToggleButton+Primary&amp;ButtonType=Primary" ph="Border6.Content" uid="{C5EE5888-1F01-42E4-9ABE-018DB54D03F6}" />
+    <r id="{C0182326-91FE-45C6-8BF0-C1C3AFE1D21A}" par="Id=ToggleButton3&amp;Text=ToggleButton+with+arrow+opened&amp;ShowArrow=1&amp;IsOpen=1" ph="Border6.Content" uid="{C5EE5888-1F01-42E4-9ABE-018DB54D03F6}" />
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border8&amp;PaddingType=Bottom&amp;UsePadding=1" ph="Border1.Content" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
     <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text15&amp;Text=DropDownButton+Controls&amp;TextSize=XX-Large" ph="Border1.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border9&amp;PaddingType=Bottom&amp;UsePadding=1" ph="BorderRight.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
@@ -114,12 +114,42 @@ content-length: 16661
     <r id="{8C3B1C75-9DBA-49BC-AC49-CD9AD5559FD6}" par="ConfigurationItem=%7b20265D99-351B-42F3-9F96-39C9B288992C%7d&amp;Id=MessageBar" ph="Border15.Content" uid="{09CCEAE9-9CF8-4D68-9C04-DFDFD0D00E69}" />
     <r id="{8C3B1C75-9DBA-49BC-AC49-CD9AD5559FD6}" par="ConfigurationItem=%7b6ADE710A-E080-4379-BA75-564925D20050%7d&amp;Id=MessageBar1" ph="Border15.Content" uid="{09CCEAE9-9CF8-4D68-9C04-DFDFD0D00E69}" />
     <r id="{8C3B1C75-9DBA-49BC-AC49-CD9AD5559FD6}" par="ConfigurationItem=%7bB27167B0-ADEE-49C3-B8B0-2E3C1DBF31F3%7d&amp;Id=MessageBar2" ph="Border15.Content" uid="{09CCEAE9-9CF8-4D68-9C04-DFDFD0D00E69}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border19&amp;PaddingType=Bottom&amp;UsePadding=1" ph="BorderRight.Content" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text24&amp;Text=ButtonTextBox+Control&amp;TextSize=XX-Large" ph="Border19.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border20&amp;PaddingType=Top&amp;UsePadding=1" ph="Border19.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
+    <r id="{50E8FC46-422F-4B03-BC96-E0B9DCEA51E7}" par="Id=ButtonTextBox&amp;IsVisible=1&amp;IsEnabled=1&amp;Watermark=Watermark&amp;ButtonText=Ok" ph="Border20.Content" uid="{7E7B891F-F8F1-4E6F-900D-ED7FB7208C07}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border21&amp;PaddingType=Top&amp;UsePadding=1" ph="Border20.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
+    <r id="{50E8FC46-422F-4B03-BC96-E0B9DCEA51E7}" par="Id=ButtonTextBox1&amp;IsVisible=1&amp;IsEnabled=0&amp;Watermark=Watermark&amp;ButtonText=Ok" ph="Border20.Content" uid="{7E7B891F-F8F1-4E6F-900D-ED7FB7208C07}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border22&amp;PaddingType=Bottom&amp;UsePadding=1" ph="BorderRight.Content" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text25&amp;Text=GlobalLogo+Control&amp;TextSize=XX-Large" ph="Border22.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border23&amp;PaddingType=Top&amp;UsePadding=1" ph="Border22.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
+    <r id="{C220369A-84A3-482B-A936-F75CDCB23736}" par="Id=GlobalLogo1" ph="Border23.Content" uid="{473DDA30-CCAA-4EED-A4AC-583995DEFC63}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border24&amp;PaddingType=Bottom&amp;UsePadding=1" ph="BorderRight.Content" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text26&amp;Text=ProgressBar+Control&amp;TextSize=XX-Large" ph="Border24.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border26&amp;PaddingType=Top&amp;UsePadding=1" ph="Border24.Content" uid="{531F7AFA-204B-4F89-A909-61AC4C5FB503}" />
+    <r id="{A45B4F78-E731-4ADF-ADD0-DBEFBC9033E4}" par="Value=50&amp;Id=ProgressBar1&amp;MaxValue=100&amp;UpdateInterval=2000" ph="Border26.Content" uid="{8A550A52-0362-4C50-8AC6-92BA0535A649}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border30&amp;PaddingType=Top&amp;UsePadding=1" ph="Grid1.Cell1" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text27&amp;Text=SearchableDropList&amp;TextSize=XX-Large" ph="Border30.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border31&amp;PaddingType=Top&amp;UsePadding=1" ph="Grid1.Cell1" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
+    <r id="{A1B29521-EF5F-4E88-88FE-6CB1C8F92557}" par="Id=SearchableDropList&amp;StaticData=%7b11111111-1111-1111-1111-111111111111%7d" ph="Border31.Content" uid="{B2CEE295-4D85-4E83-8016-D43917593DF7}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border32&amp;PaddingType=Top&amp;UsePadding=1" ph="Grid1.Cell1" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text28&amp;Text=Popover+Control&amp;TextSize=XX-Large" ph="Border32.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border34&amp;PaddingType=Top&amp;UsePadding=1" ph="Grid1.Cell1" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
+    <r id="{88C38B36-787A-43FA-85D4-FE08B0A4B7FF}" par="Id=Button5&amp;Text=Placement+popover%3a+auto+default" ph="Border34.Content" uid="{F23B9E34-9DDE-453A-925C-6F3220B0B139}" />
+    <r id="{AF3483E7-37C5-44F3-B797-0143664D4969}" par="Id=Popover1&amp;Placement=auto&amp;TargetControl=Button5&amp;Trigger=hover" ph="Border34.Content" uid="{A582D155-EA93-4E51-B2AA-210AD55DA657}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border35&amp;PaddingType=Top&amp;UsePadding=1" ph="Grid1.Cell1" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text29&amp;Text=Dialogs&amp;TextSize=XX-Large" ph="Border35.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border36&amp;PaddingType=Top&amp;UsePadding=1" ph="Grid1.Cell1" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
+    <r id="{88C38B36-787A-43FA-85D4-FE08B0A4B7FF}" par="Id=Button6&amp;ButtonType=Primary&amp;Text=Click+button+to+open+confirmation+dialog&amp;Click=javascript%3aapp.ConfirmationDialog.show()" ph="Border36.Content" uid="{F23B9E34-9DDE-453A-925C-6F3220B0B139}" />
+    <r id="{88C38B36-787A-43FA-85D4-FE08B0A4B7FF}" par="Id=Button7&amp;ButtonType=Primary&amp;Text=Click+button+to+open+dialog+window&amp;Click=javascript%3aapp.DialogWindow.show()" ph="Border36.Content" uid="{F23B9E34-9DDE-453A-925C-6F3220B0B139}" />
+    <r id="{06632524-7DD3-4E1A-84BF-2A5DF970263C}" par="Id=ConfirmationDialog&amp;HeaderText=Header" ph="Border36.Content" uid="{1DAB48A2-BBAA-454B-B38B-D084188B35A0}" />
+    <r id="{A7B206E7-7393-4125-962C-02EEFA4734CF}" par="Id=DialogWindow&amp;HeaderText=Header" ph="Border36.Content" uid="{43979EA4-B954-45A6-9B6D-551043D724B4}" />
   </d>
 </r>
 ----version----
 language: en
 version: 1
-revision: 6bb0d029-179a-4dfa-b7fb-56b049606fd1
+revision: 4dc186b2-a708-4793-8a3e-1b97ae1e2b75
 
 ----field----
 field: {7205A57F-93B4-413A-AA9A-6B16BBC59565}
@@ -141,14 +171,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6bb0d029-179a-4dfa-b7fb-56b049606fd1
+4dc186b2-a708-4793-8a3e-1b97ae1e2b75
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151230T072913Z
+20160116T132852Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -29,6 +29,8 @@ body.sc {
   /* Uploader Control */
   /* Tab Control */
   /* Global Logo */
+  /* Progress bar */
+  /* Searchable Droplist */
 }
 body.sc .sc-text {
   color: #666666;
@@ -415,7 +417,7 @@ body.sc .input-group.sc-buttontextbox input.form-control {
   font-size: 14px;
   height: 32px;
   line-height: 32px;
-  padding-left: 48px;
+  padding-left: 15px;
   z-index: 1;
   position: absolute;
 }
@@ -423,25 +425,13 @@ body.sc .input-group.sc-buttontextbox .input-group-btn {
   z-index: 10;
   width: 30px;
   position: absolute;
-  right: 20px;
+  right: 11px;
   height: 32px;
   line-height: 32px;
 }
-body.sc .input-group.sc-buttontextbox .input-group-btn button {
-  border: none;
-  box-shadow: none;
-  background: none;
-  margin-top: -5px;
-}
-body.sc .input-group.sc-buttontextbox:before {
-  content: "";
-  position: absolute;
-  width: 17px;
-  height: 17px;
-  left: 17px;
-  top: 8px;
-  z-index: 10;
-  background: url("/sitecore/shell/client/Speak/Assets/img/sc-sprite-orange.png") no-repeat -217px 0;
+body.sc .input-group.sc-buttontextbox .input-group-btn .btn.sc-button {
+  height: 31px;
+  margin-top: -1px;
 }
 body.sc .sc-messageBar .alert {
   font-weight: 400;
@@ -914,21 +904,53 @@ body.sc .popover {
 body.sc .popover.right > .arrow {
   border-right-color: #d4d4d4;
 }
+body.sc .modal a.sc-dialogWindow-maximize:before,
+body.sc .modal a.sc-dialogWindow-restore:before {
+  display: none;
+}
+body.sc .modal.maximize a.sc-dialogWindow-restore {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAzADMAMzfwV8aAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH3wkcDSI2WLPO5gAAAFlJREFUOMu1U0EKwDAIq6M/yv+fkDdlp0EZ2haa5iQqmhgMSS1BmszwtEP0WZFkVDUAsjCwSNCK5kyS74jjdADbtt61cXWTewxI/jd/od+F4wGh4h2rfjuDFzQIGbqF9LfZAAAAAElFTkSuQmCC') /*/sitecore/shell/client/Business Component Library/version 2/Assets/img/DialogWindow/dialog_restore_h.png*/ !important;
+}
+body.sc .modal a.sc-dialogWindow-maximize {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAzADMAMzfwV8aAAAACXBIWXMAAAsRAAALEQF/ZF+RAAAAB3RJTUUH3wkcDSIAlwlbfwAAADBJREFUOMtj/P///38GCgATA4WABcZ48uQJIykaZWRk/lPFBaMGjBowOAxgHPDcCAA9xgwZGg9wbAAAAABJRU5ErkJggg==') /*/sitecore/shell/client/Business Component Library/version 2/Assets/img/DialogWindow/dialog_maximize_h.png*/ !important;
+}
+body.sc .modal .sc-confirmationDialog-header,
 body.sc .modal .sc-dialogWindow-header {
   background: #556d79;
+  height: 60px;
 }
-body.sc .modal .sc-dialogWindow-header .sc-dialogWindow-header-title {
-  font-size: 1.75em;
+body.sc .modal .sc-confirmationDialog-header .sc-confirmationDialog-header-title,
+body.sc .modal .sc-dialogWindow-header .sc-confirmationDialog-header-title,
+body.sc .modal .sc-confirmationDialog-header .sc-dialogWindow-close,
+body.sc .modal .sc-dialogWindow-header .sc-dialogWindow-close {
+  font-size: 1.75em !important;
 }
+body.sc .modal .sc-confirmationDialog-header a.sc-confirmationDialog-close,
+body.sc .modal .sc-dialogWindow-header a.sc-confirmationDialog-close,
+body.sc .modal .sc-confirmationDialog-header a.sc-dialogWindow-close,
 body.sc .modal .sc-dialogWindow-header a.sc-dialogWindow-close {
-  top: 34px;
+  top: 29px;
 }
+body.sc .modal .sc-confirmationDialog-header a.sc-confirmationDialog-close:before,
+body.sc .modal .sc-dialogWindow-header a.sc-confirmationDialog-close:before,
+body.sc .modal .sc-confirmationDialog-header a.sc-dialogWindow-close:before,
 body.sc .modal .sc-dialogWindow-header a.sc-dialogWindow-close:before {
   top: -26px;
+  border-left-color: #f1eff0;
+  height: 65px;
+  right: 34px;
 }
+body.sc .modal .sc-dialogWindow-close {
+  top: 33px !important;
+}
+body.sc .modal .sc-dialogWindow-close:before {
+  left: -40px !important;
+}
+body.sc .modal .sc-confirmationDialog-body,
 body.sc .modal .sc-dialogWindow-body {
   background: #f1eff0;
 }
+body.sc .modal .sc-confirmationDialog-buttons,
 body.sc .modal .sc-dialogWindow-buttons {
   background: #f7f7f7;
   border-top: 1px solid #c5c5c5;
@@ -1050,6 +1072,16 @@ body.sc .sc-global-logo {
 }
 body.sc .sc-progressindicator-inner {
   background-image: url("/sitecore/shell/client/Speak/Assets/img/Speak/ProgressIndicator/sc-spinner32-teal.gif");
+}
+body.sc .sc-progressbar .progress-bar {
+  background: linear-gradient(to bottom, #5b7280 0, #536a77 100%);
+}
+body.sc .select2-drop.select2-drop-active {
+  border: 1px solid #607786;
+}
+body.sc .select2-container-active .select2-choice,
+body.sc .select2-container-active .select2-choices {
+  border: 1px solid #607786 !important;
 }
 /* ------------------------------------------------------------- */
 .sc-navigation-content {
@@ -1384,15 +1416,6 @@ body.sc .sc-ListPath > ul > li:first-child > a {
 }
 body.sc .input-group.sc-buttontextbox .input-group-btn button img {
   display: none;
-}
-body.sc .input-group.sc-buttontextbox .input-group-btn button:before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  background: url("/sitecore/shell/client/Speak/Assets/img/Speak/Common/16x16/dark_gray/arrow-right.png") no-repeat left top;
-  right: 0;
-  top: 9px;
 }
 .sc-advancedExpander {
   margin-top: 30px;
