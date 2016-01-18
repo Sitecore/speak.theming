@@ -286,7 +286,7 @@ body.sc {
 
     /* Textarea Control */
     .sc-textarea {
-        height: auto;
+        height: 70px !important;
         line-height: 20px;
     }
 
@@ -1135,7 +1135,6 @@ body.sc {
 
     /* Dialog Window */
     .modal {
-
       a.sc-dialogWindow-maximize, 
       a.sc-dialogWindow-restore {
         &:before {
@@ -1186,6 +1185,7 @@ body.sc {
           }
         }
 
+        &.sc-dialogWindow,
         .sc-confirmationDialog-body,
         .sc-dialogWindow-body {
             background: @SC-DialogWindowBodyBackground;
@@ -1203,6 +1203,13 @@ body.sc {
         .btn.btn-default {
             line-height: 27px;
         }
+    }
+
+    /* Uploader info */
+    .sc-uploaderInfo {
+      .remove {
+        margin-bottom: 10px;
+      }
     }
 
     /* Tab Control */

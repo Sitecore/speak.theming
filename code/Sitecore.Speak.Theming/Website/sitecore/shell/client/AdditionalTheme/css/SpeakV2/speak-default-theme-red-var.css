@@ -27,6 +27,7 @@ body.sc {
   /* Popover Control */
   /* Dialog Window */
   /* Uploader Control */
+  /* Uploader info */
   /* Tab Control */
   /* Global Logo */
   /* Progress bar */
@@ -273,7 +274,7 @@ body.sc .sc-combobox {
   font-weight: 300;
 }
 body.sc .sc-textarea {
-  height: auto;
+  height: 70px !important;
   line-height: 20px;
 }
 body.sc .sc-listcontrol.sc-detaillist .table.sc-listcontrol-header > thead > tr > th {
@@ -946,6 +947,7 @@ body.sc .modal .sc-dialogWindow-close {
 body.sc .modal .sc-dialogWindow-close:before {
   left: -40px !important;
 }
+body.sc .modal.sc-dialogWindow,
 body.sc .modal .sc-confirmationDialog-body,
 body.sc .modal .sc-dialogWindow-body {
   background: #f1eff0;
@@ -957,6 +959,9 @@ body.sc .modal .sc-dialogWindow-buttons {
 }
 body.sc .sc-uploader-content .btn.btn-default {
   line-height: 27px;
+}
+body.sc .sc-uploaderInfo .remove {
+  margin-bottom: 10px;
 }
 body.sc .sc-tabcontrol.subTab > .nav-tabs {
   border: none;
