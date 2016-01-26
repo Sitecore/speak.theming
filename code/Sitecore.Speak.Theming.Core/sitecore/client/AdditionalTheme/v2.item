@@ -27,7 +27,7 @@ content-length: 3
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 22282
+content-length: 26149
 
 <r>
   <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{4F72A793-BDBC-4262-9523-6AADD8FEA487}">
@@ -107,7 +107,11 @@ content-length: 22282
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border12&amp;PaddingType=Top&amp;UsePadding=1" ph="BorderRight.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
     <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text18&amp;Text=List+Control+-+Icon+View&amp;TextSize=XX-Large" ph="Border12.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border13&amp;PaddingType=Bottom&amp;UsePadding=1" ph="Border12.Content" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
+    <r id="{52726938-C811-4763-B80F-EB58DEE008E2}" par="Id=DataSourceDynamicData&amp;Query=%2fsitecore%2fclient%2fBusiness+Component+Library%2fversion+2%2f*&amp;Database=%24context_database" ph="Page.Body" uid="{A9DA0410-4209-489D-85D2-8A6460208B14}" />
     <r id="{6F8AB6DD-9307-4AD3-964E-5B84F0B9B4F0}" par="Id=ListControlStaticData1&amp;ViewMode=IconList&amp;StaticData=%7b6C7A71E0-258F-4AF4-B8ED-D8CB75169339%7d&amp;IsStateDiscarded=0" ph="Border13.Content" uid="{BB8C16D4-B243-40CC-8399-80C09AE111DC}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text31&amp;Text=List+Control+-+Tile+View&amp;TextSize=XX-Large" ph="BorderRight.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border25&amp;PaddingType=Bottom&amp;UsePadding=1" ph="BorderRight.Content" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
+    <r id="{6F8AB6DD-9307-4AD3-964E-5B84F0B9B4F0}" par="Id=ListControlStaticData3&amp;ViewMode=TileList&amp;StaticData=%7b6C7A71E0-258F-4AF4-B8ED-D8CB75169339%7d&amp;TileTemplatePath=%2fsitecore%2fshell%2fclient%2fBusiness+Component+Library%2fversion+2%2fContent%2fGuidance%2fRenderings%2fListsAndGrids%2fListControlGuidanceTileList.html&amp;TileCssPath=%2fsitecore%2fshell%2fclient%2fBusiness+Component+Library%2fversion+2%2fContent%2fGuidance%2fRenderings%2fListsAndGrids%2fListControlGuidanceTileList.css" ph="BorderRight.Content" uid="{BB8C16D4-B243-40CC-8399-80C09AE111DC}" />
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border14&amp;PaddingType=Bottom&amp;UsePadding=1" ph="BorderRight.Content" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
     <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text19&amp;Text=Messagebar+Controls&amp;TextSize=XX-Large" ph="Border14.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border15&amp;PaddingType=Top&amp;UsePadding=1" ph="Border14.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
@@ -120,6 +124,12 @@ content-length: 22282
     <r id="{50E8FC46-422F-4B03-BC96-E0B9DCEA51E7}" par="Id=ButtonTextBox&amp;IsVisible=1&amp;IsEnabled=1&amp;Watermark=Watermark&amp;ButtonText=Ok" ph="Border20.Content" uid="{7E7B891F-F8F1-4E6F-900D-ED7FB7208C07}" />
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border21&amp;PaddingType=Top&amp;UsePadding=1" ph="Border20.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
     <r id="{50E8FC46-422F-4B03-BC96-E0B9DCEA51E7}" par="Id=ButtonTextBox1&amp;IsVisible=1&amp;IsEnabled=0&amp;Watermark=Watermark&amp;ButtonText=Ok" ph="Border20.Content" uid="{7E7B891F-F8F1-4E6F-900D-ED7FB7208C07}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text32&amp;Text=Search+Panel&amp;TextSize=XX-Large" ph="BorderRight.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border27&amp;PaddingType=Top&amp;UsePadding=1" ph="BorderRight.Content" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
+    <r id="{411FFD02-CB1D-48FB-9925-6B4114ED1C98}" par="Id=SearchPanel1" ph="Border27.Content" uid="{AAE7DE94-E9EB-4E4D-AF95-6DF5BA6572E8}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border28&amp;PaddingType=Top&amp;UsePadding=1" ph="BorderRight.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
+    <r id="{C0182326-91FE-45C6-8BF0-C1C3AFE1D21A}" par="Id=ToggleButton4&amp;Text=Filters&amp;ShowArrow=1" ph="SearchPanel1.Filters" uid="{41322879-A256-47A6-BA31-7CF995DEB433}" />
+    <r id="{50E8FC46-422F-4B03-BC96-E0B9DCEA51E7}" par="Id=ButtonTextBox2&amp;IsVisible=1&amp;IsEnabled=1&amp;Icon=%2fsitecore%2fshell%2fclient%2fSpeak%2fAssets%2fimg%2fSpeak%2fCommon%2f16x16%2fdark_gray%2fsearch.png" ph="SearchPanel1.Searches" uid="{7DFD6257-D54F-4959-B6A2-105AFCA291C3}" />
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border22&amp;PaddingType=Bottom&amp;UsePadding=1" ph="BorderRight.Content" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
     <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text25&amp;Text=GlobalLogo+Control&amp;TextSize=XX-Large" ph="Border22.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
     <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border23&amp;PaddingType=Top&amp;UsePadding=1" ph="Border22.Content" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
@@ -144,12 +154,20 @@ content-length: 22282
     <r id="{88C38B36-787A-43FA-85D4-FE08B0A4B7FF}" par="Id=Button7&amp;ButtonType=Primary&amp;Text=Click+button+to+open+dialog+window&amp;Click=javascript%3aapp.DialogWindow.show()" ph="Border36.Content" uid="{F23B9E34-9DDE-453A-925C-6F3220B0B139}" />
     <r id="{06632524-7DD3-4E1A-84BF-2A5DF970263C}" par="Id=ConfirmationDialog&amp;HeaderText=Header" ph="Border36.Content" uid="{1DAB48A2-BBAA-454B-B38B-D084188B35A0}" />
     <r id="{A7B206E7-7393-4125-962C-02EEFA4734CF}" par="Id=DialogWindow&amp;HeaderText=Header" ph="Border36.Content" uid="{43979EA4-B954-45A6-9B6D-551043D724B4}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border38&amp;PaddingType=Top&amp;UsePadding=1" ph="Grid1.Cell1" uid="{12B8D967-3C5B-4ABA-80D1-EDA8ACC89276}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text30&amp;Text=Uploader+and+UploaderInfo&amp;TextSize=XX-Large" ph="Border38.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border37&amp;PaddingType=Top&amp;UsePadding=1" ph="Grid1.Cell1" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
+    <r id="{71FC2200-EB60-490E-8D6D-2E225467F600}" par="Id=Uploader1" ph="Border37.Content" uid="{1FB42193-473C-4189-A0FE-86CC770F703A}" />
+    <r id="{57A35ED8-6EB6-4E3E-BD03-1A8AA5B028B3}" par="Id=UploaderInfo1&amp;Behaviors=ShowAlternateTextField%2c+ShowDescriptionField+and+ShowNameField" ph="Border37.Content" uid="{6DE8408C-7D1A-46AB-A2A3-751E8B71C84D}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Border29&amp;PaddingType=Top&amp;UsePadding=1" ph="Grid1.Cell1" uid="{FD331195-4462-4E50-9D94-614C3C0E9EB0}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text33&amp;Text=Menu+Control&amp;TextSize=XX-Large" ph="Border29.Content" uid="{CDEE7518-631C-4201-B852-1507EEEFF09B}" />
+    <r id="{90F4E9F6-B3C3-4A76-A7E8-FCCF6E68EC2D}" par="Id=Frame1&amp;SourceUrl=%2fsitecore%2fclient%2fAdditionalTheme%2fv2%2fMenuPageContainer&amp;Height=400" ph="Grid1.Cell1" uid="{8623E601-897B-4068-AD50-5BEC2E1B7662}" />
   </d>
 </r>
 ----version----
 language: en
 version: 1
-revision: 4dc186b2-a708-4793-8a3e-1b97ae1e2b75
+revision: 3c9ae9da-b7ff-4f6a-977b-be12399d67ec
 
 ----field----
 field: {7205A57F-93B4-413A-AA9A-6B16BBC59565}
@@ -171,14 +189,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4dc186b2-a708-4793-8a3e-1b97ae1e2b75
+3c9ae9da-b7ff-4f6a-977b-be12399d67ec
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160116T132852Z
+20160126T133217Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -66,4 +66,5 @@
   <Item ItemPath="/sitecore/client/AdditionalTheme/v2/MessagesWarn" ItemIcon="/temp/IconCache/Applications/16x16/folder.png" />
   <Item ItemPath="/sitecore/client/AdditionalTheme/v2/MessagesWarn/Warning Message" ItemIcon="/~/icon/Applications/32x32/form_blue.png.aspx" />
   <Item ItemPath="/sitecore/client/AdditionalTheme/v2" ItemIcon="/temp/IconCache/Applications/16x16/window_dialog.png" />
+  <Item ItemPath="/sitecore/client/AdditionalTheme/v2/MenuPageContainer" ItemIcon="/temp/IconCache/Applications/32x32/window_colors.png" />
 </ItemIconCache>
