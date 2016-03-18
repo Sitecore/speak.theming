@@ -67,4 +67,45 @@
   <Item ItemPath="/sitecore/client/AdditionalTheme/v2/MessagesWarn/Warning Message" ItemIcon="/~/icon/Applications/32x32/form_blue.png.aspx" />
   <Item ItemPath="/sitecore/client/AdditionalTheme/v2" ItemIcon="/temp/IconCache/Applications/16x16/window_dialog.png" />
   <Item ItemPath="/sitecore/client/AdditionalTheme/v2/MenuPageContainer" ItemIcon="/temp/IconCache/Applications/32x32/window_colors.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change/PageSettings/Page-Stylesheet-File" ItemIcon="/temp/IconCache/WordProcessing/16x16/imp_exp_xml.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change/PageSettings/SelectedThemeTemplate" ItemIcon="/temp/IconCache/Applications/32x32/Document.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change/PageSettings/Themes" ItemIcon="/temp/IconCache/Applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change/PageSettings/SelectedTheme" ItemIcon="/temp/IconCache/Applications/32x32/Document.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change/PageSettings/ThemeStylesheet/Data/SourceSpeakV1" ItemIcon="/temp/IconCache/Applications/32x32/Document.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change/PageSettings/Themes/Contrast Theme" ItemIcon="/temp/IconCache/Imaging/16x16/paint_brush_big_h.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change/PageSettings/Themes/Red and black Theme" ItemIcon="/temp/IconCache/Imaging/16x16/paint_brush_big_h.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change/PageSettings/Themes/Orange Theme" ItemIcon="/temp/IconCache/Imaging/16x16/paint_brush_big_h.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change" ItemIcon="/temp/IconCache/Applications/16x16/window_dialog.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings/Errors/ActionLink" ItemIcon="/~/icon/Applications/32x32/form_blue.png.aspx" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings/Errors/GeneralError" ItemIcon="/~/icon/Applications/16x16/forbidden.png.aspx" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings/Errors" ItemIcon="/temp/IconCache/Applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings/Notifications/ActionLink" ItemIcon="/~/icon/Applications/32x32/form_blue.png.aspx" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings/Notifications/GlobalNotification" ItemIcon="/~/icon/Applications/32x32/information.png.aspx" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings/Notifications" ItemIcon="/temp/IconCache/Applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings/Page-Stylesheet-File" ItemIcon="/temp/IconCache/WordProcessing/16x16/imp_exp_xml.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings/Warnings/ActionLink" ItemIcon="/~/icon/Applications/32x32/form_blue.png.aspx" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings/Warnings/Warning1" ItemIcon="/~/icon/Applications/16x16/warning.png.aspx" />
+  <Item ItemPath="/sitecore/client/Applications/Theming" ItemIcon="/temp/IconCache/Applications/16x16/window_dialog.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change/PageSettings" ItemIcon="/temp/IconCache/Applications/16x16/preferences.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change/PageSettings/Themes/Default Theme" ItemIcon="/temp/IconCache/Imaging/16x16/paint_brush_big_h.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change/PageSettings/Themes/Teal Theme" ItemIcon="/temp/IconCache/Imaging/16x16/paint_brush_big_h.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change/PageSettings/SelectedThemeTemplate/Data" ItemIcon="/temp/IconCache/Applications/32x32/Document.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change/PageSettings/SelectedThemeTemplate/Data/Selected theme" ItemIcon="/temp/IconCache/Applications/32x32/Document.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change/PageSettings/ThemeStylesheet" ItemIcon="/temp/IconCache/Applications/32x32/Document.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change/PageSettings/ThemeStylesheet/Data" ItemIcon="/temp/IconCache/Applications/32x32/Document.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/Change/PageSettings/ThemeStylesheet/Data/SourceSpeakV2" ItemIcon="/temp/IconCache/Applications/32x32/Document.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings" ItemIcon="/temp/IconCache/Applications/16x16/preferences.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings/Errors/GeneralError2" ItemIcon="/~/icon/Applications/16x16/forbidden.png.aspx" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings/Notifications/GlobalNotification2" ItemIcon="/~/icon/Applications/32x32/information.png.aspx" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings/Warnings" ItemIcon="/temp/IconCache/Applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings/Warnings/Warning2" ItemIcon="/~/icon/Applications/16x16/warning.png.aspx" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings/PathThemeTemplate" ItemIcon="/temp/IconCache/Applications/32x32/Document.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings/PathThemeTemplate/Data" ItemIcon="/temp/IconCache/Applications/32x32/Document.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/PageSettings/PathThemeTemplate/Data/Path" ItemIcon="/temp/IconCache/Applications/32x32/Document.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/v2/MenuPageContainer" ItemIcon="/temp/IconCache/Applications/32x32/window_colors.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/v2/Messages" ItemIcon="/temp/IconCache/Applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/v2" ItemIcon="/temp/IconCache/Applications/16x16/window_dialog.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/v2/Messages/Notification Message" ItemIcon="/~/icon/Applications/32x32/form_blue.png.aspx" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/v2/MessagesWarn" ItemIcon="/temp/IconCache/Applications/16x16/folder.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/v2/MessagesWarn/Warning Message" ItemIcon="/~/icon/Applications/32x32/form_blue.png.aspx" />
 </ItemIconCache>

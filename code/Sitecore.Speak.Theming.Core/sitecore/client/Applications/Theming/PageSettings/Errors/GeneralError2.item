@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {3A2DD0A2-03B9-4C4C-AEE6-5BB9B23B9DF4}
+database: core
+path: /sitecore/client/Applications/Theming/PageSettings/Errors/GeneralError2
+parent: {BA5D6F3C-C473-4B43-839B-4ECB3AE88611}
+name: GeneralError2
+master: {00000000-0000-0000-0000-000000000000}
+template: {27F53C6B-04A8-4413-8130-9415223597DC}
+templatekey: Error Message
+
+----field----
+field: {957E1A7D-9727-4EEE-811D-1F3998A9FD99}
+name: Actions
+key: actions
+content-length: 38
+
+{E5835DF0-32E7-4E9F-8AFB-71A7022A1491}
+----field----
+field: {2A471C94-914F-4724-9552-ED0AC2FD5423}
+name: IsClosable
+key: isclosable
+content-length: 1
+
+1
+----version----
+language: en
+version: 1
+revision: 591f469b-0a10-432c-9141-3dead9ca134e
+
+----field----
+field: {D281BD0C-D3EF-4012-B560-5DAAF3FA37A8}
+name: Text
+key: text
+content-length: 41
+
+This is a general error which is closable
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140530T083251
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+591f469b-0a10-432c-9141-3dead9ca134e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140530T095709:635370406292860144
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

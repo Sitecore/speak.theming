@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {D26ABE9D-1262-42D7-AA6E-EEA381F21393}
+database: core
+path: /sitecore/client/Applications/Theming/PageSettings/Warnings/Warning1
+parent: {783FE4FF-5A9A-4CF9-B950-1B8AE3405861}
+name: Warning1
+master: {00000000-0000-0000-0000-000000000000}
+template: {622D0279-3D83-4FA7-8C8F-45875615C7D8}
+templatekey: Warning Message
+
+----field----
+field: {957E1A7D-9727-4EEE-811D-1F3998A9FD99}
+name: Actions
+key: actions
+content-length: 38
+
+{AF3CC456-5110-4F4F-ACA3-9D9102DA856E}
+----field----
+field: {2A471C94-914F-4724-9552-ED0AC2FD5423}
+name: IsClosable
+key: isclosable
+content-length: 1
+
+1
+----version----
+language: en
+version: 1
+revision: 6bf01c5c-edea-4d55-9708-7996dfa69618
+
+----field----
+field: {D281BD0C-D3EF-4012-B560-5DAAF3FA37A8}
+name: Text
+key: text
+content-length: 25
+
+This is a warning message
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140530T085559
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6bf01c5c-edea-4d55-9708-7996dfa69618
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140530T094338:635370398185480632
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
