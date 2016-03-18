@@ -20,13 +20,13 @@ Apps/32x32/Umbrella.png
 field: {044E3FDB-22AE-4E6C-B50E-2ABDFBABD338}
 name: Link
 key: link
-content-length: 39
+content-length: 44
 
-/sitecore/client/AdditionalTheme/change
+/sitecore/client/Applications/Theming/Change
 ----version----
 language: en
 version: 1
-revision: e5912d43-d2e0-4fcc-b22f-0347d8936b50
+revision: f56c20ec-94fa-41e7-9413-2be634b7e4b5
 
 ----field----
 field: {AA4A4643-5BFC-45A7-B9D9-5183A5211D99}
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e5912d43-d2e0-4fcc-b22f-0347d8936b50
+f56c20ec-94fa-41e7-9413-2be634b7e4b5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150612T060643:635696860032472263Z
+20160318T170203Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
