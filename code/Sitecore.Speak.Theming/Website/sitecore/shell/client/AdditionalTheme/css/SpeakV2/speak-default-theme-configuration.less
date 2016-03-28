@@ -1232,7 +1232,8 @@ body.sc {
 
     /* Tab Control */
     .sc-tab-control {
-        .sc-tab-control-button-right {
+        .sc-tab-control-button-right,
+        .sc-tab-control-button-left {
             height: 36px;
             padding-top: 11px;
         }
@@ -1243,6 +1244,9 @@ body.sc {
 
                 > .sc-tab-control-nav {
                     > .sc-tab-control-tab-item {
+                        height: 39px;
+                        background: none;
+
                         &.last-tab {
                             &:after {
                                 width: 3px;
@@ -1270,7 +1274,6 @@ body.sc {
                                 content: "";
                                 top: 0; 
                                 left: -2px;
-                                z-index:10;
                                 position: absolute;
                                 background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/corner.png') no-repeat left top;
                             }
@@ -1326,7 +1329,6 @@ body.sc {
                             &:before {
                                 content:"";
                                 top: 0;
-                                z-index:10;
                                 width: 16px;
                                 display: block;
                                 position: absolute;
@@ -1446,7 +1448,6 @@ body.sc {
                                 content: "";
                                 top: 0; 
                                 left: 0;
-                                z-index:10;
                                 position: absolute;
                                 background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/corner.png') no-repeat left top;
                             }
