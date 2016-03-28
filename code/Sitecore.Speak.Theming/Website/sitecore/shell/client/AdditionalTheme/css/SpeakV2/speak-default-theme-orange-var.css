@@ -974,17 +974,50 @@ body.sc .sc-uploaderInfo .remove {
 body.sc .sc-uploaderInfo .sc-uploaderInfo-row {
   background: white;
 }
-body.sc .sc-tabcontrol.subTab > .nav-tabs {
-  border: none;
-  background: none;
+body.sc .sc-tab-control .sc-tab-control-button-right {
+  height: 36px;
+  padding-top: 11px;
 }
-body.sc .sc-tabcontrol > .nav-tabs {
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap {
   border-bottom: none;
 }
-body.sc .sc-tabcontrol > .nav-tabs > li.active > a {
-  border: none !important;
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.last-tab:after {
+  width: 3px;
+  height: 39px;
+  content: "";
+  top: 0;
+  right: -3px;
+  position: absolute;
+  background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/corner.png') no-repeat right top;
 }
-body.sc .sc-tabcontrol > .nav-tabs > li > a {
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.last-tab:hover:after {
+  right: -4px;
+}
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.first-tab {
+  margin-left: 2px !important;
+}
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.first-tab:before {
+  width: 3px;
+  height: 39px;
+  content: "";
+  top: 0;
+  left: -2px;
+  z-index: 10;
+  position: absolute;
+  background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/corner.png') no-repeat left top;
+}
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.first-tab:hover:before {
+  left: -2px;
+}
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.before-selected a:hover:after,
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.before-selected a:after {
+  background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
+}
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.after-selected a:hover:before,
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.after-selected a:before {
+  background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
+}
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item a {
   height: 39px;
   line-height: 17px;
   text-transform: none;
@@ -994,8 +1027,13 @@ body.sc .sc-tabcontrol > .nav-tabs > li > a {
   border: none;
   background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/tab_gray_background.png') repeat-x left top;
 }
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li:before,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li:before {
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item a:hover {
+  background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/tab_gray_background.png') repeat-x left top;
+}
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item a:hover:after {
+  background-image: none;
+}
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item a:before {
   content: "";
   top: 0;
   z-index: 10;
@@ -1006,82 +1044,89 @@ body.sc .sc-tabcontrol.tabbable > .nav-tabs > li:before {
   height: 39px;
   background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
 }
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li:first-child:before,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li:first-child:before {
-  display: none;
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.selected.last-tab:after {
+  right: -4px;
 }
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li.first-visible-nav-tab:before,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li.first-visible-nav-tab:before {
-  display: none;
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.selected a {
+  color: #dc271e;
 }
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li > a,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li > a {
-  padding-left: 30px;
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.selected a:hover {
+  color: #dc271e;
 }
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li > a:before,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li > a:before {
-  display: none;
-}
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li > a:hover,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li > a:hover {
-  text-decoration: none;
-}
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li > a:hover:after,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li > a:hover:after {
-  display: none;
-}
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li.active-first-sibling:before,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li.active-first-sibling:before {
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.selected a:hover:before {
   background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
 }
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li.active:before,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li.active:before {
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.selected a:hover:hover:before {
   background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
 }
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li.active > a,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li.active > a {
-  color: #111111;
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.selected a,
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item:hover a {
+  border: none !important;
 }
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li.first-visible-nav-tab a,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li.first-visible-nav-tab a {
-  padding-left: 15px;
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.selected a:before,
+body.sc .sc-tab-control.sc-tab-control-progressive > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item:hover a:before {
+  background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
 }
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li.first-visible-nav-tab a:before,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li.first-visible-nav-tab a:before {
-  display: none;
+body.sc .sc-tab-control.sc-tab-control-subtab > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item a {
+  line-height: 29px;
 }
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li.first-visible-nav-tab:after,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li.first-visible-nav-tab:after,
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li.last-visible-nav-tab:after,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li.last-visible-nav-tab:after,
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li:first-child:after,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li:first-child:after {
+body.sc .sc-tab-control .sc-tab-control-nav {
+  height: 46px;
+}
+body.sc .sc-tab-control .sc-tab-control-nav .sc-tab-control-tab-item {
+  height: 41px;
+}
+body.sc .sc-tab-control .sc-tab-control-nav .sc-tab-control-tab-item a {
+  padding: 4px 15px 6px 15px;
+}
+body.sc .sc-tab-control.sc-tab-control-normal > .sc-tab-control-nav-wrap {
+  border-bottom: none;
+}
+body.sc .sc-tab-control.sc-tab-control-normal > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item {
+  border: none;
+}
+body.sc .sc-tab-control.sc-tab-control-normal > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item:hover {
+  background: none;
+}
+body.sc .sc-tab-control.sc-tab-control-normal > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item a {
+  background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/tab_gray_background.png') repeat-x left top;
+}
+body.sc .sc-tab-control.sc-tab-control-normal > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.last-tab {
+  padding-right: 2px;
+}
+body.sc .sc-tab-control.sc-tab-control-normal > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.last-tab:after {
+  width: 3px;
+  height: 39px;
+  content: "";
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/corner.png') no-repeat right top;
+}
+body.sc .sc-tab-control.sc-tab-control-normal > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.last-tab:hover:after {
+  right: 0;
+}
+body.sc .sc-tab-control.sc-tab-control-normal > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.first-tab {
+  padding-left: 3px;
+}
+body.sc .sc-tab-control.sc-tab-control-normal > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.first-tab:before {
   width: 3px;
   height: 39px;
   content: "";
   top: 0;
   left: 0;
+  z-index: 10;
   position: absolute;
   background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/corner.png') no-repeat left top;
 }
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li.first-visible-nav-tab a,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li.first-visible-nav-tab a,
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li.last-visible-nav-tab a,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li.last-visible-nav-tab a,
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li:first-child a,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li:first-child a {
-  border: none;
-  margin-left: 3px;
+body.sc .sc-tab-control.sc-tab-control-normal > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.first-tab:hover:before {
+  left: 0;
 }
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li.last-visible-nav-tab:after,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li.last-visible-nav-tab:after {
-  left: auto;
-  right: -3px;
-  background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/corner.png') no-repeat right top;
+body.sc .sc-tab-control.sc-tab-control-normal > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.selected {
+  background: none;
 }
-body.sc .sc-tabcontrol.progressive > .nav-tabs > li.last-visible-nav-tab a,
-body.sc .sc-tabcontrol.tabbable > .nav-tabs > li.last-visible-nav-tab a {
-  margin-left: 0;
+body.sc .sc-tab-control.sc-tab-control-normal > .sc-tab-control-nav-wrap > .sc-tab-control-nav > .sc-tab-control-tab-item.selected a {
+  color: #dc271e;
 }
 body.sc .sc-global-logo {
   background-image: url('/sitecore/shell/client/Speak/Assets/img/Speak/GlobalLogo/global_logo-orange.png');

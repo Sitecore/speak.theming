@@ -355,6 +355,9 @@
     <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\ProgressIndicator\sc-spinner32-red.gif" />
     <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\ProgressIndicator\sc-spinner32-teal.gif" />
     <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\SmartPanel\header_icon.png" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\TabControl\arrow_gray.png" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\TabControl\corner.png" />
+    <Content Include="Website\sitecore\shell\client\Speak\Assets\img\Speak\TabControl\tab_gray_background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

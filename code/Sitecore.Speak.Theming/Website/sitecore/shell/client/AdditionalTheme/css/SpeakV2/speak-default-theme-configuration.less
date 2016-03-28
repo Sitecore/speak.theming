@@ -1231,135 +1231,245 @@ body.sc {
     }
 
     /* Tab Control */
-    .sc-tabcontrol {
-        &.subTab > .nav-tabs {
-            border: none;
-            background: none;
+    .sc-tab-control {
+        .sc-tab-control-button-right {
+            height: 36px;
+            padding-top: 11px;
         }
 
-        > .nav-tabs {
-            border-bottom: none;
+        &.sc-tab-control-progressive  {
+            > .sc-tab-control-nav-wrap {
+                border-bottom: none;
 
-            > li {
-                &.active {
-                    > a {
-                        border: none !important;
+                > .sc-tab-control-nav {
+                    > .sc-tab-control-tab-item {
+                        &.last-tab {
+                            &:after {
+                                width: 3px;
+                                height: 39px;
+                                content: "";
+                                top: 0; 
+                                right: -3px;
+                                position: absolute;
+                                background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/corner.png') no-repeat right top;
+                            }
+                     
+                            &:hover {
+                                &:after {
+                                    right: -4px;
+                                }
+                            }
+                        }
+
+                        &.first-tab {
+                            margin-left: 2px !important;
+
+                            &:before {
+                                width: 3px;
+                                height: 39px;
+                                content: "";
+                                top: 0; 
+                                left: -2px;
+                                z-index:10;
+                                position: absolute;
+                                background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/corner.png') no-repeat left top;
+                            }
+                     
+                            &:hover {
+                                &:before {
+                                    left: -2px;
+                                }
+                            }
+                        }
+
+                        &.before-selected {
+                            a {
+                                &:hover:after, 
+                                &:after {
+                                    background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
+                                }
+
+
+                            }
+                        }
+
+                        &.after-selected {
+                            a {
+                                &:hover:before, 
+                                &:before {
+                                    background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
+                                }
+
+
+                            }
+                        }
+
+                        a {
+                            height: 39px;
+                            line-height: 17px;
+                            text-transform: none;
+                            color: @SC-MainFontColor;
+                            text-shadow: 0 1px 0 @SC-TabcontrolNavLinkTextShadow;
+                            font-size: 14px;
+                            border: none;
+                            background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/tab_gray_background.png') repeat-x left top;
+
+                            &:hover {
+                                background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/tab_gray_background.png') repeat-x left top;
+
+                                &:after {
+                                    background-image: none;
+                                }
+
+                            }
+
+                            &:before {
+                                content:"";
+                                top: 0;
+                                z-index:10;
+                                width: 16px;
+                                display: block;
+                                position: absolute;
+                                left: 0;
+                                height: 39px;
+                                background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
+                            }
+
+                        }
+
+                        &.selected {
+                            &.last-tab {
+                                &:after {
+                                    right: -4px;
+                                }
+                            }
+
+                            a {
+                                color: #dc271e;
+
+                                &:hover {
+                                    color: #dc271e;
+
+                                    &:before {
+                                        background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
+                                    }
+
+                                    &:hover {
+                                        &:before {
+                                            background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.selected a, 
+                        &:hover a {
+                            border: none !important;
+
+                            &:before {
+                                background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
+                            }
+                        }
                     }
-                }
-
-                > a {
-                    height: 39px;
-                    line-height: 17px;
-                    text-transform: none;
-                    color: @SC-MainFontColor;
-                    text-shadow: 0 1px 0 @SC-TabcontrolNavLinkTextShadow;
-                    font-size: 14px;
-                    border: none;
-                    background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/tab_gray_background.png') repeat-x left top;
                 }
             }
         }
 
-        &.progressive, &.tabbable {
-            > .nav-tabs {
-                > li {
-                    &:before {
-                        content:"";
-                        top: 0;
-                        z-index:10;
-                        width: 16px;
-                        display: block;
-                        position: absolute;
-                        left: 0;
-                        height: 39px;
-                        background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
-                    }
-
-                    &:first-child:before {
-                        display: none;
-                    }
-
-                    &.first-visible-nav-tab:before {
-                        display: none;
-                    }
-
-                    > a {
-                        padding-left: 30px;
-
-                        &:before {
-                            display: none;
+        &.sc-tab-control-subtab {
+            > .sc-tab-control-nav-wrap {
+                > .sc-tab-control-nav {
+                    > .sc-tab-control-tab-item {
+                        a {
+                            line-height: 29px;
                         }
+                    }
+                }
+            }
+        }
+
+        .sc-tab-control-nav {
+            height: 46px;
+
+            .sc-tab-control-tab-item {
+                height: 41px;
+
+                a {
+                    padding: 4px 15px 6px 15px;
+                }
+            }
+        }  
+        
+        &.sc-tab-control-normal {
+            > .sc-tab-control-nav-wrap {
+                border-bottom: none;
+
+                > .sc-tab-control-nav {
+                    > .sc-tab-control-tab-item {
+                        border: none;
 
                         &:hover {
-                            text-decoration: none;
+                            background: none;
+                        }
+
+
+                        a {
+                            background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/tab_gray_background.png') repeat-x left top;
+                        }
+
+                        &.last-tab {
+                            padding-right:2px;
 
                             &:after {
-                                display: none;
+                                width: 3px;
+                                height: 39px;
+                                content: "";
+                                top: 0; 
+                                right: 0;
+                                position: absolute;
+                                background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/corner.png') no-repeat right top;
                             }
-                        }                     
-                    }
-
-                    &.active-first-sibling {
-                        &:before {
-                            background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
-                        }
-                    }
-
-                    &.active {
-                        &:before {
-                            background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png') no-repeat left top;
+                     
+                            &:hover {
+                                &:after {
+                                    right: 0;
+                                }
+                            }
                         }
 
-                        > a {
-                            color: @SC-TabcontrolProgressiveActiveText;
-                        }
-                    }
+                        &.first-tab {
+                            padding-left: 3px;
 
-                    &.first-visible-nav-tab {
-                        a {
-                            padding-left: 15px;
                             &:before {
-                                display: none;
+                                width: 3px;
+                                height: 39px;
+                                content: "";
+                                top: 0; 
+                                left: 0;
+                                z-index:10;
+                                position: absolute;
+                                background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/corner.png') no-repeat left top;
+                            }
+                     
+                            &:hover {
+                                &:before {
+                                    left: 0;
+                                }
+                            }
+                        }
+
+                        &.selected {
+                            background: none;
+
+                            a {
+                                color: #dc271e;
                             }
                         }
                     }
-
-                    &.first-visible-nav-tab,
-                    &.last-visible-nav-tab,
-                    &:first-child {
-                        &:after {
-                            width: 3px;
-                            height: 39px;
-                            content: "";
-                            top: 0; 
-                            left: 0;
-                            position: absolute;
-                            background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/corner.png') no-repeat left top;
-                        }
-
-                        a {
-                            border: none;
-                            margin-left: 3px;
-                        }
-                    }
-
-                    &.last-visible-nav-tab {
-                        &:after {
-                            left : auto;
-                            right: -3px;
-                            background: url('/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/corner.png') no-repeat right top;
-                        }
-
-                        a {
-                            margin-left: 0;
-                        }
-                    }
-
                 }
             }
         }
-
-        
+            
     } 
 
     /* Global Logo */

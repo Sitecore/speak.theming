@@ -8,5 +8,3 @@ xcopy /e /i /s /y "%source%\Sitecore.Speak.Theming\Website\sitecore\shell\client
 
 
 
-
-pause
