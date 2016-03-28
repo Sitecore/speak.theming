@@ -1,0 +1,83 @@
+----item----
+version: 1
+id: {6C682592-20EB-4268-9B9C-C55CAF993DC3}
+database: core
+path: /sitecore/client/Applications/Theming/v2/TabControl2/Tab5 - Copy -
+parent: {2E24D869-DF77-4ABE-B567-876FEF587ECF}
+name: Tab5 - Copy -
+master: {00000000-0000-0000-0000-000000000000}
+template: {8A7ACB1A-0990-4C9E-A6F0-9612D0F5F51C}
+templatekey: Tab
+
+----field----
+field: {3A98ADC3-530B-4281-880D-2D56DCC605AF}
+name: IsLazyLoaded
+key: islazyloaded
+content-length: 0
+
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 268
+
+<r>
+  <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{759BEFD1-3323-404D-A243-E0ED81163C03}">
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="Id=Text2&amp;Text=Tab+2+Content&amp;TextType=Title" uid="{C82BF287-AFBC-493C-A43A-A709C5C9487F}" />
+  </d>
+</r>
+----version----
+language: en
+version: 1
+revision: bffacbe8-e982-4864-9056-cbf28c493e92
+
+----field----
+field: {F808909E-DC32-4DA6-9E5E-ED69EB9D3ED7}
+name: Header
+key: header
+content-length: 66
+
+Long, reaaaaaaaaaaaaly loooooooooooooooong tab header to be shrank
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150423T151300Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+bffacbe8-e982-4864-9056-cbf28c493e92
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150811T085759Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
