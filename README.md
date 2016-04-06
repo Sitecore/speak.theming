@@ -10,11 +10,13 @@ SPEAK Theming is the great addition to the Sitecore SPEAK framework in order to 
  
 ##Requirements
 In order to use SPEAK Theming you need to have 
+
 1. Sitecore version 8.1 or higher.
 2. Hedgehog TDS in case you want to install the themes from sources.
 
 ##How to install
 You can download existing Sitecore package from its [marketplace page](https://marketplace.sitecore.net/Modules/S/Sitecore_SPEAK_Theming.aspx?sc_lang=en) and install it via Sitecore Package Installer or you can install it from the sources in the following way:
+
 1. Checkout this repository from github
 2. Install the Sitecore CMS v. 8.1 or higher or skip this step if you have Sitecore installed
 3. Change the `/code/Setup.cmd` file:
@@ -36,6 +38,7 @@ Navigate to the Sitecore Launchpad and select the Theming shortcut. Here you can
 ##How to add your own theme
 The theme is defined by the item definition where you can provide the theme name and the location of your css files for this theme.
 In order to add your theme do the following:
+
 1. Duplicate one of the existing theme item definitions in the core database: `sitecore\client\Applications\Theming\Change\PageSettings\Themes\`
 2. Rename your item with the theme name
 3. Set the `SourceSpeakV1` and `SourceSpeakV2` fields to point out to the appropriate CSS files with theme styles
