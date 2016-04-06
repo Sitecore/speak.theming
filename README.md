@@ -4,9 +4,13 @@ SPEAK Theming is the great addition to the Sitecore SPEAK framework in order to 
 
 ## List of themes
 1. Contrast
+![contrast](https://github.com/ogojack/speak.theming/blob/master/docs/preview/contrast_zoom.jpg)
 2. Orange
+![orange](https://github.com/ogojack/speak.theming/blob/master/docs/preview/orange_zoom.jpg)
 3. Red and Black
+![Red and Black](https://github.com/ogojack/speak.theming/blob/master/docs/preview/red_zoom.jpg)
 4. Teal
+![teal](https://github.com/ogojack/speak.theming/blob/master/docs/preview/teal_zoom.jpg)
  
 ## Requirements
 In order to use SPEAK Theming you need to have 
