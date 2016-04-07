@@ -1,0 +1,305 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Speak.Theming</PackageName>
+      <Author>SVS, EGR</Author>
+      <Version>1.0.0</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xfiles>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Overwrite</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Entries>
+        <x-item>/bin/Sitecore.Speak.Theming.dll</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/changeTheme.js</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-configuration.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-contrast-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-contrast-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-orange-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-orange-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-red-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-red-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-teal-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-teal-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-configuration.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-configuration.css.map</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-configuration.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-configuration.min.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-contrast-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-contrast-var.css.map</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-contrast-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-contrast-var.min.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-orange-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-orange-var.css.map</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-orange-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-orange-var.min.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-red-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-red-var.css.map</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-red-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-red-var.min.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-teal-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-teal-var.css.map</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-teal-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-teal-var.min.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/style.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-configuration.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-contrast-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-contrast-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-orange-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-orange-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-red-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-red-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-teal-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-teal-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-configuration.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-configuration.css.map</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-configuration.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-configuration.min.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-contrast-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-contrast-var.css.map</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-contrast-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-contrast-var.min.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-orange-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-orange-var.css.map</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-orange-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-orange-var.min.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-red-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-red-var.css.map</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-red-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-red-var.min.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-teal-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-teal-var.css.map</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-teal-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-teal-var.min.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/style.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-configuration.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-contrast-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-contrast-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-orange-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-orange-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-red-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-red-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-teal-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/speak-default-theme-teal-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-configuration.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-configuration.css.map</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-configuration.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-configuration.min.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-contrast-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-contrast-var.css.map</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-contrast-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-contrast-var.min.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-orange-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-orange-var.css.map</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-orange-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-orange-var.min.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-red-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-red-var.css.map</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-red-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-red-var.min.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-teal-var.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-teal-var.css.map</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-teal-var.less</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/SpeakV2/speak-default-theme-teal-var.min.css</x-item>
+        <x-item>/sitecore/shell/client/AdditionalTheme/css/style.css</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/sc-sprite-contrast.png</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/sc-sprite-orange.png</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/sc-sprite-red.png</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/sc-sprite-teal.png</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/Speak/BackButton/back_button-new.png</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/Speak/DialogWindow/close_button_sprite-new.png</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/Speak/DropDownButton/arrows.png</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/Speak/GlobalLogo/global_logo-contrast.png</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/Speak/GlobalLogo/global_logo-orange.png</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/Speak/GlobalLogo/global_logo-red.png</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/Speak/GlobalLogo/global_logo-teal.png</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/Speak/MessageBar/sc-message-bar-icons-new.png</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/Speak/ProgressIndicator/sc-spinner32-contrast.gif</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/Speak/ProgressIndicator/sc-spinner32-orange.gif</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/Speak/ProgressIndicator/sc-spinner32-red.gif</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/Speak/ProgressIndicator/sc-spinner32-teal.gif</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/Speak/SmartPanel/header_icon.png</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/arrow_gray.png</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/corner.png</x-item>
+        <x-item>/sitecore/shell/client/Speak/Assets/img/Speak/TabControl/tab_gray_background.png</x-item>
+        <x-item>/sitecore/shell/client/Speak/Layouts/Layouts/Speak-Layout-Orange.cshtml</x-item>
+      </Entries>
+      <Include />
+      <Exclude />
+      <Name />
+    </xfiles>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/client/Applications/Launchpad/PageSettings/Buttons/Tools/Theming/{A6054951-2304-45C2-96B7-9ADAA5D37D48}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/{A60BDEAF-70C1-45F3-B9FD-B810229CB5B5}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/{DA4A6D1E-DA89-424A-9425-28C8DDC955BA}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/PageSettings/{DC621AC2-BBDE-4FC0-BB25-33BCC4414DB8}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/PageSettings/Page-Stylesheet-File/{156ABC74-DBD7-4F90-A62F-8D1DE1F7130B}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/PageSettings/SelectedTheme/{3D65ACF4-31FF-427C-81D0-CF48EE30238D}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/PageSettings/SelectedThemeTemplate/{6ED410AD-4A09-420E-A14E-E560D1C94569}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/PageSettings/SelectedThemeTemplate/Data/{4F7AFA4C-A1C5-4222-9687-8B5A85401197}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/PageSettings/SelectedThemeTemplate/Data/Selected theme/{2C326AA6-55FF-4E21-81B9-A57CEC77CCE4}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/PageSettings/Themes/{A79722F7-20DB-4189-A911-0B967E31C017}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/PageSettings/Themes/Contrast Theme/{A8A6A905-D488-4307-8460-06E67868C6FA}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/PageSettings/Themes/Default Theme/{8BE21258-4B5F-4F4E-9905-9C69583444A2}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/PageSettings/Themes/Orange Theme/{7A2D162F-99CA-4CE8-BAE2-AF81F8570C13}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/PageSettings/Themes/Red and black Theme/{BF60F8CB-4971-4A2B-AE94-45C0D201BCAD}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/PageSettings/Themes/Teal Theme/{941BE897-4B7E-4428-87D7-D6CE5662752B}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/PageSettings/ThemeStylesheet/{C1FAC1B4-DA03-49A2-933B-E8DC89120C69}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/PageSettings/ThemeStylesheet/Data/{FE8F27A2-A55A-478E-8CBE-16F4099CAA3A}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/PageSettings/ThemeStylesheet/Data/SourceSpeakV1/{CF14ED27-C831-4727-AB64-E3D3FF1291B1}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/Change/PageSettings/ThemeStylesheet/Data/SourceSpeakV2/{3CD0BE6D-4E52-473B-A7B0-B628805C86E6}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/{94096D48-8A0B-48BB-A529-36BF4C176B4C}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/Errors/{BA5D6F3C-C473-4B43-839B-4ECB3AE88611}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/Errors/ActionLink/{8EAD3008-E50E-4A55-9670-C7DA9E96D2BB}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/Errors/GeneralError/{EB844E79-8BFD-47A7-96A4-73218AB69981}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/Errors/GeneralError2/{3A2DD0A2-03B9-4C4C-AEE6-5BB9B23B9DF4}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/Notifications/{7B820908-8B35-4F08-B7BF-1EA6937585E5}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/Notifications/ActionLink/{99814317-02D7-4367-8F8D-33B8382B2B52}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/Notifications/GlobalNotification/{421C634F-245D-469B-9136-4A5CB9C4FA00}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/Notifications/GlobalNotification2/{4B7C380F-8C91-4E73-BC23-7CA67E22A5B8}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/Page-Stylesheet-File/{3E184141-E246-4696-A49E-63525B555393}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/PathThemeTemplate/{AD9302CC-0F47-4A87-9FB6-8E773037977B}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/PathThemeTemplate/Data/{F009873B-1E30-4702-B82B-67B3410AFCBD}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/PathThemeTemplate/Data/Path/{C3D706DD-02CE-4B3A-807C-45B51E14CF68}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/Warnings/{783FE4FF-5A9A-4CF9-B950-1B8AE3405861}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/Warnings/ActionLink/{623E837C-7D84-4B0C-9BD8-A7D8DE58EA50}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/Warnings/Warning1/{D26ABE9D-1262-42D7-AA6E-EEA381F21393}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/PageSettings/Warnings/Warning2/{EA5755E0-2A54-4E46-9DC7-9622DB711FA5}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/{D1F2286B-911C-4D1D-B330-D134BEE70BE3}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/MenuPageContainer/{515D11FE-AE9D-4AD7-87B8-7C1656FAFD85}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/Messages/{6ADE710A-E080-4379-BA75-564925D20050}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/Messages/Notification Message/{34CF0622-CD46-4126-AD72-23D8D9168DA1}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/MessagesWarn/{B27167B0-ADEE-49C3-B8B0-2E3C1DBF31F3}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/MessagesWarn/Warning Message/{CBA7C7C4-8072-4D47-8EF7-BD78B4DDC8A5}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/TabControl1/{0016A8D6-0170-4E6E-87A1-6CA999B434D8}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/TabControl1/Tab1/{6AC3B811-EDA1-4317-821A-70D1A9F524EA}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/TabControl1/Tab2/{08AAA931-41D1-45F0-9AD4-95A504C78FD1}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/TabControl1/Tab3LazyLoaded/{2A770E25-F057-4A7D-9C72-5279CA599ED6}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/TabControl1/Tab4LazyLoaded/{68CB74C4-1EF0-4CFB-8CD7-F38219B06ECE}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/TabControl2/{2E24D869-DF77-4ABE-B567-876FEF587ECF}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/TabControl2/Tab1/{CC49D030-4307-4563-A973-BB27C1F73514}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/TabControl2/Tab2/{ECA51516-5AE1-4807-A3FF-CFF0C665015D}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/TabControl2/Tab3/{BA6849FA-6B31-4B62-95F5-0777AC5F91F5}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/TabControl2/Tab3LazyLoaded/{44404415-0AC3-447F-8885-AF9A8AB3C30E}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/TabControl2/Tab4/{C97139B8-578D-4333-A06F-E4604BC54EE1}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/TabControl2/Tab4LazyLoaded/{5B3D5641-11A4-4AA7-91C3-4BBB9369885C}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/TabControl2/Tab5 - Copy -/{6C682592-20EB-4268-9B9C-C55CAF993DC3}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/TabControl2/Tab5 - Copy/{7FBFA0E4-204E-4F36-8D71-EE115FE12854}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/Theming/v2/TabControl2/Tab5/{FA92F2B7-F5D8-494A-B819-90E13262393A}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>items</Name>
+    </xitems>
+    <xfiles>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Entries>
+        <x-item>/App_Config/Include/Sitecore.Speak.Theming.config</x-item>
+      </Entries>
+      <Include />
+      <Exclude />
+      <Name />
+    </xfiles>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/client/Business Component Library/version 1/Layouts/Renderings/Structures/Page Structures/Dialog/DialogOrange/{06D96EF6-A4F4-4EB0-AA7F-F72C7D1972E8}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Business Component Library/version 1/Layouts/Renderings/Structures/Substructures/DialogContentNMOrange/{D873B32D-0726-4C56-8D4C-4F5B85B81DBB}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Business Component Library/version 1/Layouts/Renderings/Structures/Substructures/DialogContentNMOrange/DialogMI Parameters/__Standard Values/{71D21E69-4AD1-4E91-9025-339FCF5F0A50}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Business Component Library/version 1/Layouts/Renderings/Structures/Substructures/DialogContentNMOrange/DialogMI Parameters/{58A7EAF5-AFFC-4980-8085-40E145A109A0}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Business Component Library/version 1/Layouts/Renderings/Structures/Substructures/DialogContentNMOrange/DialogMI Parameters/Appearance/{48A7B852-CBB9-4BCF-BE15-1B66870118D8}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Business Component Library/version 1/Layouts/Renderings/Structures/Substructures/DialogContentNMOrange/DialogMI Parameters/Appearance/ShowToolbar/{09CA7D5A-A61A-486F-AECC-871C891F18D9}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name />
+    </xitems>
+    <xfiles>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Entries>
+        <x-item>/sitecore/shell/client/Business Component Library/Layouts/Renderings/Structures/Page Structures/Dialog/DialogOrange.cshtml</x-item>
+        <x-item>/sitecore/shell/client/Business Component Library/Layouts/Renderings/Structures/Substructures/DialogContentNMOrange.cshtml</x-item>
+      </Entries>
+      <Include />
+      <Exclude />
+      <Name />
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
