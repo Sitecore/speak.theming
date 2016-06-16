@@ -20,7 +20,7 @@ content-length: 1
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 2396
+content-length: 2622
 
 <r>
   <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{4F72A793-BDBC-4262-9523-6AADD8FEA487}">
@@ -36,12 +36,13 @@ content-length: 2396
     <r id="{D47D6BFD-4F1F-4715-9FD1-5957EC0259F5}" par="Id=SwitcherDataSource&amp;Database=core&amp;RootItemId=%7b3D65ACF4-31FF-427C-81D0-CF48EE30238D%7d" ph="Page.Body" uid="{E154CCDA-CA5B-4A0A-AF4F-6363EA3E2363}" />
     <r id="{D47D6BFD-4F1F-4715-9FD1-5957EC0259F5}" par="Id=DataSource&amp;Database=core&amp;ShowHiddenItems=0&amp;RootItemId=%7bA79722F7-20DB-4189-A911-0B967E31C017%7d" ph="Page.Body" uid="{E3EB9C5A-3F77-4DC3-AE82-116453906B5A}" />
     <r id="{913AB005-2527-4C2D-9827-FB3A8DFB135C}" par="Click=javascript%3aapp.saveTheme()&amp;Id=ChangeButton&amp;ButtonType=Primary&amp;Text=Change+Theme&amp;Dimension=Large" ph="main.Content" uid="{6168E1E1-5DEB-4907-BED5-5F87CDE3E063}" />
+    <r id="{41EF8D3D-6B51-4E31-B61E-417A5E652AE1}" par="Id=Frame&amp;IsVisible=0&amp;Width=100%25&amp;SourceUrl=%2fsitecore%2fclient%2fApplications%2fTheming" ph="main.Content" uid="{360A2B45-FC7B-4C48-A038-CF730442F804}" />
   </d>
 </r>
 ----version----
 language: en
 version: 1
-revision: b3c6c433-0391-4bee-b76d-7a4d776e9690
+revision: 1d067cc2-e5f4-4fc5-b6ee-5dc5c541fd23
 
 ----field----
 field: {7205A57F-93B4-413A-AA9A-6B16BBC59565}
@@ -63,14 +64,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b3c6c433-0391-4bee-b76d-7a4d776e9690
+1d067cc2-e5f4-4fc5-b6ee-5dc5c541fd23
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151217T163610Z
+20160616T130124Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
