@@ -121,4 +121,6 @@
   <Item ItemPath="/sitecore/client/Applications/Theming/v2/TabControl2/Tab5" ItemIcon="/temp/IconCache/Applications/32x32/Document.png" />
   <Item ItemPath="/sitecore/client/Applications/Theming/v2/TabControl2/Tab5 - Copy -" ItemIcon="/temp/IconCache/Applications/32x32/Document.png" />
   <Item ItemPath="/sitecore/client/Applications/Theming/v2/TabControl2/Tab5 - Copy" ItemIcon="/temp/IconCache/Applications/32x32/Document.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/v2/TabControl1/Tab4LazyLoaded" ItemIcon="/temp/IconCache/Applications/32x32/Document.png" />
+  <Item ItemPath="/sitecore/client/Applications/Theming/v2/TabControl2" ItemIcon="/temp/IconCache/Applications/16x16/folder.png" />
 </ItemIconCache>

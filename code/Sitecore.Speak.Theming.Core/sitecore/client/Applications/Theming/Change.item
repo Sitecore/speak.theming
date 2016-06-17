@@ -20,7 +20,7 @@ content-length: 1
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 2622
+content-length: 2476
 
 <r>
   <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{4F72A793-BDBC-4262-9523-6AADD8FEA487}">
@@ -29,20 +29,19 @@ content-length: 2622
     <r id="{06D96EF6-A4F4-4EB0-AA7F-F72C7D1972E8}" ph="Page.Body" uid="{C303A65C-1205-4311-BE50-A275460CFBB2}" />
     <r id="{642C1164-3AE1-4D86-8474-3BC19FE4433B}" ph="DialogHeader" uid="{3AB2380C-C8AD-4B42-8848-69418CE847F8}" />
     <r id="{F6C9F461-FCAF-47DC-AA01-C8C64C2EFFB8}" par="Id=main&amp;UsePadding=1" ph="Page.Body" uid="{16ABEFF6-990A-4A8E-ADE8-6E756FE81CE9}" />
-    <r id="{7717EB6C-9F90-4C58-826D-5E87722A0318}" par="Id=HeaderTitle&amp;TextType=LargeTitle&amp;Text=Change+the+SPEAK+Theme" ph="DialogHeader.Title" uid="{1DC97590-77EC-4F75-A687-D86F7D22CAAA}" />
-    <r id="{7717EB6C-9F90-4C58-826D-5E87722A0318}" par="Id=Text&amp;Text=Select+a+new+theme%3a" ph="main.Content" uid="{A1F67CD1-B96A-4886-B965-C8C6E4BDD68F}" />
-    <r id="{25D357D3-3648-4336-9B53-55EED7CFA078}" par="Id=ComboBox&amp;SelectedValue=%7bBF60F8CB-4971-4A2B-AE94-45C0D201BCAD%7d&amp;DisplayFieldName=%24displayName&amp;Items=%7bBinding+DataSource.Items%7d" ph="main.Content" uid="{00EBE97D-F6EC-42D8-8100-C32D1C684878}" />
-    <r id="{7717EB6C-9F90-4C58-826D-5E87722A0318}" par="Id=SelectedIdText&amp;IsVisible=0" ph="main.Content" uid="{91C32421-8531-4FB3-AEDA-EADD0436E355}" />
+    <r id="{7717EB6C-9F90-4C58-826D-5E87722A0318}" par="Id=SelectText&amp;TextType=Text&amp;Text=Select+a+theme+for+preview" ph="DialogHeader.Title" uid="{3DCA7B11-74EB-4598-92F9-BD2071E6B82B}" />
+    <r id="{25D357D3-3648-4336-9B53-55EED7CFA078}" par="Id=ComboBox&amp;SelectedValue=%7bBF60F8CB-4971-4A2B-AE94-45C0D201BCAD%7d&amp;DisplayFieldName=%24displayName&amp;Items=%7bBinding+DataSource.Items%7d" ph="DialogHeader.Title" uid="{00EBE97D-F6EC-42D8-8100-C32D1C684878}" />
+    <r id="{7717EB6C-9F90-4C58-826D-5E87722A0318}" par="Id=SelectedIdText&amp;IsVisible=0" ph="DialogHeader.Title" uid="{91C32421-8531-4FB3-AEDA-EADD0436E355}" />
     <r id="{D47D6BFD-4F1F-4715-9FD1-5957EC0259F5}" par="Id=SwitcherDataSource&amp;Database=core&amp;RootItemId=%7b3D65ACF4-31FF-427C-81D0-CF48EE30238D%7d" ph="Page.Body" uid="{E154CCDA-CA5B-4A0A-AF4F-6363EA3E2363}" />
     <r id="{D47D6BFD-4F1F-4715-9FD1-5957EC0259F5}" par="Id=DataSource&amp;Database=core&amp;ShowHiddenItems=0&amp;RootItemId=%7bA79722F7-20DB-4189-A911-0B967E31C017%7d" ph="Page.Body" uid="{E3EB9C5A-3F77-4DC3-AE82-116453906B5A}" />
-    <r id="{913AB005-2527-4C2D-9827-FB3A8DFB135C}" par="Click=javascript%3aapp.saveTheme()&amp;Id=ChangeButton&amp;ButtonType=Primary&amp;Text=Change+Theme&amp;Dimension=Large" ph="main.Content" uid="{6168E1E1-5DEB-4907-BED5-5F87CDE3E063}" />
+    <r id="{913AB005-2527-4C2D-9827-FB3A8DFB135C}" par="Click=javascript%3aapp.saveTheme()&amp;Id=ChangeButton&amp;ButtonType=Primary&amp;Text=Change+Theme&amp;Dimension=Large" ph="DialogHeader.Actions" uid="{6168E1E1-5DEB-4907-BED5-5F87CDE3E063}" />
     <r id="{41EF8D3D-6B51-4E31-B61E-417A5E652AE1}" par="Id=Frame&amp;IsVisible=0&amp;Width=100%25&amp;SourceUrl=%2fsitecore%2fclient%2fApplications%2fTheming" ph="main.Content" uid="{360A2B45-FC7B-4C48-A038-CF730442F804}" />
   </d>
 </r>
 ----version----
 language: en
 version: 1
-revision: 1d067cc2-e5f4-4fc5-b6ee-5dc5c541fd23
+revision: a8e83d35-2266-46af-af02-0c1981929b33
 
 ----field----
 field: {7205A57F-93B4-413A-AA9A-6B16BBC59565}
@@ -64,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1d067cc2-e5f4-4fc5-b6ee-5dc5c541fd23
+a8e83d35-2266-46af-af02-0c1981929b33
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160616T130124Z
+20160617T052636Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

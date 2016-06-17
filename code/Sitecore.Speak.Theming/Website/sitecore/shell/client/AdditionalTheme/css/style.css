@@ -1,22 +1,26 @@
-﻿.sc .sc-text-divider {
-    border-bottom: none;
-    margin-top: 50px;
+﻿button[data-sc-id="ChangeButton"] {
+    margin-top: 23px;
 }
 
-div[data-sc-id=RowPanel1] {
-    padding: 0 15px;
+.sc-dialogHeader { 
+    background: white !important;
+    box-shadow: #fbfbfb 0 1px 0 0 inset, #e1dfdf 0 1px 1px 0;
+    border: none !important;
+    height: 90px !important;
 }
 
-div[data-sc-id=Text16] {
-    margin-top: 60px !important;
+.sc-dialogHeader .sc-dialogHeader-title {
+    padding-top: 0 !important;
+    margin-top: -10px;
+    float: left;
 }
 
-button[data-sc-id=ChangeButton] {
-    margin-top: 10px;
-    margin-bottom: 50px;
+.sc-text[data-sc-id="SelectText"] {
+    color: #131313;
+    font-size: 16px;
+    line-height: 100%;
 }
 
-select[data-sc-id=ComboBox] {
-    width: 50%;
+iframe[data-sc-id="Frame"] {
+    margin-top: 13px;
 }
-
